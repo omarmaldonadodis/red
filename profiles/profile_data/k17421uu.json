@@ -1,0 +1,54 @@
+{
+  "profile_id": "k17421uu",
+  "profile_config": {
+    "name": "María Quiroga",
+    "age": 58,
+    "gender": "female",
+    "country": "EC",
+    "city": "Guayaquil",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "interests": [
+      "grandchildren",
+      "history",
+      "news",
+      "retirement",
+      "gardening",
+      "religion",
+      "cooking"
+    ],
+    "browsing_history": [
+      "google.com",
+      "seriouseats.com",
+      "bbc.com/mundo",
+      "eluniverso.com",
+      "mercadolibre.com.ec",
+      "facebook.com",
+      "tasty.co",
+      "youtube.com",
+      "gmail.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "IEt1xFSSUawEymqP",
+    "country": "ec",
+    "city": "Guayaquil",
+    "region": "guayas"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "157.100.66.19",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": null,
+  "created_at": "2025-11-18T17:44:10.293268",
+  "warmup_completed": false
+}

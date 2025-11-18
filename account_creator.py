@@ -37,7 +37,7 @@ class AccountCreator:
                             proxy_type: str = 'residential',
                             country: str = 'ec',
                             city: Optional[str] = None,
-                            region: Optional[str] = None,  # NUEVO
+                            region: Optional[str] = None,
                             warmup: bool = True,
                             warmup_type: str = 'basic',
                             warmup_duration: int = 30) -> Dict:
@@ -57,46 +57,89 @@ class AccountCreator:
         }
         
         try:
-            # Paso 1: Generar perfil
+            # ==================================================
+            # PASO 0: NORMALIZAR CIUDAD Y REGIÓN PRIMERO
+            # ==================================================
+            
+            # Mapeo de ciudad a región (Ecuador)
+            city_to_region_map = {
+                'quito': 'pichincha',
+                'guayaquil': 'guayas',
+                'cuenca': 'azuay',
+                'santo domingo': 'santo-domingo-de-los-tsachilas',
+                'machala': 'el-oro',
+                'ambato': 'tungurahua',
+                'portoviejo': 'manabi',
+                'loja': 'loja'
+            }
+            
+            # Si se especificó ciudad, normalizarla
+            if city:
+                city_normalized = city.lower().strip()
+                # Mapear a región automáticamente si no se especificó
+                if not region and city_normalized in city_to_region_map:
+                    region = city_to_region_map[city_normalized]
+            else:
+                city_normalized = None
+            
+            # ==================================================
+            # PASO 1: GENERAR PERFIL CON CIUDAD ESPECÍFICA
+            # ==================================================
             print_info(f"Paso 1/4: Generando perfil ({proxy_type})...")
+            
+            # Generar perfil (se generará con ciudad aleatoria si no se especificó)
             profile_config = ProfileGenerator.generate_profile(proxy_type=proxy_type)
             
-            # Si no se especificó ciudad, usar la del perfil generado
-            if not city:
-                city = profile_config.city
-            
-            # Mapear ciudad a región (Ecuador)
-            if not region:
-                city_to_region = {
-                    'quito': 'pichincha',
-                    'guayaquil': 'guayas',
-                    'cuenca': 'azuay',
-                    'santo domingo': 'santo-domingo-de-los-tsachilas',
-                    'machala': 'el-oro',
-                    'ambato': 'tungurahua',
-                    'portoviejo': 'manabi',
-                    'loja': 'loja'
+            # SOBRESCRIBIR la ciudad del perfil si se especificó una
+            if city_normalized:
+                # Capitalizar para el perfil (Loja, Quito, etc.)
+                city_display = city.title()
+                profile_config.city = city_display
+                
+                # Actualizar timezone si es necesario
+                # ProfileGenerator ya está importado al inicio del archivo
+                ecuadorian_cities = {
+                    'Quito': {'timezone': 'America/Guayaquil', 'population': 0.35},
+                    'Guayaquil': {'timezone': 'America/Guayaquil', 'population': 0.30},
+                    'Cuenca': {'timezone': 'America/Guayaquil', 'population': 0.10},
+                    'Santo Domingo': {'timezone': 'America/Guayaquil', 'population': 0.08},
+                    'Machala': {'timezone': 'America/Guayaquil', 'population': 0.07},
+                    'Ambato': {'timezone': 'America/Guayaquil', 'population': 0.05},
+                    'Portoviejo': {'timezone': 'America/Guayaquil', 'population': 0.03},
+                    'Loja': {'timezone': 'America/Guayaquil', 'population': 0.02}
                 }
-                region = city_to_region.get(city.lower(), 'pichincha')  # Default: pichincha
+                
+                if city_display in ecuadorian_cities:
+                    profile_config.timezone = ecuadorian_cities[city_display]['timezone']
+            else:
+                # Usar la ciudad generada aleatoriamente
+                city_normalized = profile_config.city.lower()
+                city_display = profile_config.city
+                
+                # Mapear región automáticamente
+                if not region and city_normalized in city_to_region_map:
+                    region = city_to_region_map[city_normalized]
             
             logger.info(f"Perfil generado:")
             logger.info(f"  Nombre: {profile_config.name}")
             logger.info(f"  Edad: {profile_config.age}")
-            logger.info(f"  Ciudad: {city}")
-            logger.info(f"  Región: {region}")
+            logger.info(f"  Ciudad: {city_display}")
+            logger.info(f"  Región: {region or 'No especificada'}")
             logger.info(f"  Dispositivo: {profile_config.device_type}")
             logger.info(f"  Intereses: {', '.join(profile_config.interests)}")
             
-            # Paso 2: Configurar proxy con geo-targeting
-            print_info(f"Paso 2/4: Configurando proxy {proxy_type.upper()} para {city.upper()}, Ecuador...")
+            # ==================================================
+            # PASO 2: CONFIGURAR PROXY CON GEO-TARGETING
+            # ==================================================
+            print_info(f"Paso 2/4: Configurando proxy {proxy_type.upper()} para {city_display.upper()}, Ecuador...")
             
             proxy_config = self.proxy_manager.get_proxy_config(
                 proxy_type=proxy_type,
                 country=country,
-                city=city,
+                city=city_normalized,  # Usar ciudad normalizada (lowercase)
                 region=region,
                 sticky_session=True,
-                session_lifetime=3600  # 60 minutos (máximo SOAX)
+                session_lifetime=3600
             )
             
             # Probar proxy
@@ -113,9 +156,9 @@ class AccountCreator:
             logger.info(f"  ISP: {proxy_test['isp']}")
             logger.info(f"  Tipo: {proxy_test['connection_type']}")
             
-            # Resto del código sin cambios...
-            
-            # Paso 3: Crear perfil en AdsPower
+            # ==================================================
+            # PASO 3: CREAR PERFIL EN ADSPOWER
+            # ==================================================
             print_info("Paso 3/4: Creando perfil en AdsPower...")
             
             profile_id = self.adspower.create_profile(
@@ -129,15 +172,28 @@ class AccountCreator:
             threexui_client = None
             if self.threexui:
                 try:
-                    print_info("Creando cliente en 3x-ui...")
+                    print_info("Creando cliente 3x-ui con monitoreo de tráfico...")
+                    
+                    # Email único para el cliente
+                    client_email = f"{profile_config.name.replace(' ', '_')}_{profile_id[:8]}"
+                    
+                    # Crear cliente con límite de datos y vinculado al perfil
                     threexui_client = self.threexui.create_client(
-                        email=f"{profile_config.name.replace(' ', '_')}_{profile_id[:8]}",
-                        total_gb=50,
-                        expiry_days=30
+                        email=client_email,
+                        total_gb=50,  # 50 GB por defecto
+                        expiry_days=30,
+                        profile_id=profile_id  # ⭐ VINCULAR con perfil AdsPower
                     )
+                    
+                    logger.info(f"✅ Cliente 3x-ui vinculado al perfil")
+                    logger.info(f"   Email: {client_email}")
+                    logger.info(f"   UUID: {threexui_client['uuid']}")
+                    logger.info(f"   Límite: {threexui_client['total_gb']} GB")
+                    
                 except Exception as e:
                     logger.warning(f"No se pudo crear cliente 3x-ui: {e}")
-            
+                    threexui_client = {'error': str(e)}
+                        
             # Guardar datos del perfil
             profile_data = {
                 'profile_id': profile_id,
@@ -146,7 +202,8 @@ class AccountCreator:
                     'type': proxy_config['proxy_type'],
                     'session_id': proxy_config['session_id'],
                     'country': country,
-                    'city': city or profile_config.city
+                    'city': city_display,
+                    'region': region
                 },
                 'proxy_test': proxy_test,
                 'threexui_client': threexui_client,
@@ -156,18 +213,18 @@ class AccountCreator:
             
             result['profile_data'] = profile_data
             
-            # Paso 4: Precalentar perfil
+            # ==================================================
+            # PASO 4: PRECALENTAR PERFIL
+            # ==================================================
             if warmup:
                 print_info(f"Paso 4/4: Precalentando perfil ({warmup_type})...")
                 
                 warmer = ProfileWarmer(self.adspower, profile_config)
                 
-                # Conectar al navegador
                 if not warmer.connect_to_browser(profile_id):
                     raise Exception("No se pudo conectar al navegador")
                 
                 try:
-                    # Ejecutar warmup según tipo
                     if warmup_type == 'advanced':
                         warmup_stats = warmer.warm_profile_advanced(
                             duration_minutes=warmup_duration,
@@ -186,7 +243,6 @@ class AccountCreator:
                     print_success("Precalentamiento completado")
                     
                 finally:
-                    # Siempre desconectar
                     warmer.disconnect(profile_id)
             else:
                 print_info("Paso 4/4: Omitiendo precalentamiento")
@@ -202,6 +258,8 @@ class AccountCreator:
             logger.info("=" * 70)
             logger.info(f"ID: {profile_id}")
             logger.info(f"Nombre: {profile_config.name}")
+            logger.info(f"Ciudad: {city_display}")
+            logger.info(f"Región: {region or 'N/A'}")
             logger.info(f"Tipo: {profile_config.device_type.upper()} ({proxy_type})")
             logger.info(f"Warmup: {'Sí' if warmup else 'No'}")
             if warmup and result['warmup_stats']:
@@ -224,7 +282,6 @@ class AccountCreator:
                     pass
             
             return result
-    
     def create_multiple_profiles(self,
                                  count: int,
                                  proxy_type: str = 'residential',

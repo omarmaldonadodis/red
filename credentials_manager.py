@@ -88,9 +88,26 @@ class CredentialsManager:
     
     @property
     def threexui_inbound_id(self) -> Optional[int]:
+        """
+        Retorna el ID del inbound de 3x-ui
+        
+        Returns:
+            int si está configurado, None para auto-detectar
+        """
+        if not self.use_3xui:
+            return None
+        
         val = os.getenv('THREEXUI_INBOUND_ID')
-        return int(val) if val and self.use_3xui else None
-    
+        
+        # Si está vacío o es string vacío, retornar None para auto-detectar
+        if not val or val.strip() == '':
+            return None
+        
+        try:
+            return int(val)
+        except (ValueError, TypeError):
+            return None
+            
     # Configuración general
     @property
     def default_country(self) -> str:

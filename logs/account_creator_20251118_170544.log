@@ -1,0 +1,17 @@
+2025-11-18 17:06:10,436 - INFO - ======================================================================
+2025-11-18 17:06:10,437 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 17:06:10,437 - INFO - ======================================================================
+2025-11-18 17:06:10,495 - INFO - Perfil generado:
+2025-11-18 17:06:10,495 - INFO -   Nombre: Fernando Haro
+2025-11-18 17:06:10,495 - INFO -   Edad: 47
+2025-11-18 17:06:10,495 - INFO -   Ciudad: Cuenca
+2025-11-18 17:06:10,495 - INFO -   Región: azuay
+2025-11-18 17:06:10,496 - INFO -   Dispositivo: desktop
+2025-11-18 17:06:10,496 - INFO -   Intereses: news, politics, family, business, gardening
+2025-11-18 17:06:14,451 - INFO - ✅ Proxy funcionando:
+2025-11-18 17:06:14,451 - INFO -   IP: 45.188.230.5
+2025-11-18 17:06:14,451 - INFO -   País: None
+2025-11-18 17:06:14,451 - INFO -   Ciudad: None
+2025-11-18 17:06:14,451 - INFO -   ISP: None
+2025-11-18 17:06:14,451 - INFO -   Tipo: residential
+2025-11-18 17:06:14,963 - ERROR - ❌ Error creando perfil: Error de AdsPower API: If the number of imported accounts exceeds the limit of 12, please delete some accounts and try again.

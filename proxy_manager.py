@@ -5,6 +5,11 @@ from typing import Dict, Optional, List
 import time
 import urllib3
 import string
+import logging
+import json
+import uuid
+
+logger = logging.getLogger(__name__)
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -254,26 +259,31 @@ class SOAXProxyManager:
         if session_id in self._active_sessions:
             del self._active_sessions[session_id]
 
-
 class ThreeXUIManager:
-    """Gestor para 3x-ui VPN panel"""
+    """Gestor para 3x-ui VPN panel con autoconfiguración y monitoreo de tráfico"""
     
-    def __init__(self, panel_url: str, username: str, password: str, inbound_id: int):
+    def __init__(self, panel_url: str, username: str, password: str, inbound_id: int = None):
         """
-        Inicializa el gestor de 3x-ui
+        Inicializa el gestor de 3x-ui con autoconfiguración
         
         Args:
             panel_url: URL del panel 3x-ui
             username: Usuario del panel
             password: Contraseña del panel
-            inbound_id: ID del inbound a usar
+            inbound_id: ID del inbound (None = auto-detectar)
         """
         self.panel_url = panel_url.rstrip('/')
         self.username = username
         self.password = password
-        self.inbound_id = inbound_id
         self.session = requests.Session()
+        
+        # Login
         self._login()
+        
+        # Auto-configurar o validar inbound
+        self.inbound_id = self._setup_inbound(inbound_id)
+        
+        logger.info(f"✅ 3x-ui inicializado - Usando Inbound ID: {self.inbound_id}")
     
     def _login(self):
         """Inicia sesión en el panel 3x-ui"""
@@ -288,34 +298,178 @@ class ThreeXUIManager:
             )
             
             if response.status_code == 200:
-                print("✅ Sesión iniciada en 3x-ui")
+                logger.info("✅ Sesión iniciada en 3x-ui")
             else:
-                raise Exception(f"Error de login: {response.status_code}")
+                raise Exception(f"Error de login: HTTP {response.status_code}")
                 
         except Exception as e:
             raise Exception(f"No se pudo conectar con 3x-ui: {e}")
     
-    def create_client(self, email: str, total_gb: int = 50, expiry_days: int = 30) -> Dict:
+    def _setup_inbound(self, requested_id: int = None) -> int:
         """
-        Crea un nuevo cliente en el inbound
+        Configura el inbound automáticamente
+        
+        Args:
+            requested_id: ID solicitado (None = auto-detectar)
+        
+        Returns:
+            int: ID del inbound a usar
+        """
+        logger.info("🔧 Configurando inbound para 3x-ui...")
+        
+        # Obtener lista de inbounds existentes
+        existing_inbounds = self._get_inbound_list()
+        
+        if not existing_inbounds:
+            logger.warning("⚠️  No hay inbounds existentes")
+            
+            # Crear inbound automáticamente
+            logger.info("📦 Creando nuevo inbound para el sistema...")
+            new_inbound_id = self._create_default_inbound()
+            
+            if new_inbound_id:
+                logger.info(f"✅ Inbound creado exitosamente: ID {new_inbound_id}")
+                return new_inbound_id
+            else:
+                raise Exception("No se pudo crear inbound automáticamente")
+        
+        # Si se especificó un ID, verificar que exista
+        if requested_id is not None:
+            exists = any(ib['id'] == requested_id for ib in existing_inbounds)
+            
+            if exists:
+                logger.info(f"✅ Usando Inbound ID {requested_id} (especificado en .env)")
+                return requested_id
+            else:
+                logger.warning(f"⚠️  Inbound ID {requested_id} no existe")
+                logger.info(f"   Inbounds disponibles: {[ib['id'] for ib in existing_inbounds]}")
+        
+        # Auto-seleccionar el primer inbound disponible
+        first_inbound = existing_inbounds[0]
+        auto_id = first_inbound['id']
+        
+        logger.info(f"🔄 Auto-seleccionando Inbound ID {auto_id}")
+        logger.info(f"   Puerto: {first_inbound.get('port')}")
+        logger.info(f"   Protocolo: {first_inbound.get('protocol')}")
+        
+        return auto_id
+    
+    def _get_inbound_list(self) -> List[Dict]:
+        """
+        Obtiene lista de inbounds existentes
+        
+        Returns:
+            Lista de inbounds
+        """
+        try:
+            response = self.session.get(
+                f"{self.panel_url}/panel/api/inbounds/list",
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                if data.get('success'):
+                    return data.get('obj', [])
+            
+            return []
+            
+        except Exception as e:
+            logger.error(f"Error obteniendo lista de inbounds: {e}")
+            return []
+    
+    def _create_default_inbound(self) -> Optional[int]:
+        """
+        Crea un inbound por defecto para el sistema
+        
+        Returns:
+            ID del inbound creado o None si falla
+        """
+        try:
+            # Configuración por defecto
+            inbound_config = {
+                'enable': True,
+                'port': 443,
+                'protocol': 'vless',
+                'settings': json.dumps({
+                    'clients': [],
+                    'decryption': 'none',
+                    'fallbacks': []
+                }),
+                'streamSettings': json.dumps({
+                    'network': 'tcp',
+                    'security': 'none',
+                    'tcpSettings': {
+                        'header': {
+                            'type': 'none'
+                        }
+                    }
+                }),
+                'remark': 'AdsPower Profiles System',
+                'sniffing': json.dumps({
+                    'enabled': True,
+                    'destOverride': ['http', 'tls']
+                })
+            }
+            
+            response = self.session.post(
+                f"{self.panel_url}/panel/api/inbounds/add",
+                json=inbound_config,
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                if data.get('success'):
+                    # Obtener el ID del inbound recién creado
+                    inbounds = self._get_inbound_list()
+                    
+                    # Buscar el que tenga el remark que pusimos
+                    for ib in inbounds:
+                        if ib.get('remark') == 'AdsPower Profiles System':
+                            return ib['id']
+                    
+                    # Si no lo encontramos, retornar el último
+                    if inbounds:
+                        return inbounds[-1]['id']
+            
+            return None
+            
+        except Exception as e:
+            logger.error(f"Error creando inbound: {e}")
+            return None
+    
+    def create_client(self, 
+                     email: str, 
+                     total_gb: int = 50, 
+                     expiry_days: int = 30,
+                     profile_id: str = None) -> Dict:
+        """
+        Crea un nuevo cliente en el inbound con límite de datos
         
         Args:
             email: Email/identificador del cliente
             total_gb: GB totales permitidos
             expiry_days: Días hasta expiración
+            profile_id: ID del perfil de AdsPower (para vincular)
         
         Returns:
             Dict con datos del cliente creado
         """
-        import uuid
+        client_uuid = str(uuid.uuid4())
+        expiry_time = int(time.time() * 1000) + (expiry_days * 24 * 60 * 60 * 1000)
+        total_bytes = total_gb * 1024 * 1024 * 1024
         
         client_data = {
-            'id': str(uuid.uuid4()),
+            'id': client_uuid,
             'email': email,
             'enable': True,
-            'expiryTime': int(time.time() * 1000) + (expiry_days * 24 * 60 * 60 * 1000),
-            'totalGB': total_gb * 1024 * 1024 * 1024,
-            'flow': ''
+            'expiryTime': expiry_time,
+            'totalGB': total_bytes,
+            'flow': '',
+            'subId': profile_id or ''
         }
         
         try:
@@ -323,33 +477,230 @@ class ThreeXUIManager:
                 f"{self.panel_url}/panel/api/inbounds/addClient",
                 json={
                     'id': self.inbound_id,
-                    'settings': {
+                    'settings': json.dumps({
                         'clients': [client_data]
-                    }
+                    })
                 },
                 timeout=10
             )
             
             if response.status_code == 200:
-                print(f"✅ Cliente 3x-ui creado: {email}")
-                return client_data
+                result = response.json()
+                
+                if result.get('success'):
+                    logger.info(f"✅ Cliente 3x-ui creado: {email}")
+                    logger.info(f"   UUID: {client_uuid}")
+                    logger.info(f"   Límite: {total_gb} GB")
+                    logger.info(f"   Expira: {expiry_days} días")
+                    
+                    return {
+                        'uuid': client_uuid,
+                        'email': email,
+                        'total_gb': total_gb,
+                        'expiry_days': expiry_days,
+                        'expiry_time': expiry_time,
+                        'profile_id': profile_id,
+                        'inbound_id': self.inbound_id,
+                        'created_at': time.strftime('%Y-%m-%d %H:%M:%S')
+                    }
+                else:
+                    raise Exception(f"API error: {result.get('msg', 'Unknown')}")
             else:
-                raise Exception(f"Error creando cliente: {response.status_code}")
+                raise Exception(f"HTTP {response.status_code}")
                 
         except Exception as e:
-            raise Exception(f"Error en 3x-ui: {e}")
+            logger.error(f"Error creando cliente: {e}")
+            return {'error': str(e)}
     
-    def get_client_link(self, client_id: str) -> str:
-        """Obtiene el link de conexión del cliente"""
-        return f"vless://{client_id}@{self.panel_url.replace('http://', '')}:443"
+    def get_client_traffic(self, client_email: str) -> Dict:
+        """
+        Obtiene estadísticas de tráfico de un cliente
+        
+        Args:
+            client_email: Email del cliente
+        
+        Returns:
+            Dict con estadísticas de tráfico
+        """
+        try:
+            response = self.session.get(
+                f"{self.panel_url}/panel/api/inbounds/get/{self.inbound_id}",
+                timeout=10
+            )
+            
+            if response.status_code != 200:
+                return {'error': f'HTTP {response.status_code}'}
+            
+            data = response.json()
+            
+            if not data.get('success'):
+                return {'error': 'API returned success=false'}
+            
+            inbound = data.get('obj', {})
+            
+            if 'settings' in inbound:
+                settings = json.loads(inbound['settings'])
+                clients = settings.get('clients', [])
+                
+                for client in clients:
+                    if client.get('email') == client_email:
+                        up = client.get('up', 0)
+                        down = client.get('down', 0)
+                        total_used = up + down
+                        total_limit = client.get('totalGB', 0)
+                        
+                        percentage_used = (total_used / total_limit * 100) if total_limit > 0 else 0
+                        remaining = max(0, total_limit - total_used)
+                        
+                        return {
+                            'email': client_email,
+                            'upload_bytes': up,
+                            'download_bytes': down,
+                            'total_used_bytes': total_used,
+                            'total_limit_bytes': total_limit,
+                            'remaining_bytes': remaining,
+                            'upload_mb': round(up / (1024 * 1024), 2),
+                            'download_mb': round(down / (1024 * 1024), 2),
+                            'total_used_mb': round(total_used / (1024 * 1024), 2),
+                            'total_limit_mb': round(total_limit / (1024 * 1024), 2),
+                            'remaining_mb': round(remaining / (1024 * 1024), 2),
+                            'percentage_used': round(percentage_used, 2),
+                            'enabled': client.get('enable', False),
+                            'expiry_time': client.get('expiryTime', 0)
+                        }
+                
+                return {'error': f'Cliente {client_email} no encontrado'}
+            
+            return {'error': 'Invalid response format'}
+            
+        except Exception as e:
+            return {'error': str(e)}
     
-    def delete_client(self, client_id: str) -> bool:
+    def update_client_limit(self, client_email: str, new_limit_gb: int) -> bool:
+        """Actualiza el límite de datos de un cliente"""
+        try:
+            response = self.session.get(
+                f"{self.panel_url}/panel/api/inbounds/get/{self.inbound_id}",
+                timeout=10
+            )
+            
+            if response.status_code != 200:
+                return False
+            
+            data = response.json()
+            
+            if not data.get('success'):
+                return False
+            
+            inbound = data.get('obj', {})
+            settings = json.loads(inbound['settings'])
+            clients = settings.get('clients', [])
+            
+            # Buscar y actualizar
+            updated = False
+            for client in clients:
+                if client.get('email') == client_email:
+                    client['totalGB'] = new_limit_gb * 1024 * 1024 * 1024
+                    updated = True
+                    break
+            
+            if not updated:
+                return False
+            
+            # Actualizar en el servidor
+            update_response = self.session.post(
+                f"{self.panel_url}/panel/api/inbounds/update/{self.inbound_id}",
+                json={
+                    'settings': json.dumps(settings)
+                },
+                timeout=10
+            )
+            
+            if update_response.status_code == 200:
+                logger.info(f"✅ Límite actualizado: {client_email} → {new_limit_gb} GB")
+                return True
+            
+            return False
+            
+        except Exception as e:
+            logger.error(f"Error actualizando límite: {e}")
+            return False
+    
+    def reset_client_traffic(self, client_email: str) -> bool:
+        """Resetea las estadísticas de tráfico de un cliente"""
+        try:
+            response = self.session.post(
+                f"{self.panel_url}/panel/api/inbounds/resetClientTraffic/{self.inbound_id}/{client_email}",
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                result = response.json()
+                
+                if result.get('success'):
+                    logger.info(f"✅ Tráfico reseteado: {client_email}")
+                    return True
+            
+            return False
+            
+        except Exception as e:
+            logger.error(f"Error reseteando tráfico: {e}")
+            return False
+    
+    def delete_client(self, client_uuid: str) -> bool:
         """Elimina un cliente"""
         try:
             response = self.session.post(
-                f"{self.panel_url}/panel/api/inbounds/delClient/{self.inbound_id}/{client_id}",
+                f"{self.panel_url}/panel/api/inbounds/delClient/{self.inbound_id}/{client_uuid}",
                 timeout=10
             )
-            return response.status_code == 200
-        except:
+            
+            if response.status_code == 200:
+                result = response.json()
+                
+                if result.get('success'):
+                    logger.info(f"✅ Cliente eliminado: {client_uuid}")
+                    return True
+            
             return False
+            
+        except Exception as e:
+            logger.error(f"Error eliminando cliente: {e}")
+            return False
+    
+    def get_inbound_info(self) -> Dict:
+        """Obtiene información del inbound actual"""
+        try:
+            response = self.session.get(
+                f"{self.panel_url}/panel/api/inbounds/get/{self.inbound_id}",
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                if data.get('success'):
+                    inbound = data.get('obj', {})
+                    
+                    # Contar clientes
+                    client_count = 0
+                    if 'settings' in inbound:
+                        settings = json.loads(inbound['settings'])
+                        client_count = len(settings.get('clients', []))
+                    
+                    return {
+                        'id': inbound.get('id'),
+                        'port': inbound.get('port'),
+                        'protocol': inbound.get('protocol'),
+                        'remark': inbound.get('remark', ''),
+                        'enabled': inbound.get('enable', False),
+                        'client_count': client_count,
+                        'up': inbound.get('up', 0),
+                        'down': inbound.get('down', 0)
+                    }
+            
+            return {}
+            
+        except Exception as e:
+            logger.error(f"Error obteniendo info del inbound: {e}")
+            return {}

@@ -1,0 +1,53 @@
+{
+  "profile_id": "k17416ba",
+  "profile_config": {
+    "name": "Isabel Iglesia",
+    "age": 36,
+    "gender": "female",
+    "country": "EC",
+    "city": "Loja",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "interests": [
+      "diy",
+      "cooking",
+      "business",
+      "religion",
+      "real_estate",
+      "family"
+    ],
+    "browsing_history": [
+      "mercadolibre.com.ec",
+      "facebook.com",
+      "forbes.com",
+      "tasty.co",
+      "gmail.com",
+      "seriouseats.com",
+      "youtube.com",
+      "google.com",
+      "eluniverso.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "YFyHWITHSkZO4kwk",
+    "country": "ec",
+    "city": "Loja",
+    "region": "loja"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "186.68.112.13",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": null,
+  "created_at": "2025-11-18T16:48:13.810758",
+  "warmup_completed": false
+}

@@ -1,0 +1,59 @@
+{
+  "profile_id": "k173yfa9",
+  "profile_config": {
+    "name": "Carlos Iñiguez",
+    "age": 37,
+    "gender": "male",
+    "country": "EC",
+    "city": "Loja",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "interests": [
+      "cooking",
+      "real_estate",
+      "health",
+      "diy",
+      "politics"
+    ],
+    "browsing_history": [
+      "mayoclinic.org",
+      "tasty.co",
+      "youtube.com",
+      "mercadolibre.com.ec",
+      "google.com",
+      "facebook.com",
+      "healthline.com",
+      "elcomercio.com",
+      "gmail.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "VzqykSw4yJdn4gZY",
+    "country": "ec",
+    "city": "Loja",
+    "region": "loja"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.78.197.14",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "id": "ece03444-e521-434e-b04d-12c8b3b01140",
+    "email": "Carlos_Iñiguez_k173yfa9",
+    "enable": true,
+    "expiryTime": 1766088960207,
+    "totalGB": 53687091200,
+    "flow": ""
+  },
+  "created_at": "2025-11-18T15:16:00.212312",
+  "warmup_completed": false
+}

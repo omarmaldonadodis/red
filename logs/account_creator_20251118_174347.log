@@ -1,0 +1,43 @@
+2025-11-18 17:44:05,653 - INFO - ======================================================================
+2025-11-18 17:44:05,653 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 17:44:05,653 - INFO - ======================================================================
+2025-11-18 17:44:05,719 - INFO - Perfil generado:
+2025-11-18 17:44:05,720 - INFO -   Nombre: María Quiroga
+2025-11-18 17:44:05,720 - INFO -   Edad: 58
+2025-11-18 17:44:05,720 - INFO -   Ciudad: Guayaquil
+2025-11-18 17:44:05,720 - INFO -   Región: guayas
+2025-11-18 17:44:05,720 - INFO -   Dispositivo: desktop
+2025-11-18 17:44:05,720 - INFO -   Intereses: grandchildren, history, news, retirement, gardening, religion, cooking
+2025-11-18 17:44:09,424 - INFO - ✅ Proxy funcionando:
+2025-11-18 17:44:09,424 - INFO -   IP: 157.100.66.19
+2025-11-18 17:44:09,424 - INFO -   País: None
+2025-11-18 17:44:09,424 - INFO -   Ciudad: None
+2025-11-18 17:44:09,425 - INFO -   ISP: None
+2025-11-18 17:44:09,425 - INFO -   Tipo: residential
+2025-11-18 17:44:10,293 - INFO - ======================================================================
+2025-11-18 17:44:10,293 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 17:44:10,294 - INFO - ======================================================================
+2025-11-18 17:44:10,294 - INFO - ID: k17421uu
+2025-11-18 17:44:10,294 - INFO - Nombre: María Quiroga
+2025-11-18 17:44:10,294 - INFO - Ciudad: Guayaquil
+2025-11-18 17:44:10,294 - INFO - Región: guayas
+2025-11-18 17:44:10,294 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 17:44:10,294 - INFO - Warmup: No
+2025-11-18 17:44:10,294 - INFO - ======================================================================
+2025-11-18 17:45:44,056 - INFO - ======================================================================
+2025-11-18 17:45:44,058 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 17:45:44,058 - INFO - ======================================================================
+2025-11-18 17:45:44,162 - INFO - Perfil generado:
+2025-11-18 17:45:44,162 - INFO -   Nombre: Rosa Coronado
+2025-11-18 17:45:44,162 - INFO -   Edad: 34
+2025-11-18 17:45:44,162 - INFO -   Ciudad: Guayaquil
+2025-11-18 17:45:44,162 - INFO -   Región: guayas
+2025-11-18 17:45:44,162 - INFO -   Dispositivo: desktop
+2025-11-18 17:45:44,162 - INFO -   Intereses: technology, real_estate, news, sports, fitness
+2025-11-18 17:45:50,213 - INFO - ✅ Proxy funcionando:
+2025-11-18 17:45:50,213 - INFO -   IP: 157.100.104.235
+2025-11-18 17:45:50,213 - INFO -   País: None
+2025-11-18 17:45:50,213 - INFO -   Ciudad: None
+2025-11-18 17:45:50,214 - INFO -   ISP: None
+2025-11-18 17:45:50,214 - INFO -   Tipo: residential
+2025-11-18 17:45:50,749 - ERROR - ❌ Error creando perfil: Error de AdsPower API: If the number of imported accounts exceeds the limit of 12, please delete some accounts and try again.

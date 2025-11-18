@@ -1,0 +1,27 @@
+2025-11-18 17:21:12,874 - INFO - ======================================================================
+2025-11-18 17:21:12,875 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 17:21:12,875 - INFO - ======================================================================
+2025-11-18 17:21:12,936 - INFO - Perfil generado:
+2025-11-18 17:21:12,936 - INFO -   Nombre: Sofía Acosta
+2025-11-18 17:21:12,936 - INFO -   Edad: 52
+2025-11-18 17:21:12,936 - INFO -   Ciudad: Quito
+2025-11-18 17:21:12,936 - INFO -   Región: pichincha
+2025-11-18 17:21:12,936 - INFO -   Dispositivo: desktop
+2025-11-18 17:21:12,936 - INFO -   Intereses: grandchildren, health, religion, retirement, cooking, gardening, family
+2025-11-18 17:21:16,953 - INFO - ✅ Proxy funcionando:
+2025-11-18 17:21:16,953 - INFO -   IP: 181.199.38.35
+2025-11-18 17:21:16,953 - INFO -   País: None
+2025-11-18 17:21:16,953 - INFO -   Ciudad: None
+2025-11-18 17:21:16,953 - INFO -   ISP: None
+2025-11-18 17:21:16,954 - INFO -   Tipo: residential
+2025-11-18 17:21:17,551 - WARNING - No se pudo crear cliente 3x-ui: Error en 3x-ui: name 'datetime' is not defined
+2025-11-18 17:21:17,552 - INFO - ======================================================================
+2025-11-18 17:21:17,552 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 17:21:17,552 - INFO - ======================================================================
+2025-11-18 17:21:17,552 - INFO - ID: k1741pcj
+2025-11-18 17:21:17,552 - INFO - Nombre: Sofía Acosta
+2025-11-18 17:21:17,552 - INFO - Ciudad: Quito
+2025-11-18 17:21:17,552 - INFO - Región: pichincha
+2025-11-18 17:21:17,553 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 17:21:17,553 - INFO - Warmup: No
+2025-11-18 17:21:17,553 - INFO - ======================================================================

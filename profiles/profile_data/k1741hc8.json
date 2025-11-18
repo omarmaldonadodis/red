@@ -1,0 +1,59 @@
+{
+  "profile_id": "k1741hc8",
+  "profile_config": {
+    "name": "Jessica Mur",
+    "age": 34,
+    "gender": "female",
+    "country": "EC",
+    "city": "Loja",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "interests": [
+      "fitness",
+      "news",
+      "finance",
+      "cars",
+      "technology",
+      "sports"
+    ],
+    "browsing_history": [
+      "elcomercio.com",
+      "google.com",
+      "zdnet.com",
+      "finance.yahoo.com",
+      "mercadolibre.com.ec",
+      "forbes.com",
+      "techcrunch.com",
+      "facebook.com",
+      "gmail.com",
+      "espn.com",
+      "cnn.com/espanol",
+      "youtube.com",
+      "elpais.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "8k0ufwnq6okUfF70",
+    "country": "ec",
+    "city": "Loja",
+    "region": "loja"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "45.70.200.251",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "error": "Error en 3x-ui: name 'datetime' is not defined"
+  },
+  "created_at": "2025-11-18T17:07:14.983078",
+  "warmup_completed": false
+}

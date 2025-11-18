@@ -11,6 +11,8 @@ from utils import (
     print_error, print_info, print_warning
 )
 import logging
+from traffic_monitor import TrafficMonitor
+
 
 logger = None
 
@@ -75,12 +77,18 @@ def initialize_system():
     
     # Crear account creator
     creator = AccountCreator(adspower, proxy_manager, threexui)
+        
+    # Crear monitor de tráfico si 3x-ui está habilitado
+    traffic_monitor = None
+    if threexui:
+        traffic_monitor = TrafficMonitor(threexui)
+        print_success("Monitor de tráfico inicializado")
     
     print_success("Sistema inicializado correctamente\n")
     
-    return creator, creds
+    return creator, creds, traffic_monitor  # ⭐ Agregar traffic_monitor
 
-def show_main_menu():
+def show_main_menu(has_3xui: bool = False):
     """Muestra el menú principal"""
     print("\n" + "=" * 70)
     print("MENÚ PRINCIPAL".center(70))
@@ -90,8 +98,165 @@ def show_main_menu():
     print("3. Precalentar perfil existente")
     print("4. Ver perfiles existentes")
     print("5. Eliminar perfiles")
-    print("6. Salir")
+    
+    if has_3xui:
+        print("\n--- MONITOREO DE TRÁFICO (3x-ui) ---")
+        print("6. Ver consumo de un perfil")
+        print("7. Ver reporte de todos los perfiles")
+        print("8. Ver top consumidores")
+        print("9. Resetear tráfico de un perfil")
+        print("10. Cambiar límite de datos")
+        print("11. Exportar reporte a JSON")
+        print("\n12. Salir")
+    else:
+        print("\n6. Salir")
+    
     print("\n" + "=" * 70)
+
+def view_profile_traffic(traffic_monitor: TrafficMonitor):
+    """Ver consumo de un perfil específico"""
+    clear_screen()
+    print_header("CONSUMO DE TRÁFICO - PERFIL INDIVIDUAL")
+    
+    profile_id = input("ID del perfil: ").strip()
+    
+    if not profile_id:
+        print_error("ID requerido")
+        input("\nPresiona Enter para continuar...")
+        return
+    
+    print_info("Consultando tráfico...")
+    
+    traffic = traffic_monitor.get_profile_traffic(profile_id)
+    
+    if 'error' in traffic:
+        print_error(f"Error: {traffic['error']}")
+    else:
+        print("\n" + "-" * 70)
+        print(f"📊 PERFIL: {traffic['profile_name']}")
+        print("-" * 70)
+        print(f"\n📤 Upload:     {traffic['upload_mb']:.2f} MB")
+        print(f"📥 Download:   {traffic['download_mb']:.2f} MB")
+        print(f"📊 Total usado: {traffic['total_used_mb']:.2f} MB")
+        print(f"💾 Límite:     {traffic['total_limit_mb']:.2f} MB")
+        print(f"📈 Usado:      {traffic['percentage_used']:.1f}%")
+        print(f"💿 Restante:   {traffic['remaining_mb']:.2f} MB")
+        print(f"✅ Estado:     {'Activo' if traffic['enabled'] else 'Inactivo'}")
+        print("-" * 70)
+        
+        # Barra de progreso visual
+        bar_length = 50
+        used_bars = int(traffic['percentage_used'] / 100 * bar_length)
+        bar = "█" * used_bars + "░" * (bar_length - used_bars)
+        print(f"\n[{bar}] {traffic['percentage_used']:.1f}%")
+    
+    input("\nPresiona Enter para continuar...")
+
+
+def view_all_traffic(traffic_monitor: TrafficMonitor):
+    """Ver reporte de todos los perfiles"""
+    clear_screen()
+    print_header("REPORTE DE TRÁFICO - TODOS LOS PERFILES")
+    
+    print_info("Consultando tráfico de todos los perfiles...")
+    
+    traffic_monitor.print_traffic_report()
+    
+    input("\nPresiona Enter para continuar...")
+
+
+def view_top_consumers(traffic_monitor: TrafficMonitor):
+    """Ver top consumidores"""
+    clear_screen()
+    print_header("TOP CONSUMIDORES DE DATOS")
+    
+    limit = get_user_input("¿Cuántos perfiles mostrar?", default=10, input_type=int)
+    
+    print_info(f"Consultando top {limit} consumidores...")
+    
+    top = traffic_monitor.get_top_consumers(limit=limit)
+    
+    if not top:
+        print_info("No hay datos disponibles")
+    else:
+        traffic_monitor.print_traffic_report(profiles=top)
+    
+    input("\nPresiona Enter para continuar...")
+
+
+def reset_profile_traffic(traffic_monitor: TrafficMonitor):
+    """Resetear tráfico de un perfil"""
+    clear_screen()
+    print_header("RESETEAR TRÁFICO DE PERFIL")
+    
+    print_warning("⚠️  Esto reseteará el contador de datos del perfil a 0")
+    
+    profile_id = input("\nID del perfil: ").strip()
+    
+    if not profile_id:
+        print_error("ID requerido")
+        input("\nPresiona Enter para continuar...")
+        return
+    
+    if not get_yes_no("¿Confirmar reset de tráfico?", default=False):
+        print_info("Operación cancelada")
+        input("\nPresiona Enter para continuar...")
+        return
+    
+    if traffic_monitor.reset_profile_traffic(profile_id):
+        print_success(f"✅ Tráfico reseteado exitosamente")
+    else:
+        print_error("Error al resetear tráfico")
+    
+    input("\nPresiona Enter para continuar...")
+
+
+def update_profile_limit(traffic_monitor: TrafficMonitor):
+    """Cambiar límite de datos de un perfil"""
+    clear_screen()
+    print_header("CAMBIAR LÍMITE DE DATOS")
+    
+    profile_id = input("ID del perfil: ").strip()
+    
+    if not profile_id:
+        print_error("ID requerido")
+        input("\nPresiona Enter para continuar...")
+        return
+    
+    # Mostrar uso actual
+    traffic = traffic_monitor.get_profile_traffic(profile_id)
+    
+    if 'error' not in traffic:
+        print(f"\n📊 Uso actual: {traffic['total_used_mb']:.2f} MB / {traffic['total_limit_mb']:.2f} MB ({traffic['percentage_used']:.1f}%)")
+    
+    new_limit = get_user_input("\nNuevo límite en GB", default=50, input_type=int)
+    
+    if not get_yes_no(f"¿Cambiar límite a {new_limit} GB?", default=True):
+        print_info("Operación cancelada")
+        input("\nPresiona Enter para continuar...")
+        return
+    
+    if traffic_monitor.update_profile_limit(profile_id, new_limit):
+        print_success(f"✅ Límite actualizado a {new_limit} GB")
+    else:
+        print_error("Error al actualizar límite")
+    
+    input("\nPresiona Enter para continuar...")
+
+
+def export_traffic_report(traffic_monitor: TrafficMonitor):
+    """Exportar reporte de tráfico a JSON"""
+    clear_screen()
+    print_header("EXPORTAR REPORTE DE TRÁFICO")
+    
+    print_info("Generando reporte...")
+    
+    filename = traffic_monitor.export_traffic_report()
+    
+    print_success(f"✅ Reporte exportado exitosamente")
+    print(f"   Archivo: {filename}")
+    
+    input("\nPresiona Enter para continuar...")
 
 def create_single_profile(creator: AccountCreator, creds: CredentialsManager):
     """Flujo para crear un solo perfil"""
@@ -373,12 +538,14 @@ def main():
     """Función principal"""
     try:
         # Inicializar sistema
-        creator, creds = initialize_system()
+        creator, creds, traffic_monitor = initialize_system()
+        
+        has_3xui = traffic_monitor is not None
         
         # Loop del menú
         while True:
             clear_screen()
-            show_main_menu()
+            show_main_menu(has_3xui=has_3xui)
             
             choice = input("\nSelecciona una opción: ").strip()
             
@@ -392,7 +559,22 @@ def main():
                 view_existing_profiles(creator)
             elif choice == '5':
                 delete_profiles(creator)
-            elif choice == '6':
+            elif choice == '6' and not has_3xui:
+                print_info("\n👋 Saliendo del sistema...")
+                sys.exit(0)
+            elif choice == '6' and has_3xui:
+                view_profile_traffic(traffic_monitor)
+            elif choice == '7' and has_3xui:
+                view_all_traffic(traffic_monitor)
+            elif choice == '8' and has_3xui:
+                view_top_consumers(traffic_monitor)
+            elif choice == '9' and has_3xui:
+                reset_profile_traffic(traffic_monitor)
+            elif choice == '10' and has_3xui:
+                update_profile_limit(traffic_monitor)
+            elif choice == '11' and has_3xui:
+                export_traffic_report(traffic_monitor)
+            elif choice == '12' and has_3xui:
                 print_info("\n👋 Saliendo del sistema...")
                 sys.exit(0)
             else:
@@ -406,6 +588,7 @@ def main():
         print_error(f"\n❌ Error crítico: {e}")
         logger.exception("Error crítico en el sistema")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,11 @@
+2025-11-18 15:18:08,942 - INFO - ======================================================================
+2025-11-18 15:18:08,942 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 15:18:08,943 - INFO - ======================================================================
+2025-11-18 15:18:09,015 - INFO - Perfil generado:
+2025-11-18 15:18:09,015 - INFO -   Nombre: Luis Barrio
+2025-11-18 15:18:09,016 - INFO -   Edad: 21
+2025-11-18 15:18:09,016 - INFO -   Ciudad: Ambato
+2025-11-18 15:18:09,016 - INFO -   Región: tungurahua
+2025-11-18 15:18:09,016 - INFO -   Dispositivo: desktop
+2025-11-18 15:18:09,016 - INFO -   Intereses: twitch, instagram, youtube, tiktok, music, technology
+2025-11-18 15:18:09,661 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

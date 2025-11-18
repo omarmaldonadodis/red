@@ -1,0 +1,55 @@
+{
+  "profile_id": "k1741pcj",
+  "profile_config": {
+    "name": "Sofía Acosta",
+    "age": 52,
+    "gender": "female",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "interests": [
+      "grandchildren",
+      "health",
+      "religion",
+      "retirement",
+      "cooking",
+      "gardening",
+      "family"
+    ],
+    "browsing_history": [
+      "elcomercio.com",
+      "google.com",
+      "allrecipes.com",
+      "medicalnewstoday.com",
+      "gmail.com",
+      "facebook.com",
+      "youtube.com",
+      "eluniverso.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "KhGQNG3vWJlaqga4",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.199.38.35",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "error": "Error en 3x-ui: name 'datetime' is not defined"
+  },
+  "created_at": "2025-11-18T17:21:17.551850",
+  "warmup_completed": false
+}
