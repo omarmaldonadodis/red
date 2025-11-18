@@ -1,0 +1,31 @@
+2025-11-18 13:53:55,621 - INFO - ======================================================================
+2025-11-18 13:53:55,621 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 13:53:55,622 - INFO - ======================================================================
+2025-11-18 13:53:55,686 - INFO - Perfil generado:
+2025-11-18 13:53:55,686 - INFO -   Nombre: Daniela Luís
+2025-11-18 13:53:55,686 - INFO -   Edad: 24
+2025-11-18 13:53:55,686 - INFO -   Ciudad: Guayaquil
+2025-11-18 13:53:55,686 - INFO -   Dispositivo: desktop
+2025-11-18 13:53:55,686 - INFO -   Intereses: streaming, gaming, sports, music, tiktok, twitch, instagram
+2025-11-18 13:53:59,942 - INFO - ✅ Proxy funcionando:
+2025-11-18 13:53:59,942 - INFO -   IP: 104.12.97.66
+2025-11-18 13:53:59,942 - INFO -   País: None
+2025-11-18 13:53:59,942 - INFO -   Ciudad: None
+2025-11-18 13:53:59,942 - INFO -   ISP: None
+2025-11-18 13:53:59,942 - INFO -   Tipo: residential
+2025-11-18 13:54:00,926 - INFO - 🔌 Conectando al navegador del perfil: k173wjg0
+2025-11-18 13:54:09,736 - WARNING - The chromedriver version (140.0.7339.81) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.183 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-11-18 13:54:10,566 - INFO - ✅ Conectado exitosamente al navegador
+2025-11-18 13:54:10,566 - INFO - 🔥 Iniciando precalentamiento básico del perfil
+2025-11-18 13:54:10,566 - INFO -    Duración: 10 minutos
+2025-11-18 13:54:10,566 - INFO -    Tipo de dispositivo: DESKTOP
+2025-11-18 13:54:10,566 - INFO -    Tipo de proxy: RESIDENTIAL
+2025-11-18 13:54:10,566 - INFO - 📚 Construyendo historial de navegación (10 minutos)
+2025-11-18 13:54:10,566 - INFO -    Sitios a visitar: 14
+2025-11-18 13:54:10,566 - INFO - Visitando: https://mercadolibre.com.ec
+2025-11-18 13:55:04,873 - INFO - ✓ Sitio visitado exitosamente: https://mercadolibre.com.ec
+2025-11-18 13:55:08,423 - INFO - Visitando: https://espn.com
+2025-11-18 13:56:21,427 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))': /session/ee7006caab4f953769a4e10a095c37ea
+2025-11-18 13:56:21,431 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1099d3a90>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/ee7006caab4f953769a4e10a095c37ea
+2025-11-18 13:56:21,434 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1099d3a60>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/ee7006caab4f953769a4e10a095c37ea
+2025-11-18 13:56:21,441 - INFO - 🔌 Navegador cerrado

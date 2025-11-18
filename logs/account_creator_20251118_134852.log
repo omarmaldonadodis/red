@@ -1,0 +1,32 @@
+2025-11-18 13:49:25,657 - INFO - ======================================================================
+2025-11-18 13:49:25,657 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 13:49:25,657 - INFO - ======================================================================
+2025-11-18 13:49:25,732 - INFO - Perfil generado:
+2025-11-18 13:49:25,732 - INFO -   Nombre: Andrea Herranz
+2025-11-18 13:49:25,732 - INFO -   Edad: 48
+2025-11-18 13:49:25,732 - INFO -   Ciudad: Guayaquil
+2025-11-18 13:49:25,732 - INFO -   Dispositivo: desktop
+2025-11-18 13:49:25,732 - INFO -   Intereses: real_estate, religion, gardening, politics, health, diy
+2025-11-18 13:49:30,780 - INFO - ✅ Proxy funcionando:
+2025-11-18 13:49:30,780 - INFO -   IP: 134.101.248.177
+2025-11-18 13:49:30,780 - INFO -   País: None
+2025-11-18 13:49:30,780 - INFO -   Ciudad: None
+2025-11-18 13:49:30,780 - INFO -   ISP: None
+2025-11-18 13:49:30,781 - INFO -   Tipo: residential
+2025-11-18 13:49:31,320 - ERROR - ❌ Error creando perfil: Error de AdsPower API: If the number of imported accounts exceeds the limit of 12, please delete some accounts and try again.
+2025-11-18 13:50:33,609 - INFO - ======================================================================
+2025-11-18 13:50:33,609 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 13:50:33,609 - INFO - ======================================================================
+2025-11-18 13:50:33,695 - INFO - Perfil generado:
+2025-11-18 13:50:33,695 - INFO -   Nombre: Carmen Villalonga
+2025-11-18 13:50:33,695 - INFO -   Edad: 34
+2025-11-18 13:50:33,695 - INFO -   Ciudad: Santo Domingo
+2025-11-18 13:50:33,695 - INFO -   Dispositivo: desktop
+2025-11-18 13:50:33,695 - INFO -   Intereses: investment, real_estate, news, cars, business
+2025-11-18 13:50:37,727 - INFO - ✅ Proxy funcionando:
+2025-11-18 13:50:37,728 - INFO -   IP: 68.98.68.144
+2025-11-18 13:50:37,728 - INFO -   País: None
+2025-11-18 13:50:37,728 - INFO -   Ciudad: None
+2025-11-18 13:50:37,728 - INFO -   ISP: None
+2025-11-18 13:50:37,728 - INFO -   Tipo: residential
+2025-11-18 13:50:38,365 - ERROR - ❌ Error creando perfil: Error de AdsPower API: When username or password or fakey have values, platform(domain_name) cannot be empty.

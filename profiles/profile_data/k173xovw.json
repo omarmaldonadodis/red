@@ -1,0 +1,64 @@
+{
+  "profile_id": "k173xovw",
+  "profile_config": {
+    "name": "Jessica Mínguez",
+    "age": 39,
+    "gender": "female",
+    "country": "EC",
+    "city": "Santo Domingo",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "interests": [
+      "religion",
+      "health",
+      "news",
+      "politics",
+      "business",
+      "family",
+      "real_estate"
+    ],
+    "browsing_history": [
+      "medicalnewstoday.com",
+      "nih.gov",
+      "healthline.com",
+      "eluniverso.com",
+      "youtube.com",
+      "businessinsider.com",
+      "gmail.com",
+      "forbes.com",
+      "facebook.com",
+      "mercadolibre.com.ec",
+      "bloomberg.com",
+      "google.com",
+      "elcomercio.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "oMTRW3i475yOuIeL",
+    "country": "ec",
+    "city": "Loja"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "45.161.33.174",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "id": "d0c32063-18d7-487e-9ad0-34e7b28636cd",
+    "email": "Jessica_Mínguez_k173xovw",
+    "enable": true,
+    "expiryTime": 1766086969685,
+    "totalGB": 53687091200,
+    "flow": ""
+  },
+  "created_at": "2025-11-18T14:42:49.690272",
+  "warmup_completed": false
+}

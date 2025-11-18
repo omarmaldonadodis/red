@@ -1,0 +1,30 @@
+2025-11-18 14:18:27,334 - INFO - ======================================================================
+2025-11-18 14:18:27,334 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 14:18:27,335 - INFO - ======================================================================
+2025-11-18 14:18:27,447 - INFO - Perfil generado:
+2025-11-18 14:18:27,447 - INFO -   Nombre: Gabriel Abril
+2025-11-18 14:18:27,447 - INFO -   Edad: 19
+2025-11-18 14:18:27,447 - INFO -   Ciudad: Quito
+2025-11-18 14:18:27,448 - INFO -   Región: pichincha
+2025-11-18 14:18:27,448 - INFO -   Dispositivo: desktop
+2025-11-18 14:18:27,448 - INFO -   Intereses: sports, youtube, instagram, gaming, music, technology
+2025-11-18 14:18:31,631 - INFO - ✅ Proxy funcionando:
+2025-11-18 14:18:31,631 - INFO -   IP: 191.99.57.77
+2025-11-18 14:18:31,632 - INFO -   País: None
+2025-11-18 14:18:31,632 - INFO -   Ciudad: None
+2025-11-18 14:18:31,632 - INFO -   ISP: None
+2025-11-18 14:18:31,632 - INFO -   Tipo: residential
+2025-11-18 14:18:32,307 - INFO - 🔌 Conectando al navegador del perfil: k173x5h4
+2025-11-18 14:18:38,725 - WARNING - The chromedriver version (140.0.7339.81) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.183 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-11-18 14:18:40,468 - INFO - ✅ Conectado exitosamente al navegador
+2025-11-18 14:18:40,468 - INFO - 🔥 Iniciando precalentamiento básico del perfil
+2025-11-18 14:18:40,468 - INFO -    Duración: 10 minutos
+2025-11-18 14:18:40,469 - INFO -    Tipo de dispositivo: DESKTOP
+2025-11-18 14:18:40,469 - INFO -    Tipo de proxy: RESIDENTIAL
+2025-11-18 14:18:40,469 - INFO - 📚 Construyendo historial de navegación (10 minutos)
+2025-11-18 14:18:40,469 - INFO -    Sitios a visitar: 15
+2025-11-18 14:18:40,469 - INFO - Visitando: https://zdnet.com
+2025-11-18 14:20:52,405 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))': /session/889f250e3d335fd37830604f4026d64e
+2025-11-18 14:20:52,420 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10fbe4820>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/889f250e3d335fd37830604f4026d64e
+2025-11-18 14:20:52,422 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10fbe4b50>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/889f250e3d335fd37830604f4026d64e
+2025-11-18 14:20:52,427 - INFO - 🔌 Navegador cerrado

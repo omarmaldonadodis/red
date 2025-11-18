@@ -1,0 +1,16 @@
+2025-11-18 13:44:58,033 - INFO - ======================================================================
+2025-11-18 13:44:58,034 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 13:44:58,034 - INFO - ======================================================================
+2025-11-18 13:44:58,137 - INFO - Perfil generado:
+2025-11-18 13:44:58,137 - INFO -   Nombre: Luis Ramírez
+2025-11-18 13:44:58,137 - INFO -   Edad: 38
+2025-11-18 13:44:58,137 - INFO -   Ciudad: Machala
+2025-11-18 13:44:58,137 - INFO -   Dispositivo: desktop
+2025-11-18 13:44:58,137 - INFO -   Intereses: politics, family, health, real_estate, religion, cooking, business
+2025-11-18 13:45:01,752 - INFO - ✅ Proxy funcionando:
+2025-11-18 13:45:01,752 - INFO -   IP: 108.253.225.117
+2025-11-18 13:45:01,752 - INFO -   País: None
+2025-11-18 13:45:01,752 - INFO -   Ciudad: None
+2025-11-18 13:45:01,752 - INFO -   ISP: None
+2025-11-18 13:45:01,752 - INFO -   Tipo: residential
+2025-11-18 13:45:02,317 - ERROR - ❌ Error creando perfil: Error de AdsPower API: random_ua incorrect format,random_ua must be a json.
