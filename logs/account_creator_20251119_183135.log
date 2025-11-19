@@ -1,0 +1,34 @@
+2025-11-19 18:31:37,115 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-19 18:31:37,115 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-19 18:31:37,120 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-19 18:31:37,120 - INFO -    Puerto: 33910
+2025-11-19 18:31:37,121 - INFO -    Protocolo: vless
+2025-11-19 18:31:37,121 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-19 18:31:37,130 - INFO - ✅ Squid Manager inicializado
+2025-11-19 18:31:40,774 - INFO - ✅ Proxy funcionando - IP: 157.100.64.10
+2025-11-19 18:32:09,579 - INFO - ======================================================================
+2025-11-19 18:32:09,579 - INFO - CREANDO NUEVO PERFIL
+2025-11-19 18:32:09,580 - INFO - ======================================================================
+2025-11-19 18:32:09,660 - INFO - Perfil generado:
+2025-11-19 18:32:09,660 - INFO -   Nombre: Diego Andreu
+2025-11-19 18:32:09,660 - INFO -   Edad: 35
+2025-11-19 18:32:09,660 - INFO -   Ciudad: Quito
+2025-11-19 18:32:09,660 - INFO -   Región: pichincha
+2025-11-19 18:32:09,660 - INFO -   Dispositivo: desktop
+2025-11-19 18:32:09,660 - INFO -   Intereses: sports, business, fitness, news, real_estate, cars, finance
+2025-11-19 18:32:09,668 - INFO - ✅ Squid Manager inicializado
+2025-11-19 18:32:12,876 - INFO - ✅ Proxy funcionando - IP: 157.100.64.10
+2025-11-19 18:32:12,879 - INFO - ✅ Proxy Squid → SOAX funcionando:
+2025-11-19 18:32:12,879 - INFO -   IP SOAX: 157.100.64.10
+2025-11-19 18:32:12,880 - INFO -   Tiempo respuesta: 0.38s
+2025-11-19 18:32:12,880 - INFO -   🔍 Tráfico será monitoreado por Squid
+2025-11-19 18:32:13,764 - INFO - ✅ Cliente 3x-ui creado: Diego_Andreu_k17591wj
+2025-11-19 18:32:13,764 - INFO -    UUID: eee380f7-7ad8-4de1-9d81-c19fe076778f
+2025-11-19 18:32:13,764 - INFO -    Límite: 50 GB
+2025-11-19 18:32:13,764 - INFO -    Expira: 30 días
+2025-11-19 18:32:13,764 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-19 18:32:13,764 - INFO -    Email: Diego_Andreu_k17591wj
+2025-11-19 18:32:13,765 - INFO -    UUID: eee380f7-7ad8-4de1-9d81-c19fe076778f
+2025-11-19 18:32:13,765 - INFO -    Límite: 50 GB
+2025-11-19 18:32:13,765 - ERROR - ❌ Error creando perfil: 'proxy_type'
+2025-11-19 18:32:13,765 - INFO - Limpiando perfil fallido...

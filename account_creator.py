@@ -12,6 +12,13 @@ import logging
 from datetime import datetime
 from utils import save_profile_data, print_success, print_error, print_info
 
+
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+use_squid = os.getenv('USE_SQUID', 'false').lower() == 'true'
+
 logger = logging.getLogger(__name__)
 
 class AccountCreator:
@@ -129,33 +136,73 @@ class AccountCreator:
             logger.info(f"  Intereses: {', '.join(profile_config.interests)}")
             
             # ==================================================
-            # PASO 2: CONFIGURAR PROXY CON GEO-TARGETING
+            # PASO 2: CONFIGURAR PROXY
             # ==================================================
-            print_info(f"Paso 2/4: Configurando proxy {proxy_type.upper()} para {city_display.upper()}, Ecuador...")
-            
-            proxy_config = self.proxy_manager.get_proxy_config(
-                proxy_type=proxy_type,
-                country=country,
-                city=city_normalized,  # Usar ciudad normalizada (lowercase)
-                region=region,
-                sticky_session=True,
-                session_lifetime=3600
-            )
-            
-            # Probar proxy
-            print_info("Probando conexión del proxy...")
-            proxy_test = self.proxy_manager.test_proxy(proxy_config, timeout=20)
-            
-            if not proxy_test['success']:
-                raise Exception(f"Proxy no funciona: {proxy_test['error']}")
-            
-            logger.info(f"✅ Proxy funcionando:")
-            logger.info(f"  IP: {proxy_test['ip']}")
-            logger.info(f"  País: {proxy_test['country']}")
-            logger.info(f"  Ciudad: {proxy_test['city']}")
-            logger.info(f"  ISP: {proxy_test['isp']}")
-            logger.info(f"  Tipo: {proxy_test['connection_type']}")
-            
+
+
+            if use_squid:
+                print_info(f"Paso 2/4: Configurando proxy a través de Squid...")
+                
+                from squid_manager import SquidManager
+                squid = SquidManager()
+                
+                # Verificar que Squid esté corriendo
+                if not squid.is_running():
+                    print_warning("⚠️  Squid no está corriendo, iniciando...")
+                    squid.start()
+                    import time
+                    time.sleep(3)
+                
+                # Configurar proxy local Squid
+                proxy_config = {
+                    'type': 'http',
+                    'host': '127.0.0.1',
+                    'port': 3128,
+                    'username': '',
+                    'password': '',
+                    'monitored_by_squid': True,
+                    'profile_id': result['profile_id'],
+                    'session_id': f"squid_{result['profile_id']}"
+                }
+                
+                # Probar proxy Squid
+                print_info("Probando conexión a través de Squid → SOAX...")
+                test_result = squid.test_proxy(timeout=15)
+                
+                if not test_result['success']:
+                    raise Exception(f"Squid no funciona: {test_result.get('error', 'Error desconocido')}")
+                
+                logger.info(f"✅ Proxy Squid → SOAX funcionando:")
+                logger.info(f"  IP SOAX: {test_result['ip']}")
+                logger.info(f"  Tiempo respuesta: {test_result['response_time']}s")
+                logger.info(f"  🔍 Tráfico será monitoreado por Squid")
+                
+            else:
+                print_info(f"Paso 2/4: Configurando proxy SOAX directo para {city_display.upper()}, Ecuador...")
+                
+                proxy_config = self.proxy_manager.get_proxy_config(
+                    proxy_type=proxy_type,
+                    country=country,
+                    city=city_normalized,
+                    region=region,
+                    sticky_session=True,
+                    session_lifetime=3600
+                )
+                
+                # Probar proxy
+                print_info("Probando conexión del proxy...")
+                proxy_test = self.proxy_manager.test_proxy(proxy_config, timeout=20)
+                
+                if not proxy_test['success']:
+                    raise Exception(f"Proxy no funciona: {proxy_test['error']}")
+                
+                logger.info(f"✅ Proxy funcionando:")
+                logger.info(f"  IP: {proxy_test['ip']}")
+                logger.info(f"  País: {proxy_test['country']}")
+                logger.info(f"  Ciudad: {proxy_test['city']}")
+                logger.info(f"  ISP: {proxy_test['isp']}")
+                logger.info(f"  Tipo: {proxy_test['connection_type']}")
+                        
             # ==================================================
             # PASO 3: CREAR PERFIL EN ADSPOWER
             # ==================================================

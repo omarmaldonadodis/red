@@ -13,6 +13,11 @@ from utils import (
 import logging
 from traffic_monitor import TrafficMonitor
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 logger = None
 
@@ -84,11 +89,38 @@ def initialize_system():
         traffic_monitor = TrafficMonitor(threexui)
         print_success("Monitor de tráfico inicializado")
     
+    # Inicializar Squid si está habilitado
+    squid_manager = None
+    use_squid = os.getenv('USE_SQUID', 'false').lower() == 'true'
+    
+    if use_squid:
+        print_info("Inicializando Squid Proxy Manager...")
+        try:
+            from squid_manager import SquidManager
+            squid_manager = SquidManager()
+            
+            if not squid_manager.is_running():
+                print_warning("Squid no está corriendo, iniciando...")
+                squid_manager.start()
+                time.sleep(2)
+            
+            # Test rápido
+            test = squid_manager.test_proxy(timeout=10)
+            if test['success']:
+                print_success(f"Squid activo y monitoreando - IP SOAX: {test['ip']}")
+            else:
+                print_warning(f"Squid no responde correctamente: {test.get('error')}")
+        
+        except Exception as e:
+            print_warning(f"Squid no disponible: {e}")
+            print_info("El sistema usará SOAX directo")
+            squid_manager = None
+    
     print_success("Sistema inicializado correctamente\n")
     
-    return creator, creds, traffic_monitor  # ⭐ Agregar traffic_monitor
+    return creator, creds, traffic_monitor, squid_manager  # ⭐ Agregar squid_manager
 
-def show_main_menu(has_3xui: bool = False):
+def show_main_menu(has_3xui: bool = False, has_squid: bool = False):
     """Muestra el menú principal"""
     print("\n" + "=" * 70)
     print("MENÚ PRINCIPAL".center(70))
@@ -99,18 +131,35 @@ def show_main_menu(has_3xui: bool = False):
     print("4. Ver perfiles existentes")
     print("5. Eliminar perfiles")
     
+    menu_option = 6
+    
     if has_3xui:
         print("\n--- MONITOREO DE TRÁFICO (3x-ui) ---")
-        print("6. Ver consumo de un perfil")
-        print("7. Ver reporte de todos los perfiles")
-        print("8. Ver top consumidores")
-        print("9. Resetear tráfico de un perfil")
-        print("10. Cambiar límite de datos")
-        print("11. Exportar reporte a JSON")
-        print("\n12. Salir")
-    else:
-        print("\n6. Salir")
+        print(f"{menu_option}. Ver consumo de un perfil")
+        menu_option += 1
+        print(f"{menu_option}. Ver reporte de todos los perfiles")
+        menu_option += 1
+        print(f"{menu_option}. Ver top consumidores")
+        menu_option += 1
+        print(f"{menu_option}. Resetear tráfico de un perfil")
+        menu_option += 1
+        print(f"{menu_option}. Cambiar límite de datos")
+        menu_option += 1
+        print(f"{menu_option}. Exportar reporte a JSON")
+        menu_option += 1
     
+    if has_squid:
+        print("\n--- MONITOREO DE TRÁFICO (SQUID) ---")
+        print(f"{menu_option}. Ver estado de Squid")
+        menu_option += 1
+        print(f"{menu_option}. Ver estadísticas de tráfico")
+        menu_option += 1
+        print(f"{menu_option}. Ver tráfico de un perfil")
+        menu_option += 1
+        print(f"{menu_option}. Limpiar logs de Squid")
+        menu_option += 1
+    
+    print(f"\n{menu_option}. Salir")
     print("\n" + "=" * 70)
 
 def view_profile_traffic(traffic_monitor: TrafficMonitor):
@@ -533,22 +582,107 @@ def delete_profiles(creator: AccountCreator):
         print_error(f"Error eliminando perfiles: {e}")
     
     input("\nPresiona Enter para continuar...")
+def show_squid_status(squid_manager):
+    """Muestra estado de Squid"""
+    clear_screen()
+    print_header("ESTADO DE SQUID PROXY")
+    
+    squid_manager.print_status_report()
+    
+    input("\nPresiona Enter para continuar...")
+
+
+def show_squid_traffic_stats(squid_manager):
+    """Muestra estadísticas de tráfico de Squid"""
+    clear_screen()
+    print_header("ESTADÍSTICAS DE TRÁFICO - SQUID")
+    
+    print_info("Analizando logs de Squid...")
+    
+    all_stats = squid_manager.parse_logs()
+    
+    if not all_stats:
+        print_warning("No hay datos de tráfico disponibles aún")
+        print_info("Crea algunos perfiles primero y navega con ellos")
+    else:
+        print("\n" + "=" * 90)
+        print(f"{'Cliente':<20} {'Total MB':<15} {'Upload MB':<15} {'Download MB':<15} {'Requests':<10}")
+        print("-" * 90)
+        
+        for client, stats in sorted(all_stats.items(), key=lambda x: x[1]['total_mb'], reverse=True):
+            print(f"{client:<20} {stats['total_mb']:<15.2f} {stats['upload_mb']:<15.2f} "
+                  f"{stats['download_mb']:<15.2f} {stats['requests']:<10}")
+        
+        print("-" * 90)
+        
+        # Total
+        total = squid_manager.get_total_usage()
+        print(f"\n📊 TOTAL: {total['total_mb']:.2f} MB | "
+              f"Upload: {total['upload_mb']:.2f} MB | "
+              f"Download: {total['download_mb']:.2f} MB | "
+              f"Requests: {total['requests']}")
+        print(f"👥 Clientes únicos: {total['unique_clients']}")
+    
+    input("\nPresiona Enter para continuar...")
+
+
+def show_squid_profile_traffic(squid_manager):
+    """Muestra tráfico de un perfil específico en Squid"""
+    clear_screen()
+    print_header("TRÁFICO DE PERFIL - SQUID")
+    
+    profile_id = input("ID del perfil: ").strip()
+    
+    if not profile_id:
+        print_error("ID requerido")
+        input("\nPresiona Enter para continuar...")
+        return
+    
+    print_info(f"Analizando tráfico del perfil {profile_id}...")
+    
+    stats = squid_manager.get_profile_stats(profile_id)
+    
+    if stats['total_mb'] == 0:
+        print_warning(f"No hay datos de tráfico para el perfil {profile_id}")
+        print_info("Asegúrate de que el perfil haya navegado usando Squid")
+    else:
+        print("\n" + "-" * 70)
+        print(f"📊 PERFIL: {profile_id}")
+        print("-" * 70)
+        print(f"\n📈 Totales:")
+        print(f"   Total: {stats['total_mb']:.2f} MB")
+        print(f"   Upload: {stats['upload_mb']:.2f} MB")
+        print(f"   Download: {stats['download_mb']:.2f} MB")
+        print(f"   Requests: {stats['requests']}")
+        print(f"\n👥 Clientes únicos: {len(stats['clients'])}")
+        
+        if stats['clients']:
+            print("\n" + "-" * 70)
+            print("Detalles por cliente:")
+            for client in stats['clients']:
+                print(f"\n   IP: {client['ip']}")
+                print(f"   Datos: {client['stats']['total_mb']:.2f} MB")
+                print(f"   Requests: {client['stats']['requests']}")
+    
+    input("\nPresiona Enter para continuar...")
 
 def main():
     """Función principal"""
     try:
         # Inicializar sistema
-        creator, creds, traffic_monitor = initialize_system()
+        creator, creds, traffic_monitor, squid_manager = initialize_system()
         
         has_3xui = traffic_monitor is not None
+        has_squid = squid_manager is not None
         
         # Loop del menú
         while True:
             clear_screen()
-            show_main_menu(has_3xui=has_3xui)
+            show_main_menu(has_3xui=has_3xui, has_squid=has_squid)
             
             choice = input("\nSelecciona una opción: ").strip()
             
+            # Opciones principales (1-5)
             if choice == '1':
                 create_single_profile(creator, creds)
             elif choice == '2':
@@ -559,22 +693,69 @@ def main():
                 view_existing_profiles(creator)
             elif choice == '5':
                 delete_profiles(creator)
-            elif choice == '6' and not has_3xui:
-                print_info("\n👋 Saliendo del sistema...")
-                sys.exit(0)
-            elif choice == '6' and has_3xui:
-                view_profile_traffic(traffic_monitor)
-            elif choice == '7' and has_3xui:
-                view_all_traffic(traffic_monitor)
-            elif choice == '8' and has_3xui:
-                view_top_consumers(traffic_monitor)
-            elif choice == '9' and has_3xui:
-                reset_profile_traffic(traffic_monitor)
-            elif choice == '10' and has_3xui:
-                update_profile_limit(traffic_monitor)
-            elif choice == '11' and has_3xui:
-                export_traffic_report(traffic_monitor)
-            elif choice == '12' and has_3xui:
+            
+            # Opciones 3x-ui (si está disponible)
+            elif has_3xui:
+                if choice == '6':
+                    view_profile_traffic(traffic_monitor)
+                elif choice == '7':
+                    view_all_traffic(traffic_monitor)
+                elif choice == '8':
+                    view_top_consumers(traffic_monitor)
+                elif choice == '9':
+                    reset_profile_traffic(traffic_monitor)
+                elif choice == '10':
+                    update_profile_limit(traffic_monitor)
+                elif choice == '11':
+                    export_traffic_report(traffic_monitor)
+                # Opciones Squid (después de 3x-ui)
+                elif has_squid:
+                    if choice == '12':
+                        show_squid_status(squid_manager)
+                    elif choice == '13':
+                        show_squid_traffic_stats(squid_manager)
+                    elif choice == '14':
+                        show_squid_profile_traffic(squid_manager)
+                    elif choice == '15':
+                        if get_yes_no("¿Limpiar logs de Squid?", default=False):
+                            squid_manager.clear_logs()
+                            print_success("Logs limpiados")
+                            input("\nPresiona Enter para continuar...")
+                    elif choice == '16':
+                        print_info("\n👋 Saliendo del sistema...")
+                        sys.exit(0)
+                    else:
+                        print_warning("\nOpción inválida")
+                        input("Presiona Enter para continuar...")
+                elif choice == '12':
+                    print_info("\n👋 Saliendo del sistema...")
+                    sys.exit(0)
+                else:
+                    print_warning("\nOpción inválida")
+                    input("Presiona Enter para continuar...")
+            
+            # Opciones Squid (sin 3x-ui)
+            elif has_squid and not has_3xui:
+                if choice == '6':
+                    show_squid_status(squid_manager)
+                elif choice == '7':
+                    show_squid_traffic_stats(squid_manager)
+                elif choice == '8':
+                    show_squid_profile_traffic(squid_manager)
+                elif choice == '9':
+                    if get_yes_no("¿Limpiar logs de Squid?", default=False):
+                        squid_manager.clear_logs()
+                        print_success("Logs limpiados")
+                        input("\nPresiona Enter para continuar...")
+                elif choice == '10':
+                    print_info("\n👋 Saliendo del sistema...")
+                    sys.exit(0)
+                else:
+                    print_warning("\nOpción inválida")
+                    input("Presiona Enter para continuar...")
+            
+            # Sin 3x-ui ni Squid
+            elif choice == '6':
                 print_info("\n👋 Saliendo del sistema...")
                 sys.exit(0)
             else:
