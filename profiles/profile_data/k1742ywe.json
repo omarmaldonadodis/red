@@ -1,0 +1,66 @@
+{
+  "profile_id": "k1742ywe",
+  "profile_config": {
+    "name": "Camila Saavedra",
+    "age": 46,
+    "gender": "female",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "interests": [
+      "real_estate",
+      "news",
+      "cooking",
+      "religion",
+      "diy",
+      "health",
+      "business"
+    ],
+    "browsing_history": [
+      "eluniverso.com",
+      "foodnetwork.com",
+      "google.com",
+      "elcomercio.com",
+      "gmail.com",
+      "facebook.com",
+      "healthline.com",
+      "nih.gov",
+      "linkedin.com",
+      "medicalnewstoday.com",
+      "mercadolibre.com.ec",
+      "youtube.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "VhyzJcRHVwML93vb",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.199.54.17",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "1325d652-4906-4c9d-99a2-0aff6ab8a75e",
+    "email": "Camila_Saavedra_k1742ywe",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766101949202,
+    "profile_id": "k1742ywe",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 18:52:29"
+  },
+  "created_at": "2025-11-18T18:52:29.216249",
+  "warmup_completed": false
+}

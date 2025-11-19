@@ -1,0 +1,40 @@
+2025-11-18 18:46:53,840 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:46:53,841 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:46:53,844 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:46:53,844 - INFO -    Puerto: 33910
+2025-11-18 18:46:53,844 - INFO -    Protocolo: vless
+2025-11-18 18:46:53,844 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:47:13,621 - INFO - ======================================================================
+2025-11-18 18:47:13,621 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:47:13,622 - INFO - ======================================================================
+2025-11-18 18:47:13,690 - INFO - Perfil generado:
+2025-11-18 18:47:13,690 - INFO -   Nombre: Diego Marti
+2025-11-18 18:47:13,690 - INFO -   Edad: 38
+2025-11-18 18:47:13,690 - INFO -   Ciudad: Quito
+2025-11-18 18:47:13,690 - INFO -   Región: pichincha
+2025-11-18 18:47:13,690 - INFO -   Dispositivo: desktop
+2025-11-18 18:47:13,691 - INFO -   Intereses: diy, news, politics, cooking, family, religion
+2025-11-18 18:47:17,952 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:47:17,952 - INFO -   IP: 38.51.39.7
+2025-11-18 18:47:17,952 - INFO -   País: None
+2025-11-18 18:47:17,952 - INFO -   Ciudad: None
+2025-11-18 18:47:17,952 - INFO -   ISP: None
+2025-11-18 18:47:17,952 - INFO -   Tipo: residential
+2025-11-18 18:47:18,769 - INFO - ✅ Cliente 3x-ui creado: Diego_Marti_k1742w6y
+2025-11-18 18:47:18,769 - INFO -    UUID: 8aae1bd9-e7d3-47ad-b3f3-d27b2d236b13
+2025-11-18 18:47:18,770 - INFO -    Límite: 50 GB
+2025-11-18 18:47:18,770 - INFO -    Expira: 30 días
+2025-11-18 18:47:18,770 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:47:18,770 - INFO -    Email: Diego_Marti_k1742w6y
+2025-11-18 18:47:18,770 - INFO -    UUID: 8aae1bd9-e7d3-47ad-b3f3-d27b2d236b13
+2025-11-18 18:47:18,770 - INFO -    Límite: 50 GB
+2025-11-18 18:47:18,771 - INFO - ======================================================================
+2025-11-18 18:47:18,771 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 18:47:18,771 - INFO - ======================================================================
+2025-11-18 18:47:18,771 - INFO - ID: k1742w6y
+2025-11-18 18:47:18,771 - INFO - Nombre: Diego Marti
+2025-11-18 18:47:18,771 - INFO - Ciudad: Quito
+2025-11-18 18:47:18,771 - INFO - Región: pichincha
+2025-11-18 18:47:18,771 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 18:47:18,771 - INFO - Warmup: No
+2025-11-18 18:47:18,771 - INFO - ======================================================================

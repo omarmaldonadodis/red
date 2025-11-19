@@ -1,0 +1,67 @@
+{
+  "profile_id": "k174331q",
+  "profile_config": {
+    "name": "Jorge Corominas",
+    "age": 32,
+    "gender": "male",
+    "country": "EC",
+    "city": "Loja",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "interests": [
+      "news",
+      "cars",
+      "fitness",
+      "travel",
+      "finance",
+      "investment",
+      "business"
+    ],
+    "browsing_history": [
+      "elpais.com",
+      "businessinsider.com",
+      "gmail.com",
+      "eluniverso.com",
+      "tripadvisor.com",
+      "entrepreneur.com",
+      "google.com",
+      "facebook.com",
+      "pichincha.com",
+      "mercadolibre.com.ec",
+      "forbes.com",
+      "youtube.com",
+      "skyscanner.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "TkmW1xZac1ewlVjK",
+    "country": "ec",
+    "city": "Loja",
+    "region": "loja"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "45.70.200.214",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "21ffa201-cc62-431c-ae7c-6d5a3fa856ce",
+    "email": "Jorge_Corominas_k174331q",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766102409882,
+    "profile_id": "k174331q",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 19:00:09"
+  },
+  "created_at": "2025-11-18T19:00:09.909088",
+  "warmup_completed": false
+}

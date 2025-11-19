@@ -1,0 +1,67 @@
+{
+  "profile_id": "k17429id",
+  "profile_config": {
+    "name": "Carmen Monreal",
+    "age": 23,
+    "gender": "female",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "interests": [
+      "streaming",
+      "instagram",
+      "tiktok",
+      "youtube",
+      "gaming",
+      "technology",
+      "social_media"
+    ],
+    "browsing_history": [
+      "pinterest.com",
+      "engadget.com",
+      "facebook.com",
+      "google.com",
+      "pichincha.com",
+      "reddit.com",
+      "pcgamer.com",
+      "twitter.com",
+      "youtube.com",
+      "techcrunch.com",
+      "eluniverso.com",
+      "primevideo.com",
+      "gmail.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "KN03Slysm7tJs9fn",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "186.71.116.71",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "cb35b96d-3144-4726-97a3-c454257c9d77",
+    "email": "Carmen_Monreal_k17429id",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766098815126,
+    "profile_id": "k17429id",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 18:00:15"
+  },
+  "created_at": "2025-11-18T18:00:15.138661",
+  "warmup_completed": false
+}

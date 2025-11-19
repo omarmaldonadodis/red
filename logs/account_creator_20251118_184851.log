@@ -1,0 +1,54 @@
+2025-11-18 18:48:52,325 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:48:52,325 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:48:52,329 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:48:52,329 - INFO -    Puerto: 33910
+2025-11-18 18:48:52,329 - INFO -    Protocolo: vless
+2025-11-18 18:48:52,329 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:49:39,732 - INFO - ======================================================================
+2025-11-18 18:49:39,733 - INFO - CREACIÓN MASIVA DE PERFILES: 5 perfiles
+2025-11-18 18:49:39,733 - INFO - ======================================================================
+2025-11-18 18:49:39,733 - INFO - 
+>>> Creando perfil 1/5...
+2025-11-18 18:49:39,733 - INFO - ======================================================================
+2025-11-18 18:49:39,733 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:49:39,733 - INFO - ======================================================================
+2025-11-18 18:49:39,798 - INFO - Perfil generado:
+2025-11-18 18:49:39,798 - INFO -   Nombre: Mario Monreal
+2025-11-18 18:49:39,798 - INFO -   Edad: 40
+2025-11-18 18:49:39,798 - INFO -   Ciudad: Cuenca
+2025-11-18 18:49:39,798 - INFO -   Región: azuay
+2025-11-18 18:49:39,798 - INFO -   Dispositivo: desktop
+2025-11-18 18:49:39,798 - INFO -   Intereses: real_estate, business, politics, religion, cooking, gardening, news
+2025-11-18 18:49:44,954 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:49:44,954 - INFO -   IP: 45.188.230.15
+2025-11-18 18:49:44,954 - INFO -   País: None
+2025-11-18 18:49:44,954 - INFO -   Ciudad: None
+2025-11-18 18:49:44,954 - INFO -   ISP: None
+2025-11-18 18:49:44,955 - INFO -   Tipo: residential
+2025-11-18 18:49:45,553 - INFO - ✅ Cliente 3x-ui creado: Mario_Monreal_k1742xnu
+2025-11-18 18:49:45,553 - INFO -    UUID: 32b6b49e-40dc-422b-8df2-ccf084fa2cb9
+2025-11-18 18:49:45,553 - INFO -    Límite: 50 GB
+2025-11-18 18:49:45,553 - INFO -    Expira: 30 días
+2025-11-18 18:49:45,553 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:49:45,554 - INFO -    Email: Mario_Monreal_k1742xnu
+2025-11-18 18:49:45,554 - INFO -    UUID: 32b6b49e-40dc-422b-8df2-ccf084fa2cb9
+2025-11-18 18:49:45,554 - INFO -    Límite: 50 GB
+2025-11-18 18:49:45,555 - INFO - ======================================================================
+2025-11-18 18:49:45,555 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 18:49:45,555 - INFO - ======================================================================
+2025-11-18 18:49:45,555 - INFO - ID: k1742xnu
+2025-11-18 18:49:45,555 - INFO - Nombre: Mario Monreal
+2025-11-18 18:49:45,555 - INFO - Ciudad: Cuenca
+2025-11-18 18:49:45,555 - INFO - Región: azuay
+2025-11-18 18:49:45,555 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 18:49:45,555 - INFO - Warmup: No
+2025-11-18 18:49:45,555 - INFO - ======================================================================
+2025-11-18 18:49:45,555 - ERROR - Error crítico en el sistema
+Traceback (most recent call last):
+  File "/Users/omarmaldonado/Desktop/proxys/crear-perfiles-soax/main.py", line 555, in main
+    create_multiple_profiles(creator, creds)
+  File "/Users/omarmaldonado/Desktop/proxys/crear-perfiles-soax/main.py", line 421, in create_multiple_profiles
+    result = creator.create_multiple_profiles(
+  File "/Users/omarmaldonado/Desktop/proxys/crear-perfiles-soax/account_creator.py", line 349, in create_multiple_profiles
+    delay = random.randint(delay_between[0], delay_between[1])
+NameError: name 'random' is not defined

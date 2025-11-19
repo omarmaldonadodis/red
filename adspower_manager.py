@@ -120,7 +120,7 @@ class AdsPowerManager:
         # Configuración del fingerprint
         fingerprint_data = {
             "name": f"{profile_config.name}_{profile_config.age}_{profile_config.proxy_type}",
-            "group_id": "0",
+            "group_id": "7937312",
             "domain_name": "",
             "open_urls": [],
             "repeat_config": ["0"],

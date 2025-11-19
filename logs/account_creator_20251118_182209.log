@@ -1,0 +1,51 @@
+2025-11-18 18:22:11,140 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:22:11,140 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:22:11,144 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:22:11,144 - INFO -    Puerto: 33910
+2025-11-18 18:22:11,144 - INFO -    Protocolo: vless
+2025-11-18 18:22:11,144 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:22:23,741 - INFO - ======================================================================
+2025-11-18 18:22:23,742 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:22:23,742 - INFO - ======================================================================
+2025-11-18 18:22:23,811 - INFO - Perfil generado:
+2025-11-18 18:22:23,811 - INFO -   Nombre: Miguel Gracia
+2025-11-18 18:22:23,811 - INFO -   Edad: 45
+2025-11-18 18:22:23,811 - INFO -   Ciudad: Cuenca
+2025-11-18 18:22:23,812 - INFO -   Región: azuay
+2025-11-18 18:22:23,812 - INFO -   Dispositivo: desktop
+2025-11-18 18:22:23,812 - INFO -   Intereses: cooking, gardening, news, religion
+2025-11-18 18:22:27,370 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:22:27,370 - INFO -   IP: 170.246.85.203
+2025-11-18 18:22:27,370 - INFO -   País: None
+2025-11-18 18:22:27,370 - INFO -   Ciudad: None
+2025-11-18 18:22:27,370 - INFO -   ISP: None
+2025-11-18 18:22:27,370 - INFO -   Tipo: residential
+2025-11-18 18:22:28,012 - INFO - ✅ Cliente 3x-ui creado: Miguel_Gracia_k1742kn5
+2025-11-18 18:22:28,013 - INFO -    UUID: c9df9685-3508-4406-b287-156f81145061
+2025-11-18 18:22:28,013 - INFO -    Límite: 50 GB
+2025-11-18 18:22:28,013 - INFO -    Expira: 30 días
+2025-11-18 18:22:28,013 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:22:28,013 - INFO -    Email: Miguel_Gracia_k1742kn5
+2025-11-18 18:22:28,013 - INFO -    UUID: c9df9685-3508-4406-b287-156f81145061
+2025-11-18 18:22:28,013 - INFO -    Límite: 50 GB
+2025-11-18 18:22:28,014 - INFO - ======================================================================
+2025-11-18 18:22:28,014 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 18:22:28,014 - INFO - ======================================================================
+2025-11-18 18:22:28,014 - INFO - ID: k1742kn5
+2025-11-18 18:22:28,014 - INFO - Nombre: Miguel Gracia
+2025-11-18 18:22:28,014 - INFO - Ciudad: Cuenca
+2025-11-18 18:22:28,014 - INFO - Región: azuay
+2025-11-18 18:22:28,014 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 18:22:28,014 - INFO - Warmup: No
+2025-11-18 18:22:28,014 - INFO - ======================================================================
+2025-11-18 18:23:40,298 - INFO - ======================================================================
+2025-11-18 18:23:40,299 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:23:40,299 - INFO - ======================================================================
+2025-11-18 18:23:40,399 - INFO - Perfil generado:
+2025-11-18 18:23:40,399 - INFO -   Nombre: Miguel Acedo
+2025-11-18 18:23:40,399 - INFO -   Edad: 38
+2025-11-18 18:23:40,399 - INFO -   Ciudad: Ambato
+2025-11-18 18:23:40,399 - INFO -   Región: tungurahua
+2025-11-18 18:23:40,399 - INFO -   Dispositivo: desktop
+2025-11-18 18:23:40,399 - INFO -   Intereses: cooking, health, religion, family, business, diy
+2025-11-18 18:23:41,061 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

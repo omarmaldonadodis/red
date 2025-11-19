@@ -1,0 +1,62 @@
+{
+  "profile_id": "k17431p0",
+  "profile_config": {
+    "name": "Carlos Terrón",
+    "age": 36,
+    "gender": "male",
+    "country": "EC",
+    "city": "Cuenca",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "interests": [
+      "diy",
+      "real_estate",
+      "cooking",
+      "family",
+      "health",
+      "business"
+    ],
+    "browsing_history": [
+      "mayoclinic.org",
+      "youtube.com",
+      "pichincha.com",
+      "gmail.com",
+      "google.com",
+      "linkedin.com",
+      "bonappetit.com",
+      "mercadolibre.com.ec",
+      "facebook.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "QMuGdYRTFK4z1drE",
+    "country": "ec",
+    "city": "Cuenca",
+    "region": "azuay"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "45.188.229.160",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "cf4c471a-18fa-4bd4-9970-cead5fb49760",
+    "email": "Carlos_Terrón_k17431p0",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766102203649,
+    "profile_id": "k17431p0",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 18:56:43"
+  },
+  "created_at": "2025-11-18T18:56:43.665985",
+  "warmup_completed": false
+}

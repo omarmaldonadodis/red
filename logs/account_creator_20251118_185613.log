@@ -1,0 +1,40 @@
+2025-11-18 18:56:14,340 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:56:14,341 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:56:14,345 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:56:14,345 - INFO -    Puerto: 33910
+2025-11-18 18:56:14,345 - INFO -    Protocolo: vless
+2025-11-18 18:56:14,346 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:56:37,904 - INFO - ======================================================================
+2025-11-18 18:56:37,904 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:56:37,904 - INFO - ======================================================================
+2025-11-18 18:56:37,970 - INFO - Perfil generado:
+2025-11-18 18:56:37,971 - INFO -   Nombre: Carlos Terrón
+2025-11-18 18:56:37,971 - INFO -   Edad: 36
+2025-11-18 18:56:37,971 - INFO -   Ciudad: Cuenca
+2025-11-18 18:56:37,971 - INFO -   Región: azuay
+2025-11-18 18:56:37,971 - INFO -   Dispositivo: desktop
+2025-11-18 18:56:37,971 - INFO -   Intereses: diy, real_estate, cooking, family, health, business
+2025-11-18 18:56:43,088 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:56:43,088 - INFO -   IP: 45.188.229.160
+2025-11-18 18:56:43,088 - INFO -   País: None
+2025-11-18 18:56:43,088 - INFO -   Ciudad: None
+2025-11-18 18:56:43,088 - INFO -   ISP: None
+2025-11-18 18:56:43,088 - INFO -   Tipo: residential
+2025-11-18 18:56:43,665 - INFO - ✅ Cliente 3x-ui creado: Carlos_Terrón_k17431p0
+2025-11-18 18:56:43,665 - INFO -    UUID: cf4c471a-18fa-4bd4-9970-cead5fb49760
+2025-11-18 18:56:43,665 - INFO -    Límite: 50 GB
+2025-11-18 18:56:43,665 - INFO -    Expira: 30 días
+2025-11-18 18:56:43,665 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:56:43,665 - INFO -    Email: Carlos_Terrón_k17431p0
+2025-11-18 18:56:43,665 - INFO -    UUID: cf4c471a-18fa-4bd4-9970-cead5fb49760
+2025-11-18 18:56:43,665 - INFO -    Límite: 50 GB
+2025-11-18 18:56:43,666 - INFO - ======================================================================
+2025-11-18 18:56:43,666 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 18:56:43,666 - INFO - ======================================================================
+2025-11-18 18:56:43,666 - INFO - ID: k17431p0
+2025-11-18 18:56:43,666 - INFO - Nombre: Carlos Terrón
+2025-11-18 18:56:43,666 - INFO - Ciudad: Cuenca
+2025-11-18 18:56:43,666 - INFO - Región: azuay
+2025-11-18 18:56:43,667 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 18:56:43,667 - INFO - Warmup: No
+2025-11-18 18:56:43,667 - INFO - ======================================================================

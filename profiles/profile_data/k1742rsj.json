@@ -1,0 +1,58 @@
+{
+  "profile_id": "k1742rsj",
+  "profile_config": {
+    "name": "Daniela Ricart",
+    "age": 34,
+    "gender": "female",
+    "country": "EC",
+    "city": "Loja",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "interests": [
+      "cars",
+      "fitness",
+      "real_estate",
+      "travel"
+    ],
+    "browsing_history": [
+      "google.com",
+      "gmail.com",
+      "facebook.com",
+      "youtube.com",
+      "mercadolibre.com.ec",
+      "pichincha.com",
+      "kayak.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "oTLpvGDme9IB7O45",
+    "country": "ec",
+    "city": "Loja",
+    "region": "loja"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "186.68.125.166",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "26e85368-9544-4937-9f10-cf70a412735a",
+    "email": "Daniela_Ricart_k1742rsj",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766101091649,
+    "profile_id": "k1742rsj",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 18:38:11"
+  },
+  "created_at": "2025-11-18T18:38:11.663889",
+  "warmup_completed": false
+}

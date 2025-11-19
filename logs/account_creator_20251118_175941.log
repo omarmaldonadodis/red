@@ -1,0 +1,40 @@
+2025-11-18 17:59:42,374 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 17:59:42,374 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 17:59:42,378 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 17:59:42,378 - INFO -    Puerto: 33910
+2025-11-18 17:59:42,378 - INFO -    Protocolo: vless
+2025-11-18 17:59:42,378 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:00:09,349 - INFO - ======================================================================
+2025-11-18 18:00:09,351 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:00:09,351 - INFO - ======================================================================
+2025-11-18 18:00:09,416 - INFO - Perfil generado:
+2025-11-18 18:00:09,417 - INFO -   Nombre: Carmen Monreal
+2025-11-18 18:00:09,417 - INFO -   Edad: 23
+2025-11-18 18:00:09,417 - INFO -   Ciudad: Quito
+2025-11-18 18:00:09,417 - INFO -   Región: pichincha
+2025-11-18 18:00:09,417 - INFO -   Dispositivo: desktop
+2025-11-18 18:00:09,417 - INFO -   Intereses: streaming, instagram, tiktok, youtube, gaming, technology, social_media
+2025-11-18 18:00:14,564 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:00:14,564 - INFO -   IP: 186.71.116.71
+2025-11-18 18:00:14,564 - INFO -   País: None
+2025-11-18 18:00:14,564 - INFO -   Ciudad: None
+2025-11-18 18:00:14,564 - INFO -   ISP: None
+2025-11-18 18:00:14,564 - INFO -   Tipo: residential
+2025-11-18 18:00:15,137 - INFO - ✅ Cliente 3x-ui creado: Carmen_Monreal_k17429id
+2025-11-18 18:00:15,137 - INFO -    UUID: cb35b96d-3144-4726-97a3-c454257c9d77
+2025-11-18 18:00:15,137 - INFO -    Límite: 50 GB
+2025-11-18 18:00:15,138 - INFO -    Expira: 30 días
+2025-11-18 18:00:15,138 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:00:15,138 - INFO -    Email: Carmen_Monreal_k17429id
+2025-11-18 18:00:15,138 - INFO -    UUID: cb35b96d-3144-4726-97a3-c454257c9d77
+2025-11-18 18:00:15,138 - INFO -    Límite: 50 GB
+2025-11-18 18:00:15,139 - INFO - ======================================================================
+2025-11-18 18:00:15,139 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 18:00:15,139 - INFO - ======================================================================
+2025-11-18 18:00:15,139 - INFO - ID: k17429id
+2025-11-18 18:00:15,139 - INFO - Nombre: Carmen Monreal
+2025-11-18 18:00:15,139 - INFO - Ciudad: Quito
+2025-11-18 18:00:15,139 - INFO - Región: pichincha
+2025-11-18 18:00:15,139 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 18:00:15,139 - INFO - Warmup: No
+2025-11-18 18:00:15,139 - INFO - ======================================================================

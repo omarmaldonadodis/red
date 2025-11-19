@@ -1,0 +1,40 @@
+2025-11-18 18:55:36,757 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:55:36,757 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:55:36,760 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:55:36,760 - INFO -    Puerto: 33910
+2025-11-18 18:55:36,761 - INFO -    Protocolo: vless
+2025-11-18 18:55:36,761 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:55:50,122 - INFO - ======================================================================
+2025-11-18 18:55:50,122 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:55:50,122 - INFO - ======================================================================
+2025-11-18 18:55:50,188 - INFO - Perfil generado:
+2025-11-18 18:55:50,188 - INFO -   Nombre: Camila Soria
+2025-11-18 18:55:50,188 - INFO -   Edad: 36
+2025-11-18 18:55:50,188 - INFO -   Ciudad: Quito
+2025-11-18 18:55:50,188 - INFO -   Región: pichincha
+2025-11-18 18:55:50,188 - INFO -   Dispositivo: desktop
+2025-11-18 18:55:50,188 - INFO -   Intereses: real_estate, cooking, health, gardening, politics, family, news
+2025-11-18 18:55:55,626 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:55:55,627 - INFO -   IP: 179.60.190.248
+2025-11-18 18:55:55,627 - INFO -   País: None
+2025-11-18 18:55:55,627 - INFO -   Ciudad: None
+2025-11-18 18:55:55,627 - INFO -   ISP: None
+2025-11-18 18:55:55,627 - INFO -   Tipo: residential
+2025-11-18 18:55:56,100 - INFO - ✅ Cliente 3x-ui creado: Camila_Soria_k17431f4
+2025-11-18 18:55:56,100 - INFO -    UUID: 8e591ef6-1c8d-4c3d-a7b6-ac3aef433607
+2025-11-18 18:55:56,100 - INFO -    Límite: 50 GB
+2025-11-18 18:55:56,100 - INFO -    Expira: 30 días
+2025-11-18 18:55:56,100 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:55:56,100 - INFO -    Email: Camila_Soria_k17431f4
+2025-11-18 18:55:56,100 - INFO -    UUID: 8e591ef6-1c8d-4c3d-a7b6-ac3aef433607
+2025-11-18 18:55:56,101 - INFO -    Límite: 50 GB
+2025-11-18 18:55:56,101 - INFO - ======================================================================
+2025-11-18 18:55:56,101 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 18:55:56,102 - INFO - ======================================================================
+2025-11-18 18:55:56,102 - INFO - ID: k17431f4
+2025-11-18 18:55:56,102 - INFO - Nombre: Camila Soria
+2025-11-18 18:55:56,102 - INFO - Ciudad: Quito
+2025-11-18 18:55:56,102 - INFO - Región: pichincha
+2025-11-18 18:55:56,102 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 18:55:56,102 - INFO - Warmup: No
+2025-11-18 18:55:56,102 - INFO - ======================================================================

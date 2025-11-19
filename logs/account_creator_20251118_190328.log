@@ -1,0 +1,40 @@
+2025-11-18 19:03:29,279 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 19:03:29,279 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 19:03:29,282 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 19:03:29,283 - INFO -    Puerto: 33910
+2025-11-18 19:03:29,283 - INFO -    Protocolo: vless
+2025-11-18 19:03:29,283 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 19:03:55,242 - INFO - ======================================================================
+2025-11-18 19:03:55,243 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 19:03:55,243 - INFO - ======================================================================
+2025-11-18 19:03:55,297 - INFO - Perfil generado:
+2025-11-18 19:03:55,297 - INFO -   Nombre: Jessica Padilla
+2025-11-18 19:03:55,297 - INFO -   Edad: 18
+2025-11-18 19:03:55,297 - INFO -   Ciudad: Guayaquil
+2025-11-18 19:03:55,297 - INFO -   Región: guayas
+2025-11-18 19:03:55,297 - INFO -   Dispositivo: desktop
+2025-11-18 19:03:55,297 - INFO -   Intereses: streaming, youtube, instagram, tiktok, twitch, technology, sports
+2025-11-18 19:04:04,142 - INFO - ✅ Proxy funcionando:
+2025-11-18 19:04:04,142 - INFO -   IP: 186.68.217.70
+2025-11-18 19:04:04,142 - INFO -   País: None
+2025-11-18 19:04:04,142 - INFO -   Ciudad: None
+2025-11-18 19:04:04,142 - INFO -   ISP: None
+2025-11-18 19:04:04,142 - INFO -   Tipo: residential
+2025-11-18 19:04:04,596 - INFO - ✅ Cliente 3x-ui creado: Jessica_Padilla_k17434vg
+2025-11-18 19:04:04,596 - INFO -    UUID: 22e5f5ec-defd-41eb-8eb8-c11851e56beb
+2025-11-18 19:04:04,596 - INFO -    Límite: 50 GB
+2025-11-18 19:04:04,596 - INFO -    Expira: 30 días
+2025-11-18 19:04:04,596 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 19:04:04,597 - INFO -    Email: Jessica_Padilla_k17434vg
+2025-11-18 19:04:04,597 - INFO -    UUID: 22e5f5ec-defd-41eb-8eb8-c11851e56beb
+2025-11-18 19:04:04,597 - INFO -    Límite: 50 GB
+2025-11-18 19:04:04,598 - INFO - ======================================================================
+2025-11-18 19:04:04,598 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 19:04:04,598 - INFO - ======================================================================
+2025-11-18 19:04:04,598 - INFO - ID: k17434vg
+2025-11-18 19:04:04,598 - INFO - Nombre: Jessica Padilla
+2025-11-18 19:04:04,598 - INFO - Ciudad: Guayaquil
+2025-11-18 19:04:04,598 - INFO - Región: guayas
+2025-11-18 19:04:04,598 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 19:04:04,598 - INFO - Warmup: No
+2025-11-18 19:04:04,598 - INFO - ======================================================================

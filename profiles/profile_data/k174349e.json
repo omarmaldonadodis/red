@@ -1,0 +1,60 @@
+{
+  "profile_id": "k174349e",
+  "profile_config": {
+    "name": "Diego Carbonell",
+    "age": 29,
+    "gender": "male",
+    "country": "EC",
+    "city": "Loja",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "interests": [
+      "real_estate",
+      "technology",
+      "sports",
+      "cars"
+    ],
+    "browsing_history": [
+      "youtube.com",
+      "elcomercio.com",
+      "facebook.com",
+      "arstechnica.com",
+      "zdnet.com",
+      "eluniverso.com",
+      "gmail.com",
+      "marca.com",
+      "google.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "okorup5aDSojtJpL",
+    "country": "ec",
+    "city": "Loja",
+    "region": "loja"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "45.71.114.27",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "90af4e7e-2532-4c20-b796-96a724cf1003",
+    "email": "Diego_Carbonell_k174349e",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766102562517,
+    "profile_id": "k174349e",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 19:02:42"
+  },
+  "created_at": "2025-11-18T19:02:42.532412",
+  "warmup_completed": false
+}

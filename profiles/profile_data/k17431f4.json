@@ -1,0 +1,65 @@
+{
+  "profile_id": "k17431f4",
+  "profile_config": {
+    "name": "Camila Soria",
+    "age": 36,
+    "gender": "female",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "interests": [
+      "real_estate",
+      "cooking",
+      "health",
+      "gardening",
+      "politics",
+      "family",
+      "news"
+    ],
+    "browsing_history": [
+      "foodnetwork.com",
+      "youtube.com",
+      "nih.gov",
+      "bbc.com/mundo",
+      "facebook.com",
+      "elcomercio.com",
+      "mayoclinic.org",
+      "gmail.com",
+      "healthline.com",
+      "google.com",
+      "eluniverso.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "I5Rm8GIFSAt5hqka",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "179.60.190.248",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "8e591ef6-1c8d-4c3d-a7b6-ac3aef433607",
+    "email": "Camila_Soria_k17431f4",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766102156087,
+    "profile_id": "k17431f4",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 18:55:56"
+  },
+  "created_at": "2025-11-18T18:55:56.101315",
+  "warmup_completed": false
+}

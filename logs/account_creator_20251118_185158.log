@@ -1,0 +1,51 @@
+2025-11-18 18:51:59,253 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:51:59,255 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:51:59,258 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:51:59,258 - INFO -    Puerto: 33910
+2025-11-18 18:51:59,258 - INFO -    Protocolo: vless
+2025-11-18 18:51:59,258 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:52:22,722 - INFO - ======================================================================
+2025-11-18 18:52:22,722 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:52:22,722 - INFO - ======================================================================
+2025-11-18 18:52:22,788 - INFO - Perfil generado:
+2025-11-18 18:52:22,789 - INFO -   Nombre: Camila Saavedra
+2025-11-18 18:52:22,789 - INFO -   Edad: 46
+2025-11-18 18:52:22,789 - INFO -   Ciudad: Quito
+2025-11-18 18:52:22,789 - INFO -   Región: pichincha
+2025-11-18 18:52:22,789 - INFO -   Dispositivo: desktop
+2025-11-18 18:52:22,789 - INFO -   Intereses: real_estate, news, cooking, religion, diy, health, business
+2025-11-18 18:52:28,574 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:52:28,575 - INFO -   IP: 181.199.54.17
+2025-11-18 18:52:28,575 - INFO -   País: None
+2025-11-18 18:52:28,575 - INFO -   Ciudad: None
+2025-11-18 18:52:28,575 - INFO -   ISP: None
+2025-11-18 18:52:28,575 - INFO -   Tipo: residential
+2025-11-18 18:52:29,215 - INFO - ✅ Cliente 3x-ui creado: Camila_Saavedra_k1742ywe
+2025-11-18 18:52:29,215 - INFO -    UUID: 1325d652-4906-4c9d-99a2-0aff6ab8a75e
+2025-11-18 18:52:29,215 - INFO -    Límite: 50 GB
+2025-11-18 18:52:29,215 - INFO -    Expira: 30 días
+2025-11-18 18:52:29,215 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:52:29,215 - INFO -    Email: Camila_Saavedra_k1742ywe
+2025-11-18 18:52:29,216 - INFO -    UUID: 1325d652-4906-4c9d-99a2-0aff6ab8a75e
+2025-11-18 18:52:29,216 - INFO -    Límite: 50 GB
+2025-11-18 18:52:29,217 - INFO - ======================================================================
+2025-11-18 18:52:29,217 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 18:52:29,217 - INFO - ======================================================================
+2025-11-18 18:52:29,217 - INFO - ID: k1742ywe
+2025-11-18 18:52:29,217 - INFO - Nombre: Camila Saavedra
+2025-11-18 18:52:29,217 - INFO - Ciudad: Quito
+2025-11-18 18:52:29,217 - INFO - Región: pichincha
+2025-11-18 18:52:29,217 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 18:52:29,217 - INFO - Warmup: No
+2025-11-18 18:52:29,217 - INFO - ======================================================================
+2025-11-18 18:55:23,269 - INFO - ======================================================================
+2025-11-18 18:55:23,270 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:55:23,271 - INFO - ======================================================================
+2025-11-18 18:55:23,363 - INFO - Perfil generado:
+2025-11-18 18:55:23,363 - INFO -   Nombre: Juan Bolaños
+2025-11-18 18:55:23,363 - INFO -   Edad: 20
+2025-11-18 18:55:23,363 - INFO -   Ciudad: Machala
+2025-11-18 18:55:23,363 - INFO -   Región: el-oro
+2025-11-18 18:55:23,363 - INFO -   Dispositivo: desktop
+2025-11-18 18:55:23,363 - INFO -   Intereses: music, social_media, gaming, youtube
+2025-11-18 18:55:24,011 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

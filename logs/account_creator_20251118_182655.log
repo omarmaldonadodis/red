@@ -1,0 +1,46 @@
+2025-11-18 18:26:55,669 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:26:55,669 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:26:55,673 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:26:55,673 - INFO -    Puerto: 33910
+2025-11-18 18:26:55,673 - INFO -    Protocolo: vless
+2025-11-18 18:26:55,673 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:27:29,540 - INFO - ======================================================================
+2025-11-18 18:27:29,540 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:27:29,540 - INFO - ======================================================================
+2025-11-18 18:27:29,616 - INFO - Perfil generado:
+2025-11-18 18:27:29,616 - INFO -   Nombre: Mauricio Villar
+2025-11-18 18:27:29,616 - INFO -   Edad: 33
+2025-11-18 18:27:29,616 - INFO -   Ciudad: Quito
+2025-11-18 18:27:29,616 - INFO -   Región: pichincha
+2025-11-18 18:27:29,616 - INFO -   Dispositivo: desktop
+2025-11-18 18:27:29,616 - INFO -   Intereses: news, real_estate, sports, finance, business, fitness, travel
+2025-11-18 18:27:33,514 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:27:33,514 - INFO -   IP: 157.100.138.96
+2025-11-18 18:27:33,515 - INFO -   País: None
+2025-11-18 18:27:33,515 - INFO -   Ciudad: None
+2025-11-18 18:27:33,515 - INFO -   ISP: None
+2025-11-18 18:27:33,515 - INFO -   Tipo: residential
+2025-11-18 18:27:34,262 - INFO - ✅ Cliente 3x-ui creado: Mauricio_Villar_k1742n2a
+2025-11-18 18:27:34,262 - INFO -    UUID: 3f575edb-a039-4832-a5e8-9013a657bf6e
+2025-11-18 18:27:34,262 - INFO -    Límite: 50 GB
+2025-11-18 18:27:34,262 - INFO -    Expira: 30 días
+2025-11-18 18:27:34,262 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:27:34,262 - INFO -    Email: Mauricio_Villar_k1742n2a
+2025-11-18 18:27:34,262 - INFO -    UUID: 3f575edb-a039-4832-a5e8-9013a657bf6e
+2025-11-18 18:27:34,262 - INFO -    Límite: 50 GB
+2025-11-18 18:27:34,263 - INFO - 🔌 Conectando al navegador del perfil: k1742n2a
+2025-11-18 18:27:40,639 - WARNING - The chromedriver version (140.0.7339.81) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.183 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-11-18 18:27:41,777 - INFO - ✅ Conectado exitosamente al navegador
+2025-11-18 18:27:41,777 - INFO - 🔥 Iniciando precalentamiento básico del perfil
+2025-11-18 18:27:41,778 - INFO -    Duración: 4 minutos
+2025-11-18 18:27:41,778 - INFO -    Tipo de dispositivo: DESKTOP
+2025-11-18 18:27:41,778 - INFO -    Tipo de proxy: RESIDENTIAL
+2025-11-18 18:27:41,778 - INFO - 📚 Construyendo historial de navegación (4 minutos)
+2025-11-18 18:27:41,778 - INFO -    Sitios a visitar: 15
+2025-11-18 18:27:41,778 - INFO - Visitando: https://google.com
+2025-11-18 18:28:28,743 - INFO - ✓ Sitio visitado exitosamente: https://google.com
+2025-11-18 18:28:31,310 - INFO - Visitando: https://kayak.com
+2025-11-18 18:28:54,117 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))': /session/606f75178eb27efa5094b70ca55fad6e
+2025-11-18 18:28:54,119 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10c5c3f40>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/606f75178eb27efa5094b70ca55fad6e
+2025-11-18 18:28:54,121 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10c5c3fd0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/606f75178eb27efa5094b70ca55fad6e
+2025-11-18 18:28:54,126 - INFO - 🔌 Navegador cerrado

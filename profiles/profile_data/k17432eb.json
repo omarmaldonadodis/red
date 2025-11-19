@@ -1,0 +1,69 @@
+{
+  "profile_id": "k17432eb",
+  "profile_config": {
+    "name": "Ricardo Alonso",
+    "age": 22,
+    "gender": "male",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "interests": [
+      "music",
+      "twitch",
+      "streaming",
+      "gaming",
+      "tiktok",
+      "technology",
+      "instagram"
+    ],
+    "browsing_history": [
+      "engadget.com",
+      "netflix.com",
+      "techcrunch.com",
+      "disneyplus.com",
+      "pichincha.com",
+      "soundcloud.com",
+      "facebook.com",
+      "mercadolibre.com.ec",
+      "gmail.com",
+      "arstechnica.com",
+      "ign.com",
+      "spotify.com",
+      "google.com",
+      "tidal.com",
+      "youtube.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "mrW3PvcDOdhTEjZi",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "45.195.201.177",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "3af7ee72-d196-4882-8a4a-1aae40b6b4a7",
+    "email": "Ricardo_Alonso_k17432eb",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766102306461,
+    "profile_id": "k17432eb",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 18:58:26"
+  },
+  "created_at": "2025-11-18T18:58:26.475723",
+  "warmup_completed": false
+}

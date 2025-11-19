@@ -1,0 +1,40 @@
+2025-11-18 19:02:17,016 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 19:02:17,017 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 19:02:17,020 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 19:02:17,020 - INFO -    Puerto: 33910
+2025-11-18 19:02:17,020 - INFO -    Protocolo: vless
+2025-11-18 19:02:17,021 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 19:02:36,917 - INFO - ======================================================================
+2025-11-18 19:02:36,918 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 19:02:36,918 - INFO - ======================================================================
+2025-11-18 19:02:36,986 - INFO - Perfil generado:
+2025-11-18 19:02:36,987 - INFO -   Nombre: Diego Carbonell
+2025-11-18 19:02:36,987 - INFO -   Edad: 29
+2025-11-18 19:02:36,987 - INFO -   Ciudad: Loja
+2025-11-18 19:02:36,987 - INFO -   Región: loja
+2025-11-18 19:02:36,987 - INFO -   Dispositivo: desktop
+2025-11-18 19:02:36,987 - INFO -   Intereses: real_estate, technology, sports, cars
+2025-11-18 19:02:41,722 - INFO - ✅ Proxy funcionando:
+2025-11-18 19:02:41,722 - INFO -   IP: 45.71.114.27
+2025-11-18 19:02:41,722 - INFO -   País: None
+2025-11-18 19:02:41,722 - INFO -   Ciudad: None
+2025-11-18 19:02:41,722 - INFO -   ISP: None
+2025-11-18 19:02:41,722 - INFO -   Tipo: residential
+2025-11-18 19:02:42,531 - INFO - ✅ Cliente 3x-ui creado: Diego_Carbonell_k174349e
+2025-11-18 19:02:42,531 - INFO -    UUID: 90af4e7e-2532-4c20-b796-96a724cf1003
+2025-11-18 19:02:42,531 - INFO -    Límite: 50 GB
+2025-11-18 19:02:42,531 - INFO -    Expira: 30 días
+2025-11-18 19:02:42,531 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 19:02:42,532 - INFO -    Email: Diego_Carbonell_k174349e
+2025-11-18 19:02:42,532 - INFO -    UUID: 90af4e7e-2532-4c20-b796-96a724cf1003
+2025-11-18 19:02:42,532 - INFO -    Límite: 50 GB
+2025-11-18 19:02:42,533 - INFO - ======================================================================
+2025-11-18 19:02:42,533 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 19:02:42,533 - INFO - ======================================================================
+2025-11-18 19:02:42,533 - INFO - ID: k174349e
+2025-11-18 19:02:42,533 - INFO - Nombre: Diego Carbonell
+2025-11-18 19:02:42,533 - INFO - Ciudad: Loja
+2025-11-18 19:02:42,533 - INFO - Región: loja
+2025-11-18 19:02:42,533 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 19:02:42,533 - INFO - Warmup: No
+2025-11-18 19:02:42,533 - INFO - ======================================================================

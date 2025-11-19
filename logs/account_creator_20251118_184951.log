@@ -1,0 +1,17 @@
+2025-11-18 18:49:52,069 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:49:52,069 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:49:52,073 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:49:52,073 - INFO -    Puerto: 33910
+2025-11-18 18:49:52,073 - INFO -    Protocolo: vless
+2025-11-18 18:49:52,073 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:50:11,229 - INFO - ======================================================================
+2025-11-18 18:50:11,229 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:50:11,229 - INFO - ======================================================================
+2025-11-18 18:50:11,282 - INFO - Perfil generado:
+2025-11-18 18:50:11,282 - INFO -   Nombre: Luis Agustí
+2025-11-18 18:50:11,282 - INFO -   Edad: 28
+2025-11-18 18:50:11,283 - INFO -   Ciudad: Loja
+2025-11-18 18:50:11,283 - INFO -   Región: loja
+2025-11-18 18:50:11,283 - INFO -   Dispositivo: desktop
+2025-11-18 18:50:11,283 - INFO -   Intereses: travel, investment, news, cars, technology
+2025-11-18 18:50:29,472 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de conexión: Verifica saldo en SOAX

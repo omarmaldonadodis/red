@@ -1,0 +1,40 @@
+2025-11-18 18:59:21,799 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:59:21,800 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:59:21,804 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:59:21,805 - INFO -    Puerto: 33910
+2025-11-18 18:59:21,805 - INFO -    Protocolo: vless
+2025-11-18 18:59:21,805 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 19:00:02,776 - INFO - ======================================================================
+2025-11-18 19:00:02,777 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 19:00:02,777 - INFO - ======================================================================
+2025-11-18 19:00:02,837 - INFO - Perfil generado:
+2025-11-18 19:00:02,837 - INFO -   Nombre: Jorge Corominas
+2025-11-18 19:00:02,838 - INFO -   Edad: 32
+2025-11-18 19:00:02,838 - INFO -   Ciudad: Loja
+2025-11-18 19:00:02,838 - INFO -   Región: loja
+2025-11-18 19:00:02,838 - INFO -   Dispositivo: desktop
+2025-11-18 19:00:02,838 - INFO -   Intereses: news, cars, fitness, travel, finance, investment, business
+2025-11-18 19:00:09,066 - INFO - ✅ Proxy funcionando:
+2025-11-18 19:00:09,066 - INFO -   IP: 45.70.200.214
+2025-11-18 19:00:09,066 - INFO -   País: None
+2025-11-18 19:00:09,066 - INFO -   Ciudad: None
+2025-11-18 19:00:09,066 - INFO -   ISP: None
+2025-11-18 19:00:09,066 - INFO -   Tipo: residential
+2025-11-18 19:00:09,907 - INFO - ✅ Cliente 3x-ui creado: Jorge_Corominas_k174331q
+2025-11-18 19:00:09,907 - INFO -    UUID: 21ffa201-cc62-431c-ae7c-6d5a3fa856ce
+2025-11-18 19:00:09,907 - INFO -    Límite: 50 GB
+2025-11-18 19:00:09,907 - INFO -    Expira: 30 días
+2025-11-18 19:00:09,908 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 19:00:09,908 - INFO -    Email: Jorge_Corominas_k174331q
+2025-11-18 19:00:09,908 - INFO -    UUID: 21ffa201-cc62-431c-ae7c-6d5a3fa856ce
+2025-11-18 19:00:09,908 - INFO -    Límite: 50 GB
+2025-11-18 19:00:09,910 - INFO - ======================================================================
+2025-11-18 19:00:09,910 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 19:00:09,910 - INFO - ======================================================================
+2025-11-18 19:00:09,910 - INFO - ID: k174331q
+2025-11-18 19:00:09,911 - INFO - Nombre: Jorge Corominas
+2025-11-18 19:00:09,911 - INFO - Ciudad: Loja
+2025-11-18 19:00:09,911 - INFO - Región: loja
+2025-11-18 19:00:09,911 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 19:00:09,911 - INFO - Warmup: No
+2025-11-18 19:00:09,912 - INFO - ======================================================================

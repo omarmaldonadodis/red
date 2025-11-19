@@ -1,0 +1,66 @@
+{
+  "profile_id": "k17434vg",
+  "profile_config": {
+    "name": "Jessica Padilla",
+    "age": 18,
+    "gender": "female",
+    "country": "EC",
+    "city": "Guayaquil",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+    "interests": [
+      "streaming",
+      "youtube",
+      "instagram",
+      "tiktok",
+      "twitch",
+      "technology",
+      "sports"
+    ],
+    "browsing_history": [
+      "techcrunch.com",
+      "hbomax.com",
+      "youtube.com",
+      "facebook.com",
+      "zdnet.com",
+      "theverge.com",
+      "elcomercio.com",
+      "gmail.com",
+      "marca.com",
+      "google.com",
+      "pichincha.com",
+      "as.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "residential",
+    "session_id": "K6HRZDxGP7kALqDg",
+    "country": "ec",
+    "city": "Guayaquil",
+    "region": "guayas"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "186.68.217.70",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "residential",
+    "error": null
+  },
+  "threexui_client": {
+    "uuid": "22e5f5ec-defd-41eb-8eb8-c11851e56beb",
+    "email": "Jessica_Padilla_k17434vg",
+    "total_gb": 50,
+    "expiry_days": 30,
+    "expiry_time": 1766102644583,
+    "profile_id": "k17434vg",
+    "inbound_id": 1,
+    "created_at": "2025-11-18 19:04:04"
+  },
+  "created_at": "2025-11-18T19:04:04.597527",
+  "warmup_completed": false
+}

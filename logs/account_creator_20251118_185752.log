@@ -1,0 +1,40 @@
+2025-11-18 18:57:52,886 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-18 18:57:52,886 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-18 18:57:52,890 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-18 18:57:52,891 - INFO -    Puerto: 33910
+2025-11-18 18:57:52,891 - INFO -    Protocolo: vless
+2025-11-18 18:57:52,891 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-18 18:58:21,716 - INFO - ======================================================================
+2025-11-18 18:58:21,733 - INFO - CREANDO NUEVO PERFIL
+2025-11-18 18:58:21,733 - INFO - ======================================================================
+2025-11-18 18:58:21,803 - INFO - Perfil generado:
+2025-11-18 18:58:21,803 - INFO -   Nombre: Ricardo Alonso
+2025-11-18 18:58:21,803 - INFO -   Edad: 22
+2025-11-18 18:58:21,804 - INFO -   Ciudad: Quito
+2025-11-18 18:58:21,804 - INFO -   Región: pichincha
+2025-11-18 18:58:21,804 - INFO -   Dispositivo: desktop
+2025-11-18 18:58:21,804 - INFO -   Intereses: music, twitch, streaming, gaming, tiktok, technology, instagram
+2025-11-18 18:58:25,949 - INFO - ✅ Proxy funcionando:
+2025-11-18 18:58:25,949 - INFO -   IP: 45.195.201.177
+2025-11-18 18:58:25,949 - INFO -   País: None
+2025-11-18 18:58:25,950 - INFO -   Ciudad: None
+2025-11-18 18:58:25,950 - INFO -   ISP: None
+2025-11-18 18:58:25,950 - INFO -   Tipo: residential
+2025-11-18 18:58:26,474 - INFO - ✅ Cliente 3x-ui creado: Ricardo_Alonso_k17432eb
+2025-11-18 18:58:26,474 - INFO -    UUID: 3af7ee72-d196-4882-8a4a-1aae40b6b4a7
+2025-11-18 18:58:26,474 - INFO -    Límite: 50 GB
+2025-11-18 18:58:26,475 - INFO -    Expira: 30 días
+2025-11-18 18:58:26,475 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-18 18:58:26,475 - INFO -    Email: Ricardo_Alonso_k17432eb
+2025-11-18 18:58:26,475 - INFO -    UUID: 3af7ee72-d196-4882-8a4a-1aae40b6b4a7
+2025-11-18 18:58:26,475 - INFO -    Límite: 50 GB
+2025-11-18 18:58:26,476 - INFO - ======================================================================
+2025-11-18 18:58:26,476 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-18 18:58:26,476 - INFO - ======================================================================
+2025-11-18 18:58:26,476 - INFO - ID: k17432eb
+2025-11-18 18:58:26,476 - INFO - Nombre: Ricardo Alonso
+2025-11-18 18:58:26,476 - INFO - Ciudad: Quito
+2025-11-18 18:58:26,476 - INFO - Región: pichincha
+2025-11-18 18:58:26,476 - INFO - Tipo: DESKTOP (residential)
+2025-11-18 18:58:26,476 - INFO - Warmup: No
+2025-11-18 18:58:26,477 - INFO - ======================================================================
