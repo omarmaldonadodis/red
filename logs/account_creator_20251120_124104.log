@@ -1,0 +1,150 @@
+2025-11-20 12:41:16,947 - INFO - ======================================================================
+2025-11-20 12:41:16,947 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 12:41:16,947 - INFO - ======================================================================
+2025-11-20 12:41:16,990 - INFO - Perfil generado:
+2025-11-20 12:41:16,990 - INFO -   Nombre: Isabel Ferrero
+2025-11-20 12:41:16,990 - INFO -   Edad: 35
+2025-11-20 12:41:16,990 - INFO -   Ciudad: Quito
+2025-11-20 12:41:16,991 - INFO -   Región: pichincha
+2025-11-20 12:41:16,991 - INFO -   Dispositivo: mobile
+2025-11-20 12:41:16,991 - INFO -   Tipo Proxy: mobile
+2025-11-20 12:41:16,991 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 12:41:16,991 - INFO -   ├─ Dispositivo: Xiaomi 13 Pro
+2025-11-20 12:41:16,991 - INFO -   ├─ Resolución: 1440x3200
+2025-11-20 12:41:16,991 - INFO -   ├─ Viewport: 412x915
+2025-11-20 12:41:16,991 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 12:41:16,991 - INFO -   ├─ CPU Cores: 8
+2025-11-20 12:41:16,991 - INFO -   ├─ RAM: 12GB
+2025-11-20 12:41:16,991 - INFO -   ├─ Touch Points: 10
+2025-11-20 12:41:16,991 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 12:41:16,991 - INFO -   ├─ Renderer: Adreno (TM) 740
+2025-11-20 12:41:16,991 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; 2210132C) AppleWebKit/537.36 (KHTML, like Gecko)...
+2025-11-20 12:41:16,992 - INFO -   Intereses: news_apps, ride_sharing, social_media, banking
+2025-11-20 12:41:22,226 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 12:41:22,226 - INFO -   IP: 190.63.127.239
+2025-11-20 12:41:22,226 - INFO -   País: None
+2025-11-20 12:41:22,226 - INFO -   Ciudad: None
+2025-11-20 12:41:22,226 - INFO -   ISP: None
+2025-11-20 12:41:22,226 - INFO -   Tipo: mobile
+2025-11-20 12:41:22,806 - ERROR - ❌ Error creando perfil: Error de AdsPower API: If the number of imported accounts exceeds the limit of 12, please delete some accounts and try again.
+2025-11-20 12:41:59,010 - INFO - ======================================================================
+2025-11-20 12:41:59,010 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 12:41:59,010 - INFO - ======================================================================
+2025-11-20 12:41:59,048 - INFO - Perfil generado:
+2025-11-20 12:41:59,048 - INFO -   Nombre: Fernando Téllez
+2025-11-20 12:41:59,048 - INFO -   Edad: 29
+2025-11-20 12:41:59,048 - INFO -   Ciudad: Quito
+2025-11-20 12:41:59,048 - INFO -   Región: pichincha
+2025-11-20 12:41:59,048 - INFO -   Dispositivo: mobile
+2025-11-20 12:41:59,048 - INFO -   Tipo Proxy: mobile
+2025-11-20 12:41:59,048 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 12:41:59,048 - INFO -   ├─ Dispositivo: OnePlus 12
+2025-11-20 12:41:59,048 - INFO -   ├─ Resolución: 1440x3168
+2025-11-20 12:41:59,048 - INFO -   ├─ Viewport: 412x915
+2025-11-20 12:41:59,048 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 12:41:59,048 - INFO -   ├─ CPU Cores: 8
+2025-11-20 12:41:59,049 - INFO -   ├─ RAM: 16GB
+2025-11-20 12:41:59,049 - INFO -   ├─ Touch Points: 10
+2025-11-20 12:41:59,049 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 12:41:59,049 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-20 12:41:59,049 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; CPH2583) AppleWebKit/537.36 (KHTML, like Gecko) ...
+2025-11-20 12:41:59,049 - INFO -   Intereses: ride_sharing, fitness_apps, news_apps
+2025-11-20 12:42:02,870 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 12:42:02,871 - INFO -   IP: 181.211.105.200
+2025-11-20 12:42:02,871 - INFO -   País: None
+2025-11-20 12:42:02,871 - INFO -   Ciudad: None
+2025-11-20 12:42:02,871 - INFO -   ISP: None
+2025-11-20 12:42:02,871 - INFO -   Tipo: mobile
+2025-11-20 12:42:03,358 - ERROR - ❌ Error creando perfil: 'ProfileConfig' object has no attribute 'width_height'
+2025-11-20 12:44:10,792 - INFO - ======================================================================
+2025-11-20 12:44:10,793 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 12:44:10,793 - INFO - ======================================================================
+2025-11-20 12:44:10,830 - INFO - Perfil generado:
+2025-11-20 12:44:10,830 - INFO -   Nombre: Patricia Gabaldón
+2025-11-20 12:44:10,831 - INFO -   Edad: 19
+2025-11-20 12:44:10,831 - INFO -   Ciudad: Quito
+2025-11-20 12:44:10,831 - INFO -   Región: pichincha
+2025-11-20 12:44:10,831 - INFO -   Dispositivo: mobile
+2025-11-20 12:44:10,831 - INFO -   Tipo Proxy: mobile
+2025-11-20 12:44:10,831 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 12:44:10,831 - INFO -   ├─ Dispositivo: OnePlus 12
+2025-11-20 12:44:10,831 - INFO -   ├─ Resolución: 1440x3168
+2025-11-20 12:44:10,831 - INFO -   ├─ Viewport: 412x915
+2025-11-20 12:44:10,831 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 12:44:10,831 - INFO -   ├─ CPU Cores: 8
+2025-11-20 12:44:10,831 - INFO -   ├─ RAM: 16GB
+2025-11-20 12:44:10,831 - INFO -   ├─ Touch Points: 10
+2025-11-20 12:44:10,831 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 12:44:10,831 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-20 12:44:10,831 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; CPH2583) AppleWebKit/537.36 (KHTML, like Gecko) ...
+2025-11-20 12:44:10,832 - INFO -   Intereses: photos, music_streaming, mobile_gaming
+2025-11-20 12:44:15,661 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 12:44:15,661 - INFO -   IP: 181.112.90.10
+2025-11-20 12:44:15,661 - INFO -   País: None
+2025-11-20 12:44:15,662 - INFO -   Ciudad: None
+2025-11-20 12:44:15,662 - INFO -   ISP: None
+2025-11-20 12:44:15,662 - INFO -   Tipo: mobile
+2025-11-20 12:44:16,580 - ERROR - ❌ Error creando perfil: Error de AdsPower API: If the number of imported accounts exceeds the limit of 12, please delete some accounts and try again.
+2025-11-20 12:44:49,243 - INFO - ======================================================================
+2025-11-20 12:44:49,244 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 12:44:49,244 - INFO - ======================================================================
+2025-11-20 12:44:49,289 - INFO - Perfil generado:
+2025-11-20 12:44:49,290 - INFO -   Nombre: Jessica Mata
+2025-11-20 12:44:49,290 - INFO -   Edad: 32
+2025-11-20 12:44:49,290 - INFO -   Ciudad: Quito
+2025-11-20 12:44:49,290 - INFO -   Región: pichincha
+2025-11-20 12:44:49,290 - INFO -   Dispositivo: mobile
+2025-11-20 12:44:49,290 - INFO -   Tipo Proxy: mobile
+2025-11-20 12:44:49,290 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 12:44:49,290 - INFO -   ├─ Dispositivo: iPhone 15 Plus
+2025-11-20 12:44:49,290 - INFO -   ├─ Resolución: 1290x2796
+2025-11-20 12:44:49,290 - INFO -   ├─ Viewport: 430x932
+2025-11-20 12:44:49,291 - INFO -   ├─ Pixel Ratio: 3.0x
+2025-11-20 12:44:49,291 - INFO -   ├─ CPU Cores: 6
+2025-11-20 12:44:49,291 - INFO -   ├─ RAM: 6GB
+2025-11-20 12:44:49,291 - INFO -   ├─ Touch Points: 5
+2025-11-20 12:44:49,291 - INFO -   ├─ Platform: iPhone
+2025-11-20 12:44:49,291 - INFO -   ├─ Renderer: Apple GPU
+2025-11-20 12:44:49,291 - INFO -   └─ User Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHT...
+2025-11-20 12:44:49,291 - INFO -   Intereses: ride_sharing, food_delivery, shopping, messaging
+2025-11-20 12:44:53,412 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 12:44:53,412 - INFO -   IP: 181.211.104.173
+2025-11-20 12:44:53,412 - INFO -   País: None
+2025-11-20 12:44:53,412 - INFO -   Ciudad: None
+2025-11-20 12:44:53,412 - INFO -   ISP: None
+2025-11-20 12:44:53,412 - INFO -   Tipo: mobile
+2025-11-20 12:44:54,059 - ERROR - ❌ Error creando perfil: 'ProfileConfig' object has no attribute 'width_height'
+2025-11-20 12:50:55,553 - INFO - ======================================================================
+2025-11-20 12:50:55,554 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 12:50:55,554 - INFO - ======================================================================
+2025-11-20 12:50:55,640 - INFO - Perfil generado:
+2025-11-20 12:50:55,640 - INFO -   Nombre: Isabel Coello
+2025-11-20 12:50:55,640 - INFO -   Edad: 21
+2025-11-20 12:50:55,640 - INFO -   Ciudad: Guayaquil
+2025-11-20 12:50:55,640 - INFO -   Región: guayas
+2025-11-20 12:50:55,640 - INFO -   Dispositivo: mobile
+2025-11-20 12:50:55,640 - INFO -   Tipo Proxy: mobile
+2025-11-20 12:50:55,640 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 12:50:55,640 - INFO -   ├─ Dispositivo: OnePlus 12
+2025-11-20 12:50:55,640 - INFO -   ├─ Resolución: 1440x3168
+2025-11-20 12:50:55,640 - INFO -   ├─ Viewport: 412x915
+2025-11-20 12:50:55,640 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 12:50:55,640 - INFO -   ├─ CPU Cores: 8
+2025-11-20 12:50:55,641 - INFO -   ├─ RAM: 16GB
+2025-11-20 12:50:55,641 - INFO -   ├─ Touch Points: 10
+2025-11-20 12:50:55,641 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 12:50:55,641 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-20 12:50:55,641 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; CPH2583) AppleWebKit/537.36 (KHTML, like Gecko) ...
+2025-11-20 12:50:55,641 - INFO -   Intereses: tiktok, social_media, photos, snapchat
+2025-11-20 12:51:00,170 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 12:51:00,170 - INFO -   IP: 181.211.219.250
+2025-11-20 12:51:00,170 - INFO -   País: None
+2025-11-20 12:51:00,170 - INFO -   Ciudad: None
+2025-11-20 12:51:00,170 - INFO -   ISP: None
+2025-11-20 12:51:00,170 - INFO -   Tipo: mobile
+2025-11-20 12:51:01,455 - ERROR - ❌ Error creando perfil: 'ProfileConfig' object has no attribute 'width_height'

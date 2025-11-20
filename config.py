@@ -18,12 +18,12 @@ class ProfileConfig:
     user_agent: str
     interests: List[str]
     browsing_history: List[str]
-    proxy_type: str  # 'residential' o 'mobile'
-    device_type: str  # 'desktop' o 'mobile'
+    proxy_type: str
+    device_type: str
     
-    # Fingerprints adicionales para mobile
+    # Fingerprints móviles
     device_name: str = None
-    screen_resolution: str = None
+    screen_resolution: str = None  # ← DEBE SER ASÍ
     viewport: str = None
     pixel_ratio: float = None
     hardware_concurrency: int = None
