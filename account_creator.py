@@ -89,9 +89,9 @@ class AccountCreator:
             # PASO 1: GENERAR PERFIL
             # ==================================================
             print_info(f"Paso 1/4: Generando perfil {proxy_type.upper()}...")
-            
+
             profile_config = ProfileGenerator.generate_profile(proxy_type=proxy_type)
-            
+
             # Sobrescribir ciudad si se especificó
             if city_normalized:
                 city_display = city.title()
@@ -116,7 +116,10 @@ class AccountCreator:
                 
                 if not region and city_normalized in city_to_region_map:
                     region = city_to_region_map[city_normalized]
-            
+
+            # ==========================================
+            # LOGGING DETALLADO DEL PERFIL
+            # ==========================================
             logger.info(f"Perfil generado:")
             logger.info(f"  Nombre: {profile_config.name}")
             logger.info(f"  Edad: {profile_config.age}")
@@ -124,8 +127,27 @@ class AccountCreator:
             logger.info(f"  Región: {region or 'No especificada'}")
             logger.info(f"  Dispositivo: {profile_config.device_type}")
             logger.info(f"  Tipo Proxy: {proxy_type}")
+
+            # ==========================================
+            # LOGGING DE FINGERPRINTS MÓVILES
+            # ==========================================
+            if profile_config.device_type == 'mobile':
+                logger.info(f"\n📱 FINGERPRINTS MÓVILES:")
+                logger.info(f"  ├─ Dispositivo: {profile_config.device_name}")
+                logger.info(f"  ├─ Resolución: {profile_config.screen_resolution}")
+                logger.info(f"  ├─ Viewport: {profile_config.viewport}")
+                logger.info(f"  ├─ Pixel Ratio: {profile_config.pixel_ratio}x")
+                logger.info(f"  ├─ CPU Cores: {profile_config.hardware_concurrency}")
+                logger.info(f"  ├─ RAM: {profile_config.device_memory}GB")
+                logger.info(f"  ├─ Touch Points: {profile_config.max_touch_points}")
+                logger.info(f"  ├─ Platform: {profile_config.platform}")
+                logger.info(f"  ├─ Renderer: {profile_config.renderer}")
+                logger.info(f"  └─ User Agent: {profile_config.user_agent[:80]}...")
+            else:
+                logger.info(f"  User Agent: {profile_config.user_agent[:80]}...")
+
             logger.info(f"  Intereses: {', '.join(profile_config.interests)}")
-            
+                        
             # ==================================================
             # PASO 2: CONFIGURAR PROXY SOAX
             # ==================================================

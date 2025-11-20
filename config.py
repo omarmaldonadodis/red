@@ -1,8 +1,9 @@
-# config.py
+# config.py - ACTUALIZADO CON FINGERPRINTS MÓVILES ULTRARREALISTAS
 from dataclasses import dataclass, asdict
 from typing import List, Dict
 import random
 from faker import Faker
+from mobile_devices import get_random_mobile_device, get_device_by_id
 
 @dataclass
 class ProfileConfig:
@@ -19,6 +20,17 @@ class ProfileConfig:
     browsing_history: List[str]
     proxy_type: str  # 'residential' o 'mobile'
     device_type: str  # 'desktop' o 'mobile'
+    
+    # Fingerprints adicionales para mobile
+    device_name: str = None
+    screen_resolution: str = None
+    viewport: str = None
+    pixel_ratio: float = None
+    hardware_concurrency: int = None
+    device_memory: int = None
+    max_touch_points: int = None
+    platform: str = None
+    renderer: str = None
     
     def to_dict(self):
         return asdict(self)
@@ -174,7 +186,7 @@ class ProfileGenerator:
         ]
     }
     
-    # User agents realistas
+    # User agents realistas para DESKTOP
     DESKTOP_USER_AGENTS = [
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
@@ -183,21 +195,14 @@ class ProfileGenerator:
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
     ]
     
-    MOBILE_USER_AGENTS = [
-        'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
-        'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
-        'Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
-        'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36',
-        'Mozilla/5.0 (Linux; Android 12; SM-A525F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
-    ]
-    
     @classmethod
-    def generate_profile(cls, proxy_type: str = 'residential') -> ProfileConfig:
+    def generate_profile(cls, proxy_type: str = 'residential', specific_device: str = None) -> ProfileConfig:
         """
         Genera un perfil realista basado en el tipo de proxy
         
         Args:
             proxy_type: 'residential' (desktop) o 'mobile'
+            specific_device: ID de dispositivo específico (opcional, solo para mobile)
         """
         # Determinar tipo de dispositivo según proxy
         device_type = 'mobile' if proxy_type == 'mobile' else 'desktop'
@@ -232,25 +237,68 @@ class ProfileGenerator:
         # Generar historial de navegación
         browsing_history = cls._generate_browsing_history(interests, device_type)
         
-        # User agent según dispositivo
-        user_agent = random.choice(
-            cls.MOBILE_USER_AGENTS if device_type == 'mobile' else cls.DESKTOP_USER_AGENTS
-        )
+        # ============================================
+        # FINGERPRINTS ESPECÍFICOS POR TIPO
+        # ============================================
+        if device_type == 'mobile':
+            # Obtener dispositivo móvil real
+            if specific_device:
+                device_id = specific_device
+                device_data = get_device_by_id(device_id)
+            else:
+                device_id, device_data = get_random_mobile_device()
+            
+            if not device_data:
+                raise ValueError(f"Dispositivo '{specific_device}' no encontrado")
+            
+            # Usar user agent del dispositivo real
+            user_agent = device_data['user_agent']
+            
+            # Fingerprints móviles ultrarrealistas
+            profile = ProfileConfig(
+                name=full_name,
+                age=age,
+                gender=gender,
+                country='EC',
+                city=city,
+                language='es-EC',
+                timezone=cls.ECUADORIAN_CITIES[city]['timezone'],
+                user_agent=user_agent,
+                interests=interests,
+                browsing_history=browsing_history,
+                proxy_type=proxy_type,
+                device_type=device_type,
+                # Fingerprints adicionales del dispositivo real
+                device_name=device_data['name'],
+                screen_resolution=device_data['resolution'],
+                viewport=device_data['viewport'],
+                pixel_ratio=device_data['pixel_ratio'],
+                hardware_concurrency=device_data['hardware_concurrency'],
+                device_memory=device_data['device_memory'],
+                max_touch_points=device_data['max_touch_points'],
+                platform=device_data['platform'],
+                renderer=device_data['renderer']
+            )
+        else:
+            # Desktop - fingerprints existentes
+            user_agent = random.choice(cls.DESKTOP_USER_AGENTS)
+            
+            profile = ProfileConfig(
+                name=full_name,
+                age=age,
+                gender=gender,
+                country='EC',
+                city=city,
+                language='es-EC',
+                timezone=cls.ECUADORIAN_CITIES[city]['timezone'],
+                user_agent=user_agent,
+                interests=interests,
+                browsing_history=browsing_history,
+                proxy_type=proxy_type,
+                device_type=device_type
+            )
         
-        return ProfileConfig(
-            name=full_name,
-            age=age,
-            gender=gender,
-            country='EC',
-            city=city,
-            language='es-EC',
-            timezone=cls.ECUADORIAN_CITIES[city]['timezone'],
-            user_agent=user_agent,
-            interests=interests,
-            browsing_history=browsing_history,
-            proxy_type=proxy_type,
-            device_type=device_type
-        )
+        return profile
     
     @staticmethod
     def _generate_realistic_age(device_type: str) -> int:

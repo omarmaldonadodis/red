@@ -100,117 +100,197 @@ class AdsPowerManager:
         except requests.exceptions.RequestException as e:
             raise Exception(f"Error en petición HTTP a AdsPower: {e}")
     
-  # adspower_manager.py - MÉTODO create_profile CORREGIDO
+
+    # adspower_manager.py - MÉTODO create_profile MEJORADO PARA MOBILE
 
     def create_profile(self, profile_config, proxy_config: Dict) -> str:
         """
         Crea un nuevo perfil en AdsPower con configuración completa
+        Ahora con soporte para fingerprints móviles ultrarrealistas
         """
         
-        # Determinar configuraciones según tipo de dispositivo
+        # ==========================================
+        # FINGERPRINTS SEGÚN TIPO DE DISPOSITIVO
+        # ==========================================
         if profile_config.device_type == 'mobile':
-            screen_resolutions = ["375_667", "414_896", "390_844", "393_851"]
-            hardware_concurrency = random.choice([4, 6, 8])
-            device_memory = random.choice([4, 6, 8])
+            # FINGERPRINTS MÓVILES ULTRARREALISTAS
+            print(f"📱 Creando perfil MÓVIL: {profile_config.device_name}")
+            
+            fingerprint_data = {
+                "name": f"{profile_config.name}_{profile_config.age}_{profile_config.proxy_type}",
+                "group_id": "7937312",
+                "domain_name": "",
+                "open_urls": [],
+                "repeat_config": ["0"],
+                "username": "", 
+                "password": "",
+                "remark": json.dumps({
+                    'age': profile_config.age,
+                    'city': profile_config.city,
+                    'interests': profile_config.interests,
+                    'device_type': profile_config.device_type,
+                    'device_name': profile_config.device_name,
+                    'proxy_type': profile_config.proxy_type,
+                    'created_at': time.strftime('%Y-%m-%d %H:%M:%S')
+                }, ensure_ascii=False),
+                
+                # Proxy configuration
+                "user_proxy_config": {
+                    "proxy_soft": "other",
+                    "proxy_type": proxy_config.get('type', 'http'),
+                    "proxy_host": proxy_config['host'],
+                    "proxy_port": str(proxy_config['port']),
+                    "proxy_user": proxy_config['username'],
+                    "proxy_password": proxy_config['password']
+                },
+                
+                # ==========================================
+                # FINGERPRINTS MÓVILES ULTRARREALISTAS
+                # ==========================================
+                "fingerprint_config": {
+                    # Timezone y ubicación
+                    "automatic_timezone": "0",
+                    "timezone": profile_config.timezone,
+                    "webrtc": "proxy",
+                    "location": "ask",
+                    
+                    # Idiomas del dispositivo real
+                    "language": [profile_config.language, "es", "en-US", "en"],
+                    "page_language": [profile_config.language, "es", "en-US", "en"],
+                    
+                    # User Agent del dispositivo real
+                    "ua": profile_config.user_agent,
+                    
+                    # Resolución de pantalla del dispositivo real
+                    "screen_resolution": profile_config.viewport,  # viewport como resolución visible
+                    
+                    # Canvas fingerprinting (variado por dispositivo)
+                    "canvas": "1",
+                    
+                    # WebGL fingerprinting con renderer real
+                    "webgl_image": "1",
+                    "webgl": "1",
+                    
+                    # Audio fingerprinting
+                    "audio": "1",
+                    
+                    # Media devices (cámaras, micrófonos)
+                    "media_devices": "1",
+                    
+                    # Do Not Track
+                    "do_not_track": "default",
+                    
+                    # Hardware del dispositivo real
+                    "hardware_concurrency": str(profile_config.hardware_concurrency),
+                    "device_memory": str(profile_config.device_memory),
+                    
+                    # Client Rects
+                    "client_rects": "1",
+                    
+                    # Speech Voices
+                    "speech_voices": "1",
+                    
+                    # Port Scan Protection
+                    "port_scan_protection": "1",
+                    
+                    # Platform del dispositivo real
+                    "platform": profile_config.platform,
+                    
+                    # Fonts (móviles tienen menos fonts)
+                    "fonts": ["system"],
+                    
+                    # ==========================================
+                    # PROPIEDADES ESPECÍFICAS DE MOBILE
+                    # ==========================================
+                    # Touch events
+                    "touch_enabled": "1",
+                    "max_touch_points": str(profile_config.max_touch_points),
+                    
+                    # Device pixel ratio (importante para mobile)
+                    "device_pixel_ratio": str(profile_config.pixel_ratio),
+                    
+                    # Orientación (portrait por defecto en mobile)
+                    "screen_orientation": "portrait-primary",
+                    
+                    # Mobile-specific properties
+                    "mobile": "1",
+                }
+            }
+            
         else:
+            # FINGERPRINTS DESKTOP (código existente)
             screen_resolutions = ["1920_1080", "1366_768", "1440_900", "1536_864", "2560_1440"]
             hardware_concurrency = random.choice([4, 8, 16])
             device_memory = random.choice([8, 16, 32])
-        
-        # Configuración del fingerprint
-        fingerprint_data = {
-            "name": f"{profile_config.name}_{profile_config.age}_{profile_config.proxy_type}",
-            "group_id": "7937312",
-            "domain_name": "",
-            "open_urls": [],
-            "repeat_config": ["0"],
-            "username": "", 
-            "password": "",
-            "remark": json.dumps({
-                'age': profile_config.age,
-                'city': profile_config.city,
-                'interests': profile_config.interests,
-                'device_type': profile_config.device_type,
-                'proxy_type': profile_config.proxy_type,
-                'created_at': time.strftime('%Y-%m-%d %H:%M:%S')
-            }),
             
-            # Proxy configuration
-            "user_proxy_config": {
-                "proxy_soft": "other",
-                "proxy_type": proxy_config.get('type', 'http'),
-                "proxy_host": proxy_config['host'],
-                "proxy_port": str(proxy_config['port']),
-                "proxy_user": proxy_config['username'],
-                "proxy_password": proxy_config['password']
-            },
-            
-            # Fingerprint del navegador - CORREGIDO
-            "fingerprint_config": {
-                # Timezone y ubicación
-                "automatic_timezone": "0",
-                "timezone": profile_config.timezone,
-                "webrtc": "proxy",
-                "location": "ask",
+            fingerprint_data = {
+                "name": f"{profile_config.name}_{profile_config.age}_{profile_config.proxy_type}",
+                "group_id": "7937312",
+                "domain_name": "",
+                "open_urls": [],
+                "repeat_config": ["0"],
+                "username": "", 
+                "password": "",
+                "remark": json.dumps({
+                    'age': profile_config.age,
+                    'city': profile_config.city,
+                    'interests': profile_config.interests,
+                    'device_type': profile_config.device_type,
+                    'proxy_type': profile_config.proxy_type,
+                    'created_at': time.strftime('%Y-%m-%d %H:%M:%S')
+                }, ensure_ascii=False),
                 
-                # Idiomas
-                "language": [profile_config.language, "en-US"],
-                "page_language": [profile_config.language, "en-US"],
+                # Proxy configuration
+                "user_proxy_config": {
+                    "proxy_soft": "other",
+                    "proxy_type": proxy_config.get('type', 'http'),
+                    "proxy_host": proxy_config['host'],
+                    "proxy_port": str(proxy_config['port']),
+                    "proxy_user": proxy_config['username'],
+                    "proxy_password": proxy_config['password']
+                },
                 
-                # User Agent
-                "ua": profile_config.user_agent,
-                
-                # Resolución de pantalla
-                "screen_resolution": random.choice(screen_resolutions),
-                
-                # Fonts
-                "fonts": ["all"],
-                
-                # Canvas fingerprinting
-                "canvas": "1",
-                
-                # WebGL fingerprinting
-                "webgl_image": "1",
-                "webgl": "1",
-                
-                # Audio fingerprinting
-                "audio": "1",
-                
-                # Media devices
-                "media_devices": "1",
-                
-                # Do Not Track
-                "do_not_track": "default",
-                
-                # Hardware
-                "hardware_concurrency": str(hardware_concurrency),
-                "device_memory": str(device_memory),
-                
-                # Client Rects
-                "client_rects": "1",
-                
-                # Speech Voices
-                "speech_voices": "1",
-                
-                # Port Scan Protection
-                "port_scan_protection": "1",
-                
-                # Platform
-                "platform": "Win32" if profile_config.device_type == 'desktop' else "Linux armv81",
-                
-                # ELIMINADOS: random_ua (causa error)
+                # Fingerprint del navegador desktop
+                "fingerprint_config": {
+                    "automatic_timezone": "0",
+                    "timezone": profile_config.timezone,
+                    "webrtc": "proxy",
+                    "location": "ask",
+                    "language": [profile_config.language, "en-US"],
+                    "page_language": [profile_config.language, "en-US"],
+                    "ua": profile_config.user_agent,
+                    "screen_resolution": random.choice(screen_resolutions),
+                    "fonts": ["all"],
+                    "canvas": "1",
+                    "webgl_image": "1",
+                    "webgl": "1",
+                    "audio": "1",
+                    "media_devices": "1",
+                    "do_not_track": "default",
+                    "hardware_concurrency": str(hardware_concurrency),
+                    "device_memory": str(device_memory),
+                    "client_rects": "1",
+                    "speech_voices": "1",
+                    "port_scan_protection": "1",
+                    "platform": "Win32",
+                }
             }
-        }
         
+        # Crear perfil en AdsPower
         result = self._make_request('POST', '/api/v1/user/create', json_data=fingerprint_data)
         
         profile_id = result['data']['id']
+        
         print(f"✅ Perfil creado exitosamente")
         print(f"   ID: {profile_id}")
         print(f"   Nombre: {fingerprint_data['name']}")
         print(f"   Tipo: {profile_config.device_type.upper()} ({profile_config.proxy_type})")
+        if profile_config.device_type == 'mobile':
+            print(f"   Dispositivo: {profile_config.device_name}")
+            print(f"   Resolución: {profile_config.screen_resolution}")
+            print(f"   Viewport: {profile_config.viewport}")
         
-        return profile_id  
+        return profile_id
     def get_profile_list(self, page: int = 1, page_size: int = 100, group_id: Optional[str] = None) -> List[Dict]:
         """Obtiene lista de perfiles existentes"""
         params = {'page': page, 'page_size': page_size}

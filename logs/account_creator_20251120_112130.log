@@ -1,0 +1,84 @@
+2025-11-20 11:21:41,831 - INFO - ======================================================================
+2025-11-20 11:21:41,832 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 11:21:41,832 - INFO - ======================================================================
+2025-11-20 11:21:41,897 - INFO - Perfil generado:
+2025-11-20 11:21:41,897 - INFO -   Nombre: Ricardo Fuertes
+2025-11-20 11:21:41,897 - INFO -   Edad: 34
+2025-11-20 11:21:41,897 - INFO -   Ciudad: Quito
+2025-11-20 11:21:41,897 - INFO -   Región: pichincha
+2025-11-20 11:21:41,897 - INFO -   Dispositivo: mobile
+2025-11-20 11:21:41,897 - INFO -   Tipo Proxy: mobile
+2025-11-20 11:21:41,897 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 11:21:41,897 - INFO -   ├─ Dispositivo: Samsung Galaxy S24 Ultra
+2025-11-20 11:21:41,897 - INFO -   ├─ Resolución: 1440x3120
+2025-11-20 11:21:41,897 - INFO -   ├─ Viewport: 412x915
+2025-11-20 11:21:41,897 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 11:21:41,898 - INFO -   ├─ CPU Cores: 8
+2025-11-20 11:21:41,898 - INFO -   ├─ RAM: 12GB
+2025-11-20 11:21:41,898 - INFO -   ├─ Touch Points: 5
+2025-11-20 11:21:41,898 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 11:21:41,898 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-20 11:21:41,898 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko)...
+2025-11-20 11:21:41,898 - INFO -   Intereses: food_delivery, social_media, messaging
+2025-11-20 11:21:43,284 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPConnectionPool(host='proxy.soax.com', port=5000): Max retries exceeded with url: http://checker.
+2025-11-20 11:22:08,701 - INFO - ======================================================================
+2025-11-20 11:22:08,701 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 11:22:08,701 - INFO - ======================================================================
+2025-11-20 11:22:08,733 - INFO - Perfil generado:
+2025-11-20 11:22:08,733 - INFO -   Nombre: Camila Garmendia
+2025-11-20 11:22:08,733 - INFO -   Edad: 21
+2025-11-20 11:22:08,733 - INFO -   Ciudad: Quito
+2025-11-20 11:22:08,733 - INFO -   Región: pichincha
+2025-11-20 11:22:08,733 - INFO -   Dispositivo: mobile
+2025-11-20 11:22:08,733 - INFO -   Tipo Proxy: mobile
+2025-11-20 11:22:08,733 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 11:22:08,733 - INFO -   ├─ Dispositivo: iPhone 15 Plus
+2025-11-20 11:22:08,733 - INFO -   ├─ Resolución: 1290x2796
+2025-11-20 11:22:08,733 - INFO -   ├─ Viewport: 430x932
+2025-11-20 11:22:08,734 - INFO -   ├─ Pixel Ratio: 3.0x
+2025-11-20 11:22:08,734 - INFO -   ├─ CPU Cores: 6
+2025-11-20 11:22:08,734 - INFO -   ├─ RAM: 6GB
+2025-11-20 11:22:08,734 - INFO -   ├─ Touch Points: 5
+2025-11-20 11:22:08,734 - INFO -   ├─ Platform: iPhone
+2025-11-20 11:22:08,734 - INFO -   ├─ Renderer: Apple GPU
+2025-11-20 11:22:08,734 - INFO -   └─ User Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHT...
+2025-11-20 11:22:08,734 - INFO -   Intereses: instagram, snapchat, tiktok, music_streaming
+2025-11-20 11:22:12,918 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 11:22:12,918 - INFO -   IP: 190.152.81.186
+2025-11-20 11:22:12,918 - INFO -   País: None
+2025-11-20 11:22:12,918 - INFO -   Ciudad: None
+2025-11-20 11:22:12,918 - INFO -   ISP: None
+2025-11-20 11:22:12,918 - INFO -   Tipo: mobile
+2025-11-20 11:22:13,329 - ERROR - ❌ Error creando perfil: Error de AdsPower API: screen_resolution incorrect format,the format is: width_height
+2025-11-20 11:28:57,170 - INFO - ======================================================================
+2025-11-20 11:28:57,170 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 11:28:57,170 - INFO - ======================================================================
+2025-11-20 11:28:57,258 - INFO - Perfil generado:
+2025-11-20 11:28:57,258 - INFO -   Nombre: María Aramburu
+2025-11-20 11:28:57,259 - INFO -   Edad: 18
+2025-11-20 11:28:57,259 - INFO -   Ciudad: Loja
+2025-11-20 11:28:57,259 - INFO -   Región: loja
+2025-11-20 11:28:57,259 - INFO -   Dispositivo: mobile
+2025-11-20 11:28:57,259 - INFO -   Tipo Proxy: mobile
+2025-11-20 11:28:57,259 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 11:28:57,259 - INFO -   ├─ Dispositivo: Google Pixel 8 Pro
+2025-11-20 11:28:57,259 - INFO -   ├─ Resolución: 1344x2992
+2025-11-20 11:28:57,259 - INFO -   ├─ Viewport: 448x998
+2025-11-20 11:28:57,259 - INFO -   ├─ Pixel Ratio: 3.0x
+2025-11-20 11:28:57,259 - INFO -   ├─ CPU Cores: 9
+2025-11-20 11:28:57,259 - INFO -   ├─ RAM: 12GB
+2025-11-20 11:28:57,259 - INFO -   ├─ Touch Points: 5
+2025-11-20 11:28:57,259 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 11:28:57,260 - INFO -   ├─ Renderer: Mali-G715
+2025-11-20 11:28:57,260 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gec...
+2025-11-20 11:28:57,260 - INFO -   Intereses: social_media, tiktok, music_streaming
+2025-11-20 11:29:02,112 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 11:29:02,112 - INFO -   IP: 181.113.168.19
+2025-11-20 11:29:02,112 - INFO -   País: None
+2025-11-20 11:29:02,112 - INFO -   Ciudad: None
+2025-11-20 11:29:02,112 - INFO -   ISP: None
+2025-11-20 11:29:02,112 - INFO -   Tipo: mobile
+2025-11-20 11:29:03,340 - ERROR - ❌ Error creando perfil: Error de AdsPower API: screen_resolution incorrect format,the format is: width_height
