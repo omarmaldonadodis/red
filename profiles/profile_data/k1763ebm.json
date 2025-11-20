@@ -1,0 +1,51 @@
+{
+  "profile_id": "k1763ebm",
+  "profile_config": {
+    "name": "Jessica Romeu",
+    "age": 23,
+    "gender": "female",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "interests": [
+      "snapchat",
+      "mobile_gaming",
+      "instagram",
+      "social_media"
+    ],
+    "browsing_history": [
+      "google.com",
+      "mobilegamer.com",
+      "m.eluniverso.com",
+      "youtube.com",
+      "apps.apple.com",
+      "m.gmail.com",
+      "mobile.twitter.com",
+      "pichincha.com",
+      "play.google.com",
+      "m.facebook.com"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "eCcWXKJ4COdcNPsj",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.196.73.43",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "created_at": "2025-11-20T10:53:38.006826",
+  "warmup_completed": false
+}

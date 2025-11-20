@@ -1,0 +1,12 @@
+2025-11-20 10:14:15,649 - INFO - ======================================================================
+2025-11-20 10:14:15,650 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:14:15,650 - INFO - ======================================================================
+2025-11-20 10:14:15,716 - INFO - Perfil generado:
+2025-11-20 10:14:15,716 - INFO -   Nombre: Luis Esteve
+2025-11-20 10:14:15,716 - INFO -   Edad: 23
+2025-11-20 10:14:15,716 - INFO -   Ciudad: Quito
+2025-11-20 10:14:15,716 - INFO -   Región: pichincha
+2025-11-20 10:14:15,717 - INFO -   Dispositivo: mobile
+2025-11-20 10:14:15,717 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:14:15,717 - INFO -   Intereses: music_streaming, tiktok, instagram, snapchat, photos
+2025-11-20 10:14:16,166 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

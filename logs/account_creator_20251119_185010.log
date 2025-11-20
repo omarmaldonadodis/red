@@ -1,0 +1,8 @@
+2025-11-19 18:50:11,335 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-19 18:50:11,335 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-19 18:50:11,339 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-19 18:50:11,339 - INFO -    Puerto: 33910
+2025-11-19 18:50:11,339 - INFO -    Protocolo: vless
+2025-11-19 18:50:11,339 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-19 18:50:11,348 - INFO - ✅ Squid Manager inicializado
+2025-11-19 18:50:14,296 - INFO - ✅ Proxy funcionando - IP: 157.100.64.10

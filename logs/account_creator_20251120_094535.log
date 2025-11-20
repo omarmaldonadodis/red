@@ -1,0 +1,12 @@
+2025-11-20 09:45:43,920 - INFO - ======================================================================
+2025-11-20 09:45:43,920 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 09:45:43,921 - INFO - ======================================================================
+2025-11-20 09:45:43,987 - INFO - Perfil generado:
+2025-11-20 09:45:43,987 - INFO -   Nombre: Sofía Chaves
+2025-11-20 09:45:43,987 - INFO -   Edad: 25
+2025-11-20 09:45:43,987 - INFO -   Ciudad: Quito
+2025-11-20 09:45:43,987 - INFO -   Región: pichincha
+2025-11-20 09:45:43,987 - INFO -   Dispositivo: mobile
+2025-11-20 09:45:43,987 - INFO -   Tipo Proxy: mobile
+2025-11-20 09:45:43,987 - INFO -   Intereses: photos, messaging, tiktok, snapchat
+2025-11-20 09:45:44,441 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

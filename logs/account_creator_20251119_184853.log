@@ -1,0 +1,38 @@
+2025-11-19 18:48:54,491 - INFO - ✅ Sesión iniciada en 3x-ui
+2025-11-19 18:48:54,491 - INFO - 🔧 Configurando inbound para 3x-ui...
+2025-11-19 18:48:54,497 - INFO - 🔄 Auto-seleccionando Inbound ID 1
+2025-11-19 18:48:54,497 - INFO -    Puerto: 33910
+2025-11-19 18:48:54,497 - INFO -    Protocolo: vless
+2025-11-19 18:48:54,497 - INFO - ✅ 3x-ui inicializado - Usando Inbound ID: 1
+2025-11-19 18:48:54,507 - INFO - ✅ Squid Manager inicializado
+2025-11-19 18:48:57,878 - INFO - ✅ Proxy funcionando - IP: 157.100.64.10
+2025-11-19 18:49:10,302 - INFO - ======================================================================
+2025-11-19 18:49:10,302 - INFO - CREANDO NUEVO PERFIL
+2025-11-19 18:49:10,303 - INFO - ======================================================================
+2025-11-19 18:49:10,369 - INFO - Perfil generado:
+2025-11-19 18:49:10,369 - INFO -   Nombre: Carolina Echevarría
+2025-11-19 18:49:10,369 - INFO -   Edad: 53
+2025-11-19 18:49:10,369 - INFO -   Ciudad: Loja
+2025-11-19 18:49:10,369 - INFO -   Región: loja
+2025-11-19 18:49:10,369 - INFO -   Dispositivo: desktop
+2025-11-19 18:49:10,369 - INFO -   Intereses: gardening, health, religion, travel, family, history, retirement
+2025-11-19 18:49:10,376 - INFO - ✅ Squid Manager inicializado
+2025-11-19 18:49:13,375 - INFO - ✅ Proxy funcionando - IP: 157.100.64.10
+2025-11-19 18:49:13,378 - INFO - ✅ Proxy Squid → SOAX funcionando:
+2025-11-19 18:49:13,378 - INFO -   IP SOAX: 157.100.64.10
+2025-11-19 18:49:13,378 - INFO -   Tiempo respuesta: 0.38s
+2025-11-19 18:49:13,378 - INFO -   🔍 Tráfico será monitoreado por Squid
+2025-11-19 18:49:24,018 - ERROR - Error creando cliente: HTTPConnectionPool(host='localhost', port=54321): Read timed out. (read timeout=10)
+2025-11-19 18:49:24,018 - INFO - ✅ Cliente 3x-ui vinculado al perfil
+2025-11-19 18:49:24,018 - INFO -    Email: Carolina_Echevarría_k1759ad0
+2025-11-19 18:49:24,018 - WARNING - No se pudo crear cliente 3x-ui: 'uuid'
+2025-11-19 18:49:24,019 - INFO - ======================================================================
+2025-11-19 18:49:24,019 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-19 18:49:24,019 - INFO - ======================================================================
+2025-11-19 18:49:24,019 - INFO - ID: k1759ad0
+2025-11-19 18:49:24,020 - INFO - Nombre: Carolina Echevarría
+2025-11-19 18:49:24,020 - INFO - Ciudad: Loja
+2025-11-19 18:49:24,020 - INFO - Región: loja
+2025-11-19 18:49:24,020 - INFO - Tipo: DESKTOP (residential)
+2025-11-19 18:49:24,020 - INFO - Warmup: No
+2025-11-19 18:49:24,020 - INFO - ======================================================================

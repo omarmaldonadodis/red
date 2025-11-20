@@ -1,0 +1,45 @@
+2025-11-20 10:27:18,058 - INFO - ======================================================================
+2025-11-20 10:27:18,058 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:27:18,058 - INFO - ======================================================================
+2025-11-20 10:27:18,104 - INFO - Perfil generado:
+2025-11-20 10:27:18,104 - INFO -   Nombre: Carmen Granados
+2025-11-20 10:27:18,104 - INFO -   Edad: 24
+2025-11-20 10:27:18,104 - INFO -   Ciudad: Quito
+2025-11-20 10:27:18,104 - INFO -   Región: pichincha
+2025-11-20 10:27:18,104 - INFO -   Dispositivo: mobile
+2025-11-20 10:27:18,104 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:27:18,104 - INFO -   Intereses: photos, messaging, mobile_gaming
+2025-11-20 10:27:22,267 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 10:27:22,267 - INFO -   IP: 181.211.105.200
+2025-11-20 10:27:22,267 - INFO -   País: None
+2025-11-20 10:27:22,267 - INFO -   Ciudad: None
+2025-11-20 10:27:22,267 - INFO -   ISP: None
+2025-11-20 10:27:22,267 - INFO -   Tipo: mobile
+2025-11-20 10:27:22,977 - INFO - ======================================================================
+2025-11-20 10:27:22,977 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-20 10:27:22,977 - INFO - ======================================================================
+2025-11-20 10:27:22,978 - INFO - ID: k1762fu0
+2025-11-20 10:27:22,978 - INFO - Nombre: Carmen Granados
+2025-11-20 10:27:22,978 - INFO - Ciudad: Quito
+2025-11-20 10:27:22,978 - INFO - Región: pichincha
+2025-11-20 10:27:22,978 - INFO - Tipo: MOBILE (mobile)
+2025-11-20 10:27:22,978 - INFO - Warmup: No
+2025-11-20 10:27:22,978 - INFO - ======================================================================
+2025-11-20 10:29:07,546 - INFO - ======================================================================
+2025-11-20 10:29:07,547 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:29:07,547 - INFO - ======================================================================
+2025-11-20 10:29:07,622 - INFO - Perfil generado:
+2025-11-20 10:29:07,622 - INFO -   Nombre: María Vives
+2025-11-20 10:29:07,622 - INFO -   Edad: 35
+2025-11-20 10:29:07,622 - INFO -   Ciudad: Quito
+2025-11-20 10:29:07,622 - INFO -   Región: pichincha
+2025-11-20 10:29:07,622 - INFO -   Dispositivo: mobile
+2025-11-20 10:29:07,622 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:29:07,623 - INFO -   Intereses: banking, messaging, news_apps
+2025-11-20 10:29:19,715 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 10:29:19,715 - INFO -   IP: 181.211.41.242
+2025-11-20 10:29:19,715 - INFO -   País: None
+2025-11-20 10:29:19,715 - INFO -   Ciudad: None
+2025-11-20 10:29:19,715 - INFO -   ISP: None
+2025-11-20 10:29:19,715 - INFO -   Tipo: mobile
+2025-11-20 10:29:20,529 - ERROR - ❌ Error creando perfil: Error de AdsPower API: If the number of imported accounts exceeds the limit of 12, please delete some accounts and try again.

@@ -1,0 +1,7 @@
+2025-11-20 09:33:48,501 - ERROR - Error crítico en el sistema
+Traceback (most recent call last):
+  File "/Users/omarmaldonado/Desktop/proxys/crear-perfiles-soax/main.py", line 468, in main
+    creator, creds, traffic_monitor, squid_manager = initialize_system()
+  File "/Users/omarmaldonado/Desktop/proxys/crear-perfiles-soax/main.py", line 61, in initialize_system
+    return creator, creds, traffic_monitor, squid_manager  # ⭐ Agregar squid_manager
+NameError: name 'creator' is not defined

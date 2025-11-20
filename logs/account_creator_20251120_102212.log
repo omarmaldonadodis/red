@@ -1,0 +1,12 @@
+2025-11-20 10:22:29,830 - INFO - ======================================================================
+2025-11-20 10:22:29,830 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:22:29,830 - INFO - ======================================================================
+2025-11-20 10:22:29,885 - INFO - Perfil generado:
+2025-11-20 10:22:29,885 - INFO -   Nombre: Isabel Valera
+2025-11-20 10:22:29,885 - INFO -   Edad: 32
+2025-11-20 10:22:29,885 - INFO -   Ciudad: Quito
+2025-11-20 10:22:29,886 - INFO -   Región: pichincha
+2025-11-20 10:22:29,886 - INFO -   Dispositivo: mobile
+2025-11-20 10:22:29,886 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:22:29,886 - INFO -   Intereses: social_media, shopping, news_apps
+2025-11-20 10:22:29,886 - ERROR - ❌ Error creando perfil: name 'opt' is not defined

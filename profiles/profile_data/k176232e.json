@@ -1,0 +1,46 @@
+{
+  "profile_id": "k176232e",
+  "profile_config": {
+    "name": "Daniela Coll",
+    "age": 27,
+    "gender": "female",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36",
+    "interests": [
+      "ride_sharing",
+      "fitness_apps",
+      "food_delivery"
+    ],
+    "browsing_history": [
+      "youtube.com",
+      "pichincha.com",
+      "m.facebook.com",
+      "google.com",
+      "m.gmail.com",
+      "mercadolibre.com.ec"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "huUYaZclNrHjm9NV",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.196.73.43",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "created_at": "2025-11-20T10:18:20.382210",
+  "warmup_completed": false
+}

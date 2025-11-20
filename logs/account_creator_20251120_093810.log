@@ -1,0 +1,12 @@
+2025-11-20 09:38:22,800 - INFO - ======================================================================
+2025-11-20 09:38:22,800 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 09:38:22,800 - INFO - ======================================================================
+2025-11-20 09:38:22,861 - INFO - Perfil generado:
+2025-11-20 09:38:22,862 - INFO -   Nombre: Ricardo Falcón
+2025-11-20 09:38:22,862 - INFO -   Edad: 28
+2025-11-20 09:38:22,862 - INFO -   Ciudad: Quito
+2025-11-20 09:38:22,862 - INFO -   Región: pichincha
+2025-11-20 09:38:22,862 - INFO -   Dispositivo: mobile
+2025-11-20 09:38:22,862 - INFO -   Tipo Proxy: mobile
+2025-11-20 09:38:22,862 - INFO -   Intereses: banking, food_delivery, fitness_apps, social_media
+2025-11-20 09:38:23,494 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

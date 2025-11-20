@@ -1,0 +1,18 @@
+2025-11-20 10:34:34,736 - INFO - ======================================================================
+2025-11-20 10:34:34,737 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:34:34,737 - INFO - ======================================================================
+2025-11-20 10:34:34,805 - INFO - Perfil generado:
+2025-11-20 10:34:34,805 - INFO -   Nombre: Rosa Figueras
+2025-11-20 10:34:34,805 - INFO -   Edad: 35
+2025-11-20 10:34:34,805 - INFO -   Ciudad: Quito
+2025-11-20 10:34:34,805 - INFO -   Región: pichincha
+2025-11-20 10:34:34,805 - INFO -   Dispositivo: mobile
+2025-11-20 10:34:34,805 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:34:34,806 - INFO -   Intereses: social_media, ride_sharing, food_delivery
+2025-11-20 10:34:41,086 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 10:34:41,086 - INFO -   IP: 181.211.104.173
+2025-11-20 10:34:41,086 - INFO -   País: None
+2025-11-20 10:34:41,086 - INFO -   Ciudad: None
+2025-11-20 10:34:41,086 - INFO -   ISP: None
+2025-11-20 10:34:41,086 - INFO -   Tipo: mobile
+2025-11-20 10:34:41,662 - ERROR - ❌ Error creando perfil: Error de AdsPower API: If the number of imported accounts exceeds the limit of 12, please delete some accounts and try again.

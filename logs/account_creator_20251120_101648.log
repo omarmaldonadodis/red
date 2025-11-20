@@ -1,0 +1,12 @@
+2025-11-20 10:16:57,668 - INFO - ======================================================================
+2025-11-20 10:16:57,668 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:16:57,669 - INFO - ======================================================================
+2025-11-20 10:16:57,725 - INFO - Perfil generado:
+2025-11-20 10:16:57,725 - INFO -   Nombre: Carolina Almeida
+2025-11-20 10:16:57,725 - INFO -   Edad: 30
+2025-11-20 10:16:57,725 - INFO -   Ciudad: Quito
+2025-11-20 10:16:57,725 - INFO -   Región: pichincha
+2025-11-20 10:16:57,725 - INFO -   Dispositivo: mobile
+2025-11-20 10:16:57,725 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:16:57,725 - INFO -   Intereses: shopping, messaging, social_media, ride_sharing
+2025-11-20 10:16:57,725 - ERROR - ❌ Error creando perfil: 'proxy_type'

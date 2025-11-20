@@ -1,0 +1,55 @@
+{
+  "profile_id": "k1759ad0",
+  "profile_config": {
+    "name": "Carolina Echevarría",
+    "age": 53,
+    "gender": "female",
+    "country": "EC",
+    "city": "Loja",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "interests": [
+      "gardening",
+      "health",
+      "religion",
+      "travel",
+      "family",
+      "history",
+      "retirement"
+    ],
+    "browsing_history": [
+      "eluniverso.com",
+      "healthline.com",
+      "mayoclinic.org",
+      "booking.com",
+      "facebook.com",
+      "expedia.com",
+      "webmd.com",
+      "tripadvisor.com",
+      "pichincha.com",
+      "gmail.com",
+      "google.com",
+      "youtube.com"
+    ],
+    "proxy_type": "residential",
+    "device_type": "desktop"
+  },
+  "proxy_config": {
+    "type": "http",
+    "session_id": "squid_None",
+    "country": "ec",
+    "city": "Loja",
+    "region": "loja",
+    "monitored_by_squid": true
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "via_squid"
+  },
+  "threexui_client": {
+    "error": "'uuid'"
+  },
+  "created_at": "2025-11-19T18:49:24.019149",
+  "warmup_completed": false
+}

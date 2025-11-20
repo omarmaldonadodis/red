@@ -1,0 +1,36 @@
+2025-11-20 10:08:17,140 - INFO - ======================================================================
+2025-11-20 10:08:17,140 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:08:17,140 - INFO - ======================================================================
+2025-11-20 10:08:17,184 - INFO - Perfil generado:
+2025-11-20 10:08:17,184 - INFO -   Nombre: Diego Madrigal
+2025-11-20 10:08:17,185 - INFO -   Edad: 26
+2025-11-20 10:08:17,185 - INFO -   Ciudad: Quito
+2025-11-20 10:08:17,185 - INFO -   Región: pichincha
+2025-11-20 10:08:17,185 - INFO -   Dispositivo: mobile
+2025-11-20 10:08:17,185 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:08:17,185 - INFO -   Intereses: banking, social_media, news_apps, shopping, ride_sharing
+2025-11-20 10:08:17,637 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C
+2025-11-20 10:08:53,331 - INFO - ======================================================================
+2025-11-20 10:08:53,331 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:08:53,331 - INFO - ======================================================================
+2025-11-20 10:08:53,363 - INFO - Perfil generado:
+2025-11-20 10:08:53,364 - INFO -   Nombre: Natalia Prieto
+2025-11-20 10:08:53,364 - INFO -   Edad: 47
+2025-11-20 10:08:53,364 - INFO -   Ciudad: Quito
+2025-11-20 10:08:53,364 - INFO -   Región: pichincha
+2025-11-20 10:08:53,364 - INFO -   Dispositivo: mobile
+2025-11-20 10:08:53,364 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:08:53,364 - INFO -   Intereses: social_media, health_apps, messaging, news_apps
+2025-11-20 10:08:53,778 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C
+2025-11-20 10:13:17,275 - INFO - ======================================================================
+2025-11-20 10:13:17,276 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:13:17,276 - INFO - ======================================================================
+2025-11-20 10:13:17,318 - INFO - Perfil generado:
+2025-11-20 10:13:17,319 - INFO -   Nombre: Ana Roda
+2025-11-20 10:13:17,319 - INFO -   Edad: 23
+2025-11-20 10:13:17,319 - INFO -   Ciudad: Quito
+2025-11-20 10:13:17,319 - INFO -   Región: pichincha
+2025-11-20 10:13:17,319 - INFO -   Dispositivo: mobile
+2025-11-20 10:13:17,319 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:13:17,319 - INFO -   Intereses: photos, instagram, music_streaming, tiktok
+2025-11-20 10:13:17,821 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

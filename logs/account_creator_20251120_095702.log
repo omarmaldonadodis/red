@@ -1,0 +1,12 @@
+2025-11-20 09:57:16,807 - INFO - ======================================================================
+2025-11-20 09:57:16,807 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 09:57:16,807 - INFO - ======================================================================
+2025-11-20 09:57:16,867 - INFO - Perfil generado:
+2025-11-20 09:57:16,867 - INFO -   Nombre: Miguel Bauzà
+2025-11-20 09:57:16,867 - INFO -   Edad: 39
+2025-11-20 09:57:16,867 - INFO -   Ciudad: Quito
+2025-11-20 09:57:16,867 - INFO -   Región: pichincha
+2025-11-20 09:57:16,868 - INFO -   Dispositivo: mobile
+2025-11-20 09:57:16,868 - INFO -   Tipo Proxy: mobile
+2025-11-20 09:57:16,868 - INFO -   Intereses: shopping, social_media, health_apps
+2025-11-20 09:57:17,475 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

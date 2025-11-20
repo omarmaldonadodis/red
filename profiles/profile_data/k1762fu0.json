@@ -1,0 +1,50 @@
+{
+  "profile_id": "k1762fu0",
+  "profile_config": {
+    "name": "Carmen Granados",
+    "age": 24,
+    "gender": "female",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+    "interests": [
+      "photos",
+      "messaging",
+      "mobile_gaming"
+    ],
+    "browsing_history": [
+      "apps.apple.com",
+      "messenger.com",
+      "web.whatsapp.com",
+      "m.gmail.com",
+      "play.google.com",
+      "google.com",
+      "m.facebook.com",
+      "m.eluniverso.com",
+      "youtube.com",
+      "pichincha.com"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "QhrzwgevPrSsFiC6",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.211.105.200",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "created_at": "2025-11-20T10:27:22.977399",
+  "warmup_completed": false
+}

@@ -1,0 +1,45 @@
+2025-11-20 10:18:15,333 - INFO - ======================================================================
+2025-11-20 10:18:15,333 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:18:15,333 - INFO - ======================================================================
+2025-11-20 10:18:15,383 - INFO - Perfil generado:
+2025-11-20 10:18:15,384 - INFO -   Nombre: Daniela Coll
+2025-11-20 10:18:15,384 - INFO -   Edad: 27
+2025-11-20 10:18:15,384 - INFO -   Ciudad: Quito
+2025-11-20 10:18:15,384 - INFO -   Región: pichincha
+2025-11-20 10:18:15,384 - INFO -   Dispositivo: mobile
+2025-11-20 10:18:15,384 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:18:15,384 - INFO -   Intereses: ride_sharing, fitness_apps, food_delivery
+2025-11-20 10:18:19,768 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 10:18:19,768 - INFO -   IP: 181.196.73.43
+2025-11-20 10:18:19,768 - INFO -   País: None
+2025-11-20 10:18:19,768 - INFO -   Ciudad: None
+2025-11-20 10:18:19,768 - INFO -   ISP: None
+2025-11-20 10:18:19,769 - INFO -   Tipo: mobile
+2025-11-20 10:18:20,382 - INFO - ======================================================================
+2025-11-20 10:18:20,382 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-20 10:18:20,382 - INFO - ======================================================================
+2025-11-20 10:18:20,382 - INFO - ID: k176232e
+2025-11-20 10:18:20,382 - INFO - Nombre: Daniela Coll
+2025-11-20 10:18:20,382 - INFO - Ciudad: Quito
+2025-11-20 10:18:20,383 - INFO - Región: pichincha
+2025-11-20 10:18:20,383 - INFO - Tipo: MOBILE (mobile)
+2025-11-20 10:18:20,383 - INFO - Warmup: No
+2025-11-20 10:18:20,383 - INFO - ======================================================================
+2025-11-20 10:20:13,781 - INFO - ======================================================================
+2025-11-20 10:20:13,782 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:20:13,782 - INFO - ======================================================================
+2025-11-20 10:20:13,824 - INFO - Perfil generado:
+2025-11-20 10:20:13,824 - INFO -   Nombre: Mónica Marti
+2025-11-20 10:20:13,824 - INFO -   Edad: 23
+2025-11-20 10:20:13,824 - INFO -   Ciudad: Guayaquil
+2025-11-20 10:20:13,825 - INFO -   Región: guayas
+2025-11-20 10:20:13,825 - INFO -   Dispositivo: mobile
+2025-11-20 10:20:13,825 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:20:13,825 - INFO -   Intereses: photos, tiktok, music_streaming
+2025-11-20 10:20:18,173 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 10:20:18,173 - INFO -   IP: 181.196.88.188
+2025-11-20 10:20:18,174 - INFO -   País: None
+2025-11-20 10:20:18,174 - INFO -   Ciudad: None
+2025-11-20 10:20:18,174 - INFO -   ISP: None
+2025-11-20 10:20:18,174 - INFO -   Tipo: mobile
+2025-11-20 10:20:18,962 - ERROR - ❌ Error creando perfil: Error de AdsPower API: If the number of imported accounts exceeds the limit of 12, please delete some accounts and try again.

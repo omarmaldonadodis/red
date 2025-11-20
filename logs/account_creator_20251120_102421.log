@@ -1,0 +1,12 @@
+2025-11-20 10:24:34,059 - INFO - ======================================================================
+2025-11-20 10:24:34,059 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 10:24:34,059 - INFO - ======================================================================
+2025-11-20 10:24:34,102 - INFO - Perfil generado:
+2025-11-20 10:24:34,102 - INFO -   Nombre: Alejandro Montalbán
+2025-11-20 10:24:34,102 - INFO -   Edad: 24
+2025-11-20 10:24:34,102 - INFO -   Ciudad: Quito
+2025-11-20 10:24:34,102 - INFO -   Región: pichincha
+2025-11-20 10:24:34,102 - INFO -   Dispositivo: mobile
+2025-11-20 10:24:34,102 - INFO -   Tipo Proxy: mobile
+2025-11-20 10:24:34,102 - INFO -   Intereses: messaging, snapchat, social_media
+2025-11-20 10:24:34,103 - ERROR - ❌ Error creando perfil: get_proxy_config() got an unexpected keyword argument 'opt'

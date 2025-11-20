@@ -1,0 +1,12 @@
+2025-11-20 09:35:32,407 - INFO - ======================================================================
+2025-11-20 09:35:32,408 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 09:35:32,408 - INFO - ======================================================================
+2025-11-20 09:35:32,475 - INFO - Perfil generado:
+2025-11-20 09:35:32,475 - INFO -   Nombre: Daniel Cepeda
+2025-11-20 09:35:32,475 - INFO -   Edad: 53
+2025-11-20 09:35:32,476 - INFO -   Ciudad: Quito
+2025-11-20 09:35:32,476 - INFO -   Región: pichincha
+2025-11-20 09:35:32,476 - INFO -   Dispositivo: mobile
+2025-11-20 09:35:32,476 - INFO -   Tipo Proxy: mobile
+2025-11-20 09:35:32,476 - INFO -   Intereses: weather, messaging, email
+2025-11-20 09:35:32,476 - ERROR - ❌ Error creando perfil: name 'time' is not defined
