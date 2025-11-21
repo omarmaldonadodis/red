@@ -1,0 +1,293 @@
+2025-11-20 14:09:55,188 - INFO - ======================================================================
+2025-11-20 14:09:55,188 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 14:09:55,188 - INFO - ======================================================================
+2025-11-20 14:09:55,259 - INFO - Perfil generado:
+2025-11-20 14:09:55,259 - INFO -   Nombre: Luis Corominas
+2025-11-20 14:09:55,259 - INFO -   Edad: 29
+2025-11-20 14:09:55,260 - INFO -   Ciudad: Quito
+2025-11-20 14:09:55,260 - INFO -   Región: pichincha
+2025-11-20 14:09:55,260 - INFO -   Dispositivo: mobile
+2025-11-20 14:09:55,260 - INFO -   Tipo Proxy: mobile
+2025-11-20 14:09:55,260 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 14:09:55,260 - INFO -   ├─ Dispositivo: Xiaomi 14 Ultra
+2025-11-20 14:09:55,260 - INFO -   ├─ Resolución: 1440x3200
+2025-11-20 14:09:55,260 - INFO -   ├─ Viewport: 412x915
+2025-11-20 14:09:55,260 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 14:09:55,260 - INFO -   ├─ CPU Cores: 8
+2025-11-20 14:09:55,260 - INFO -   ├─ RAM: 16GB
+2025-11-20 14:09:55,260 - INFO -   ├─ Touch Points: 10
+2025-11-20 14:09:55,260 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 14:09:55,260 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-20 14:09:55,261 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; 2405CPH3DC) AppleWebKit/537.36 (KHTML, like Geck...
+2025-11-20 14:09:55,261 - INFO -   Intereses: shopping, ride_sharing, banking
+2025-11-20 14:09:59,793 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 14:09:59,793 - INFO -   IP: 190.152.236.2
+2025-11-20 14:09:59,793 - INFO -   País: None
+2025-11-20 14:09:59,793 - INFO -   Ciudad: None
+2025-11-20 14:09:59,793 - INFO -   ISP: None
+2025-11-20 14:09:59,793 - INFO -   Tipo: mobile
+2025-11-20 14:10:00,457 - INFO - ======================================================================
+2025-11-20 14:10:00,457 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-20 14:10:00,458 - INFO - ======================================================================
+2025-11-20 14:10:00,458 - INFO - ID: k1769jas
+2025-11-20 14:10:00,458 - INFO - Nombre: Luis Corominas
+2025-11-20 14:10:00,458 - INFO - Ciudad: Quito
+2025-11-20 14:10:00,458 - INFO - Región: pichincha
+2025-11-20 14:10:00,458 - INFO - Tipo: MOBILE (mobile)
+2025-11-20 14:10:00,458 - INFO - Warmup: No
+2025-11-20 14:10:00,458 - INFO - ======================================================================
+2025-11-20 14:11:17,445 - INFO - ======================================================================
+2025-11-20 14:11:17,446 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 14:11:17,446 - INFO - ======================================================================
+2025-11-20 14:11:17,486 - INFO - Perfil generado:
+2025-11-20 14:11:17,486 - INFO -   Nombre: Carmen Badía
+2025-11-20 14:11:17,486 - INFO -   Edad: 40
+2025-11-20 14:11:17,486 - INFO -   Ciudad: Loja
+2025-11-20 14:11:17,487 - INFO -   Región: loja
+2025-11-20 14:11:17,487 - INFO -   Dispositivo: mobile
+2025-11-20 14:11:17,487 - INFO -   Tipo Proxy: mobile
+2025-11-20 14:11:17,487 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 14:11:17,487 - INFO -   ├─ Dispositivo: OnePlus 11
+2025-11-20 14:11:17,487 - INFO -   ├─ Resolución: 1440x3216
+2025-11-20 14:11:17,487 - INFO -   ├─ Viewport: 412x918
+2025-11-20 14:11:17,487 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 14:11:17,487 - INFO -   ├─ CPU Cores: 8
+2025-11-20 14:11:17,488 - INFO -   ├─ RAM: 16GB
+2025-11-20 14:11:17,488 - INFO -   ├─ Touch Points: 10
+2025-11-20 14:11:17,488 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 14:11:17,488 - INFO -   ├─ Renderer: Adreno (TM) 740
+2025-11-20 14:11:17,488 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; CPH2449) AppleWebKit/537.36 (KHTML, like Gecko) ...
+2025-11-20 14:11:17,488 - INFO -   Intereses: news_apps, family_apps, shopping
+2025-11-20 14:11:22,222 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 14:11:22,222 - INFO -   IP: 181.113.168.88
+2025-11-20 14:11:22,222 - INFO -   País: None
+2025-11-20 14:11:22,222 - INFO -   Ciudad: None
+2025-11-20 14:11:22,222 - INFO -   ISP: None
+2025-11-20 14:11:22,222 - INFO -   Tipo: mobile
+2025-11-20 14:11:22,654 - INFO - 🔌 Conectando al navegador del perfil: k1769kke
+2025-11-20 14:11:29,054 - WARNING - The chromedriver version (140.0.7339.81) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.183 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-11-20 14:11:31,267 - INFO - ✅ Conectado exitosamente al navegador
+2025-11-20 14:11:31,268 - INFO - 🔥 Iniciando precalentamiento básico del perfil
+2025-11-20 14:11:31,268 - INFO -    Duración: 10 minutos
+2025-11-20 14:11:31,268 - INFO -    Tipo de dispositivo: MOBILE
+2025-11-20 14:11:31,268 - INFO -    Tipo de proxy: MOBILE
+2025-11-20 14:11:31,269 - INFO - 📚 Construyendo historial de navegación (10 minutos)
+2025-11-20 14:11:31,269 - INFO -    Sitios a visitar: 9
+2025-11-20 14:11:31,269 - INFO - Visitando: https://m.gmail.com
+2025-11-20 14:12:11,007 - WARNING - Error en scroll: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.81)
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ec20 chromedriver + 429088
+3   chromedriver                        0x000000010612568d chromedriver + 325261
+4   chromedriver                        0x000000010614d92d chromedriver + 489773
+5   chromedriver                        0x00000001061bf19f chromedriver + 954783
+6   chromedriver                        0x00000001061ddc6c chromedriver + 1080428
+7   chromedriver                        0x00000001061b6bd3 chromedriver + 920531
+8   chromedriver                        0x00000001061828ff chromedriver + 706815
+9   chromedriver                        0x0000000106183dc1 chromedriver + 712129
+10  chromedriver                        0x00000001066a5030 chromedriver + 6090800
+11  chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+12  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+13  chromedriver                        0x00000001066a993f chromedriver + 6109503
+14  chromedriver                        0x000000010666f664 chromedriver + 5871204
+15  chromedriver                        0x00000001066cbae8 chromedriver + 6249192
+16  chromedriver                        0x00000001066cbcac chromedriver + 6249644
+17  chromedriver                        0x00000001066de371 chromedriver + 6325105
+18  libsystem_pthread.dylib             0x00007ff80bed3e05 _pthread_start + 115
+19  libsystem_pthread.dylib             0x00007ff80becf857 thread_start + 15
+
+2025-11-20 14:12:20,239 - WARNING - Error en scroll: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:29,466 - INFO - ✓ Sitio visitado exitosamente: https://m.gmail.com
+2025-11-20 14:12:32,655 - INFO - Visitando: https://m.facebook.com
+2025-11-20 14:12:32,656 - WARNING - Error visitando https://m.facebook.com: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:36,106 - INFO - Visitando: https://m.amazon.com
+2025-11-20 14:12:36,108 - WARNING - Error visitando https://m.amazon.com: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:39,317 - INFO - Visitando: https://wish.com
+2025-11-20 14:12:39,318 - WARNING - Error visitando https://wish.com: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:42,997 - INFO - Visitando: https://pichincha.com
+2025-11-20 14:12:42,999 - WARNING - Error visitando https://pichincha.com: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:47,136 - INFO - Visitando: https://google.com
+2025-11-20 14:12:47,138 - WARNING - Error visitando https://google.com: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:50,162 - INFO - Visitando: https://youtube.com
+2025-11-20 14:12:50,164 - WARNING - Error visitando https://youtube.com: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:54,538 - INFO - Visitando: https://m.eluniverso.com
+2025-11-20 14:12:54,539 - WARNING - Error visitando https://m.eluniverso.com: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:57,629 - INFO - Visitando: https://m.elcomercio.com
+2025-11-20 14:12:57,630 - WARNING - Error visitando https://m.elcomercio.com: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x00000001066e7098 chromedriver + 6361240
+1   chromedriver                        0x00000001066de79a chromedriver + 6326170
+2   chromedriver                        0x000000010613ea63 chromedriver + 428643
+3   chromedriver                        0x000000010618229f chromedriver + 705183
+4   chromedriver                        0x00000001061b6d06 chromedriver + 920838
+5   chromedriver                        0x00000001061b1889 chromedriver + 899209
+6   chromedriver                        0x00000001061b0a37 chromedriver + 895543
+7   chromedriver                        0x000000010610711f chromedriver + 200991
+8   chromedriver                        0x00000001066a5030 chromedriver + 6090800
+9   chromedriver                        0x00000001066a8ec5 chromedriver + 6106821
+10  chromedriver                        0x00000001066802f7 chromedriver + 5939959
+11  chromedriver                        0x00000001066a993f chromedriver + 6109503
+12  chromedriver                        0x000000010666f664 chromedriver + 5871204
+13  chromedriver                        0x00000001061052d9 chromedriver + 193241
+14  dyld                                0x00007ff80bb2e530 start + 3056
+
+2025-11-20 14:12:57,631 - INFO - ✅ Historial de navegación completado
+2025-11-20 14:12:57,631 - INFO -    Sitios visitados: 1
+2025-11-20 14:12:57,631 - INFO -    Sitios fallidos: 8
+2025-11-20 14:12:57,631 - INFO -    Tiempo total: 86s
+2025-11-20 14:12:57,631 - INFO - ✅ Precalentamiento básico completado
+2025-11-20 14:12:57,639 - INFO - 🔌 Navegador cerrado
+2025-11-20 14:12:57,645 - WARNING - Error al desconectar: Error de AdsPower API: User_id is not open
+2025-11-20 14:12:57,646 - INFO - ======================================================================
+2025-11-20 14:12:57,646 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-20 14:12:57,646 - INFO - ======================================================================
+2025-11-20 14:12:57,647 - INFO - ID: k1769kke
+2025-11-20 14:12:57,647 - INFO - Nombre: Carmen Badía
+2025-11-20 14:12:57,647 - INFO - Ciudad: Loja
+2025-11-20 14:12:57,647 - INFO - Región: loja
+2025-11-20 14:12:57,647 - INFO - Tipo: MOBILE (mobile)
+2025-11-20 14:12:57,647 - INFO - Warmup: Sí
+2025-11-20 14:12:57,647 - INFO - Sitios visitados: 1
+2025-11-20 14:12:57,647 - INFO - Tiempo total: 86s
+2025-11-20 14:12:57,647 - INFO - ======================================================================

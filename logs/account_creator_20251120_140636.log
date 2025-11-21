@@ -1,0 +1,30 @@
+2025-11-20 14:06:47,163 - INFO - ======================================================================
+2025-11-20 14:06:47,164 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 14:06:47,164 - INFO - ======================================================================
+2025-11-20 14:06:47,231 - INFO - Perfil generado:
+2025-11-20 14:06:47,231 - INFO -   Nombre: Daniela Carbó
+2025-11-20 14:06:47,231 - INFO -   Edad: 31
+2025-11-20 14:06:47,231 - INFO -   Ciudad: Quito
+2025-11-20 14:06:47,231 - INFO -   Región: pichincha
+2025-11-20 14:06:47,231 - INFO -   Dispositivo: mobile
+2025-11-20 14:06:47,231 - INFO -   Tipo Proxy: mobile
+2025-11-20 14:06:47,231 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 14:06:47,231 - INFO -   ├─ Dispositivo: Samsung Galaxy S23 Ultra
+2025-11-20 14:06:47,231 - INFO -   ├─ Resolución: 1440x3088
+2025-11-20 14:06:47,231 - INFO -   ├─ Viewport: 412x915
+2025-11-20 14:06:47,231 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 14:06:47,231 - INFO -   ├─ CPU Cores: 8
+2025-11-20 14:06:47,232 - INFO -   ├─ RAM: 12GB
+2025-11-20 14:06:47,232 - INFO -   ├─ Touch Points: 5
+2025-11-20 14:06:47,232 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 14:06:47,232 - INFO -   ├─ Renderer: Adreno (TM) 740
+2025-11-20 14:06:47,232 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko)...
+2025-11-20 14:06:47,232 - INFO -   Intereses: social_media, news_apps, fitness_apps, banking
+2025-11-20 14:06:51,815 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 14:06:51,816 - INFO -   IP: 181.196.73.163
+2025-11-20 14:06:51,816 - INFO -   País: None
+2025-11-20 14:06:51,816 - INFO -   Ciudad: None
+2025-11-20 14:06:51,816 - INFO -   ISP: None
+2025-11-20 14:06:51,816 - INFO -   Tipo: mobile
+2025-11-20 14:06:52,342 - ERROR - ❌ Error creando perfil: Error de AdsPower API: screen_resolution incorrect format,the format is: width_height

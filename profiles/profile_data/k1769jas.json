@@ -1,0 +1,60 @@
+{
+  "profile_id": "k1769jas",
+  "profile_config": {
+    "name": "Luis Corominas",
+    "age": 29,
+    "gender": "male",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; 2405CPH3DC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36",
+    "interests": [
+      "shopping",
+      "ride_sharing",
+      "banking"
+    ],
+    "browsing_history": [
+      "m.facebook.com",
+      "m.elcomercio.com",
+      "wish.com",
+      "google.com",
+      "youtube.com",
+      "m.gmail.com",
+      "pichincha.com",
+      "bancoguayaquil.com",
+      "m.amazon.com",
+      "produbanco.com",
+      "m.mercadolibre.com.ec"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile",
+    "device_name": "Xiaomi 14 Ultra",
+    "screen_resolution": "1440x3200",
+    "viewport": "412x915",
+    "pixel_ratio": 3.5,
+    "hardware_concurrency": 8,
+    "device_memory": 16,
+    "max_touch_points": 10,
+    "platform": "Linux armv81",
+    "renderer": "Adreno (TM) 750"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "etPYIpAShLTCULoA",
+    "country": "ec",
+    "city": "Quito",
+    "region": "pichincha"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "190.152.236.2",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "created_at": "2025-11-20T14:10:00.457313",
+  "warmup_completed": false
+}

@@ -1,0 +1,69 @@
+{
+  "profile_id": "k1769kke",
+  "profile_config": {
+    "name": "Carmen Badía",
+    "age": 40,
+    "gender": "female",
+    "country": "EC",
+    "city": "Loja",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; CPH2449) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.194 Mobile Safari/537.36",
+    "interests": [
+      "news_apps",
+      "family_apps",
+      "shopping"
+    ],
+    "browsing_history": [
+      "m.elcomercio.com",
+      "m.facebook.com",
+      "wish.com",
+      "google.com",
+      "m.eluniverso.com",
+      "m.gmail.com",
+      "youtube.com",
+      "m.amazon.com",
+      "pichincha.com"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile",
+    "device_name": "OnePlus 11",
+    "screen_resolution": "1440x3216",
+    "viewport": "412x918",
+    "pixel_ratio": 3.5,
+    "hardware_concurrency": 8,
+    "device_memory": 16,
+    "max_touch_points": 10,
+    "platform": "Linux armv81",
+    "renderer": "Adreno (TM) 740"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "qYGV5p0fpUNE0gAI",
+    "country": "ec",
+    "city": "Loja",
+    "region": "loja"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.113.168.88",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "created_at": "2025-11-20T14:11:22.654110",
+  "warmup_completed": true,
+  "warmup_stats": {
+    "sites_visited": 1,
+    "sites_failed": 8,
+    "total_time": 86,
+    "sites_list": [
+      "m.gmail.com"
+    ],
+    "warmup_duration": 86,
+    "warmup_type": "basic",
+    "completed_at": "2025-11-20T14:12:57.631459"
+  }
+}

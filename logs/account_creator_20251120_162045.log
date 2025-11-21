@@ -1,0 +1,138 @@
+2025-11-20 16:21:13,568 - INFO - ======================================================================
+2025-11-20 16:21:13,568 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 16:21:13,569 - INFO - ======================================================================
+2025-11-20 16:21:13,642 - INFO - Perfil generado:
+2025-11-20 16:21:13,643 - INFO -   Nombre: Luis Tejera
+2025-11-20 16:21:13,643 - INFO -   Edad: 39
+2025-11-20 16:21:13,643 - INFO -   Ciudad: Loja
+2025-11-20 16:21:13,643 - INFO -   Región: loja
+2025-11-20 16:21:13,643 - INFO -   Dispositivo: mobile
+2025-11-20 16:21:13,643 - INFO -   Tipo Proxy: mobile
+2025-11-20 16:21:13,643 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 16:21:13,643 - INFO -   ├─ Dispositivo: Samsung Galaxy S24 Ultra
+2025-11-20 16:21:13,643 - INFO -   ├─ Resolución: 1440x3120
+2025-11-20 16:21:13,643 - INFO -   ├─ Viewport: 412x915
+2025-11-20 16:21:13,643 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 16:21:13,644 - INFO -   ├─ CPU Cores: 8
+2025-11-20 16:21:13,644 - INFO -   ├─ RAM: 12GB
+2025-11-20 16:21:13,644 - INFO -   ├─ Touch Points: 5
+2025-11-20 16:21:13,644 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 16:21:13,644 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-20 16:21:13,644 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko)...
+2025-11-20 16:21:13,644 - INFO -   Intereses: banking, news_apps, social_media, shopping
+2025-11-20 16:21:18,429 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 16:21:18,429 - INFO -   IP: 181.113.168.88
+2025-11-20 16:21:18,429 - INFO -   País: None
+2025-11-20 16:21:18,429 - INFO -   Ciudad: None
+2025-11-20 16:21:18,430 - INFO -   ISP: None
+2025-11-20 16:21:18,430 - INFO -   Tipo: mobile
+2025-11-20 16:21:19,010 - ERROR - ❌ Error creando perfil: Error de AdsPower API: device_memory must be random,default,2,4,6,8,16,32,64,128
+2025-11-20 16:21:48,048 - INFO - ======================================================================
+2025-11-20 16:21:48,048 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 16:21:48,048 - INFO - ======================================================================
+2025-11-20 16:21:48,091 - INFO - Perfil generado:
+2025-11-20 16:21:48,091 - INFO -   Nombre: Andrea Zurita
+2025-11-20 16:21:48,091 - INFO -   Edad: 23
+2025-11-20 16:21:48,091 - INFO -   Ciudad: Quito
+2025-11-20 16:21:48,091 - INFO -   Región: pichincha
+2025-11-20 16:21:48,091 - INFO -   Dispositivo: mobile
+2025-11-20 16:21:48,092 - INFO -   Tipo Proxy: mobile
+2025-11-20 16:21:48,092 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 16:21:48,092 - INFO -   ├─ Dispositivo: Xiaomi 13 Pro
+2025-11-20 16:21:48,092 - INFO -   ├─ Resolución: 1440x3200
+2025-11-20 16:21:48,092 - INFO -   ├─ Viewport: 412x915
+2025-11-20 16:21:48,092 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 16:21:48,092 - INFO -   ├─ CPU Cores: 8
+2025-11-20 16:21:48,092 - INFO -   ├─ RAM: 12GB
+2025-11-20 16:21:48,093 - INFO -   ├─ Touch Points: 10
+2025-11-20 16:21:48,093 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 16:21:48,093 - INFO -   ├─ Renderer: Adreno (TM) 740
+2025-11-20 16:21:48,093 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; 2210132C) AppleWebKit/537.36 (KHTML, like Gecko)...
+2025-11-20 16:21:48,093 - INFO -   Intereses: snapchat, messaging, tiktok, instagram
+2025-11-20 16:21:49,308 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPConnectionPool(host='proxy.soax.com', port=5000): Max retries exceeded with url: http://checker.
+2025-11-20 16:22:23,907 - INFO - ======================================================================
+2025-11-20 16:22:23,908 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 16:22:23,908 - INFO - ======================================================================
+2025-11-20 16:22:23,955 - INFO - Perfil generado:
+2025-11-20 16:22:23,955 - INFO -   Nombre: Diana Donoso
+2025-11-20 16:22:23,955 - INFO -   Edad: 28
+2025-11-20 16:22:23,955 - INFO -   Ciudad: Quito
+2025-11-20 16:22:23,955 - INFO -   Región: pichincha
+2025-11-20 16:22:23,955 - INFO -   Dispositivo: mobile
+2025-11-20 16:22:23,956 - INFO -   Tipo Proxy: mobile
+2025-11-20 16:22:23,956 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 16:22:23,956 - INFO -   ├─ Dispositivo: iPhone 15 Plus
+2025-11-20 16:22:23,956 - INFO -   ├─ Resolución: 1290x2796
+2025-11-20 16:22:23,956 - INFO -   ├─ Viewport: 430x932
+2025-11-20 16:22:23,956 - INFO -   ├─ Pixel Ratio: 3.0x
+2025-11-20 16:22:23,956 - INFO -   ├─ CPU Cores: 6
+2025-11-20 16:22:23,956 - INFO -   ├─ RAM: 6GB
+2025-11-20 16:22:23,956 - INFO -   ├─ Touch Points: 5
+2025-11-20 16:22:23,956 - INFO -   ├─ Platform: iPhone
+2025-11-20 16:22:23,956 - INFO -   ├─ Renderer: Apple GPU
+2025-11-20 16:22:23,956 - INFO -   └─ User Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHT...
+2025-11-20 16:22:23,956 - INFO -   Intereses: messaging, social_media, banking
+2025-11-20 16:22:25,255 - ERROR - ❌ Error creando perfil: Proxy no funciona: Error de proxy: HTTPConnectionPool(host='proxy.soax.com', port=5000): Max retries exceeded with url: http://checker.
+2025-11-20 16:24:33,626 - INFO - ======================================================================
+2025-11-20 16:24:33,626 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 16:24:33,626 - INFO - ======================================================================
+2025-11-20 16:24:33,714 - INFO - Perfil generado:
+2025-11-20 16:24:33,715 - INFO -   Nombre: Gabriel Valcárcel
+2025-11-20 16:24:33,715 - INFO -   Edad: 33
+2025-11-20 16:24:33,715 - INFO -   Ciudad: Loja
+2025-11-20 16:24:33,715 - INFO -   Región: loja
+2025-11-20 16:24:33,715 - INFO -   Dispositivo: mobile
+2025-11-20 16:24:33,715 - INFO -   Tipo Proxy: mobile
+2025-11-20 16:24:33,715 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 16:24:33,715 - INFO -   ├─ Dispositivo: Samsung Galaxy S24+
+2025-11-20 16:24:33,715 - INFO -   ├─ Resolución: 1440x3120
+2025-11-20 16:24:33,715 - INFO -   ├─ Viewport: 412x914
+2025-11-20 16:24:33,716 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-20 16:24:33,716 - INFO -   ├─ CPU Cores: 8
+2025-11-20 16:24:33,716 - INFO -   ├─ RAM: 12GB
+2025-11-20 16:24:33,716 - INFO -   ├─ Touch Points: 5
+2025-11-20 16:24:33,716 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 16:24:33,716 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-20 16:24:33,716 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; SM-S926B) AppleWebKit/537.36 (KHTML, like Gecko)...
+2025-11-20 16:24:33,716 - INFO -   Intereses: news_apps, food_delivery, social_media, ride_sharing
+2025-11-20 16:24:38,063 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 16:24:38,064 - INFO -   IP: 181.113.168.88
+2025-11-20 16:24:38,064 - INFO -   País: None
+2025-11-20 16:24:38,064 - INFO -   Ciudad: None
+2025-11-20 16:24:38,064 - INFO -   ISP: None
+2025-11-20 16:24:38,064 - INFO -   Tipo: mobile
+2025-11-20 16:24:38,681 - ERROR - ❌ Error creando perfil: Error de AdsPower API: device_memory must be random,default,2,4,6,8,16,32,64,128
+2025-11-20 16:25:32,888 - INFO - ======================================================================
+2025-11-20 16:25:32,888 - INFO - CREANDO NUEVO PERFIL
+2025-11-20 16:25:32,888 - INFO - ======================================================================
+2025-11-20 16:25:32,940 - INFO - Perfil generado:
+2025-11-20 16:25:32,940 - INFO -   Nombre: Valeria Salas
+2025-11-20 16:25:32,940 - INFO -   Edad: 32
+2025-11-20 16:25:32,940 - INFO -   Ciudad: Loja
+2025-11-20 16:25:32,940 - INFO -   Región: loja
+2025-11-20 16:25:32,941 - INFO -   Dispositivo: mobile
+2025-11-20 16:25:32,941 - INFO -   Tipo Proxy: mobile
+2025-11-20 16:25:32,941 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-20 16:25:32,941 - INFO -   ├─ Dispositivo: Google Pixel 8 Pro
+2025-11-20 16:25:32,941 - INFO -   ├─ Resolución: 1344x2992
+2025-11-20 16:25:32,941 - INFO -   ├─ Viewport: 448x998
+2025-11-20 16:25:32,941 - INFO -   ├─ Pixel Ratio: 3.0x
+2025-11-20 16:25:32,941 - INFO -   ├─ CPU Cores: 9
+2025-11-20 16:25:32,941 - INFO -   ├─ RAM: 12GB
+2025-11-20 16:25:32,941 - INFO -   ├─ Touch Points: 5
+2025-11-20 16:25:32,941 - INFO -   ├─ Platform: Linux armv81
+2025-11-20 16:25:32,941 - INFO -   ├─ Renderer: Mali-G715
+2025-11-20 16:25:32,942 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gec...
+2025-11-20 16:25:32,942 - INFO -   Intereses: social_media, banking, messaging, news_apps, ride_sharing
+2025-11-20 16:25:37,955 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-20 16:25:37,955 - INFO -   IP: 181.113.168.98
+2025-11-20 16:25:37,955 - INFO -   País: None
+2025-11-20 16:25:37,955 - INFO -   Ciudad: None
+2025-11-20 16:25:37,955 - INFO -   ISP: None
+2025-11-20 16:25:37,955 - INFO -   Tipo: mobile
+2025-11-20 16:25:38,533 - ERROR - ❌ Error creando perfil: Error de AdsPower API: hardware_concurrency must be random,default,2,3,4,6,8,10,12,16,20,24,32,64

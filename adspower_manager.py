@@ -162,7 +162,7 @@ class AdsPowerManager:
                     "ua": profile_config.user_agent,
                     
                     # Resolución de pantalla del dispositivo real
-                    "screen_resolution": profile_config.viewport,  # viewport como resolución visible
+                    "screen_resolution": profile_config.viewport.replace("x", "_"),
                     
                     # Canvas fingerprinting (variado por dispositivo)
                     "canvas": "1",
