@@ -1,7 +1,8 @@
-# mobile_devices.py
+# mobile_devices.py - CORREGIDO CON VALORES COMPATIBLES ADSPOWER
 """
 Base de datos de dispositivos móviles reales con fingerprints ultrarrealistas
-Enfocado en dispositivos de gama alta con pantallas grandes (6.1" - 6.9")
+IMPORTANTE: hardware_concurrency solo acepta: 2,3,4,6,8,10,12,16,20,24,32,64
+IMPORTANTE: device_memory solo acepta: 2,4,6,8,16,32,64,128
 """
 
 MOBILE_DEVICES = {
@@ -16,13 +17,13 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.5,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 12,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 16,  # ✅ Compatible (era 12, ahora 16)
         'max_touch_points': 5,
         'vendor': 'Google Inc.',
         'renderer': 'Adreno (TM) 750',
         'languages': ['es-EC', 'es', 'en-US', 'en'],
-        'timezone_offset': -300,  # Ecuador GMT-5
+        'timezone_offset': -300,
         'color_depth': 32,
         'webkit_version': '537.36',
         'chrome_version': '120.0.6099.230',
@@ -36,8 +37,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.5,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.194 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 12,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 16,  # ✅ Compatible (era 12, ahora 16)
         'max_touch_points': 5,
         'vendor': 'Google Inc.',
         'renderer': 'Adreno (TM) 740',
@@ -56,8 +57,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.5,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; SM-S926B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 12,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 16,  # ✅ Compatible (era 12, ahora 16)
         'max_touch_points': 5,
         'vendor': 'Google Inc.',
         'renderer': 'Adreno (TM) 750',
@@ -76,8 +77,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 2.625,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; SM-A546B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 8,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 8,  # ✅ Compatible
         'max_touch_points': 5,
         'vendor': 'Google Inc.',
         'renderer': 'Mali-G68',
@@ -99,8 +100,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.0,
         'user_agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1',
         'platform': 'iPhone',
-        'hardware_concurrency': 6,
-        'device_memory': 8,
+        'hardware_concurrency': 6,  # ✅ Compatible
+        'device_memory': 8,  # ✅ Compatible
         'max_touch_points': 5,
         'vendor': 'Apple Computer, Inc.',
         'renderer': 'Apple GPU',
@@ -119,8 +120,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.0,
         'user_agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1',
         'platform': 'iPhone',
-        'hardware_concurrency': 6,
-        'device_memory': 6,
+        'hardware_concurrency': 6,  # ✅ Compatible
+        'device_memory': 6,  # ✅ Compatible (redondeado de 6GB)
         'max_touch_points': 5,
         'vendor': 'Apple Computer, Inc.',
         'renderer': 'Apple GPU',
@@ -139,8 +140,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.0,
         'user_agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/604.1',
         'platform': 'iPhone',
-        'hardware_concurrency': 6,
-        'device_memory': 6,
+        'hardware_concurrency': 6,  # ✅ Compatible
+        'device_memory': 6,  # ✅ Compatible
         'max_touch_points': 5,
         'vendor': 'Apple Computer, Inc.',
         'renderer': 'Apple GPU',
@@ -162,8 +163,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.0,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 9,
-        'device_memory': 12,
+        'hardware_concurrency': 10,  # ✅ Compatible (era 9, ahora 10)
+        'device_memory': 16,  # ✅ Compatible (era 12, ahora 16)
         'max_touch_points': 5,
         'vendor': 'Google Inc.',
         'renderer': 'Mali-G715',
@@ -182,8 +183,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.5,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; Pixel 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.194 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 12,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 16,  # ✅ Compatible (era 12, ahora 16)
         'max_touch_points': 5,
         'vendor': 'Google Inc.',
         'renderer': 'Mali-G710',
@@ -205,8 +206,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.5,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; 2405CPH3DC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 16,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 16,  # ✅ Compatible
         'max_touch_points': 10,
         'vendor': 'Google Inc.',
         'renderer': 'Adreno (TM) 750',
@@ -225,8 +226,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.5,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; 2210132C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 12,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 16,  # ✅ Compatible (era 12, ahora 16)
         'max_touch_points': 10,
         'vendor': 'Google Inc.',
         'renderer': 'Adreno (TM) 740',
@@ -248,8 +249,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.5,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; CPH2583) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 16,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 16,  # ✅ Compatible
         'max_touch_points': 10,
         'vendor': 'Google Inc.',
         'renderer': 'Adreno (TM) 750',
@@ -268,8 +269,8 @@ MOBILE_DEVICES = {
         'pixel_ratio': 3.5,
         'user_agent': 'Mozilla/5.0 (Linux; Android 14; CPH2449) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.194 Mobile Safari/537.36',
         'platform': 'Linux armv81',
-        'hardware_concurrency': 8,
-        'device_memory': 16,
+        'hardware_concurrency': 8,  # ✅ Compatible
+        'device_memory': 16,  # ✅ Compatible
         'max_touch_points': 10,
         'vendor': 'Google Inc.',
         'renderer': 'Adreno (TM) 740',
@@ -305,40 +306,26 @@ def get_devices_by_brand(brand: str):
     return {k: v for k, v in MOBILE_DEVICES.items() if k.startswith(brand)}
 
 
-def print_device_info(device_id: str):
-    """Imprime información detallada de un dispositivo"""
-    device = MOBILE_DEVICES.get(device_id)
-    if not device:
-        print(f"❌ Dispositivo '{device_id}' no encontrado")
-        return
+def list_devices_menu():
+    """Muestra menú interactivo de dispositivos"""
+    brands = {}
+    for device_id, device in MOBILE_DEVICES.items():
+        brand = device_id.split('_')[0].title()
+        if brand not in brands:
+            brands[brand] = []
+        brands[brand].append((device_id, device))
     
-    print(f"\n{'='*70}")
-    print(f"DISPOSITIVO: {device['name']}")
-    print(f"{'='*70}")
-    print(f"📱 Pantalla: {device['screen_size']} ({device['resolution']})")
-    print(f"🖥️  Viewport: {device['viewport']}")
-    print(f"📊 Pixel Ratio: {device['pixel_ratio']}")
-    print(f"🧠 CPU Cores: {device['hardware_concurrency']}")
-    print(f"💾 RAM: {device['device_memory']}GB")
-    print(f"👆 Touch Points: {device['max_touch_points']}")
-    print(f"🎨 Renderer: {device['renderer']}")
-    print(f"🌍 Platform: {device['platform']}")
-    print(f"\n🔧 User Agent:")
-    print(f"   {device['user_agent']}")
-    print(f"{'='*70}\n")
+    print("\n" + "="*70)
+    print("DISPOSITIVOS MÓVILES DISPONIBLES".center(70))
+    print("="*70)
+    
+    for brand, devices in sorted(brands.items()):
+        print(f"\n📱 {brand}:")
+        for device_id, device in devices:
+            print(f"   • {device['name']:<30} ({device['screen_size']}, {device['hardware_concurrency']} cores)")
+    
+    print("\n" + "="*70)
 
 
 if __name__ == "__main__":
-    print("="*70)
-    print("BASE DE DATOS DE DISPOSITIVOS MÓVILES")
-    print("="*70)
-    print(f"\n✅ {len(MOBILE_DEVICES)} dispositivos disponibles:\n")
-    
-    for device_id, device in MOBILE_DEVICES.items():
-        print(f"   • {device['name']:<30} ({device['screen_size']}, {device['resolution']})")
-    
-    print("\n" + "="*70)
-    print("\nEjemplo de uso:")
-    print("from mobile_devices import get_random_mobile_device")
-    print("device_id, device = get_random_mobile_device()")
-    print("="*70)
+    list_devices_menu()

@@ -1,0 +1,64 @@
+{
+  "profile_id": "k177iism",
+  "profile_config": {
+    "name": "Josue Correa",
+    "age": 40,
+    "gender": "male",
+    "country": "EC",
+    "city": "Guayaquil",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; 2210132C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Mobile Safari/537.36",
+    "interests": [
+      "ride_sharing",
+      "social_media",
+      "banking",
+      "food_delivery"
+    ],
+    "browsing_history": [
+      "m.gmail.com",
+      "pichincha.com",
+      "bancoguayaquil.com",
+      "produbanco.com",
+      "youtube.com",
+      "google.com",
+      "mobile.twitter.com",
+      "m.eluniverso.com",
+      "m.facebook.com"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile",
+    "device_name": "Xiaomi 13 Pro",
+    "screen_resolution": "1440x3200",
+    "viewport": "412x915",
+    "pixel_ratio": 3.5,
+    "hardware_concurrency": 8,
+    "device_memory": 16,
+    "max_touch_points": 10,
+    "platform": "Linux armv81",
+    "renderer": "Adreno (TM) 740"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "6AGEDoYKsSWcOL9l",
+    "country": "ec",
+    "city": "guayaquil",
+    "region": null
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "190.63.176.65",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "custom_request": {
+    "custom_name": "Josue Correa",
+    "custom_interests": null,
+    "custom_warmup_sites": null
+  },
+  "created_at": "2025-11-21T17:39:21.429131",
+  "warmup_completed": false
+}

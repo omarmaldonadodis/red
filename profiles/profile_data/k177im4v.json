@@ -1,0 +1,67 @@
+{
+  "profile_id": "k177im4v",
+  "profile_config": {
+    "name": "Josue Correa",
+    "age": 40,
+    "gender": "male",
+    "country": "EC",
+    "city": "Guayaquil",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; 2405CPH3DC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36",
+    "interests": [
+      "instagram",
+      "social_media",
+      "messaging",
+      "mobile_gaming"
+    ],
+    "browsing_history": [
+      "reddit.com",
+      "web.whatsapp.com",
+      "discord.com",
+      "pichincha.com",
+      "mobilegamer.com",
+      "m.facebook.com",
+      "telegram.org",
+      "youtube.com",
+      "pinterest.com",
+      "m.eluniverso.com",
+      "m.gmail.com",
+      "google.com"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile",
+    "device_name": "Xiaomi 14 Ultra",
+    "screen_resolution": "1440x3200",
+    "viewport": "412x915",
+    "pixel_ratio": 3.5,
+    "hardware_concurrency": 8,
+    "device_memory": 16,
+    "max_touch_points": 10,
+    "platform": "Linux armv81",
+    "renderer": "Adreno (TM) 750"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "ehWLk5H1mxDpn1yI",
+    "country": "ec",
+    "city": "guayaquil",
+    "region": null
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.211.217.231",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "custom_request": {
+    "custom_name": "Josue Correa",
+    "custom_interests": null,
+    "custom_warmup_sites": null
+  },
+  "created_at": "2025-11-21T17:46:00.237806",
+  "warmup_completed": false
+}

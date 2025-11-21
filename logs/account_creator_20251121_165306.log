@@ -1,0 +1,8 @@
+2025-11-21 16:53:50,986 - INFO - ======================================================================
+2025-11-21 16:53:50,986 - INFO - CREANDO PERFIL PERSONALIZADO
+2025-11-21 16:53:50,986 - INFO - ======================================================================
+2025-11-21 16:53:51,063 - INFO - 👤 Perfil: Josue Correa, 25 años
+2025-11-21 16:53:51,063 - INFO - 📍 Ubicación: Quito, EC
+2025-11-21 16:53:51,063 - INFO - ❤️  Intereses: music_streaming, snapchat, instagram, social_media
+2025-11-21 16:53:59,138 - INFO - ✅ Proxy MOBILE - IP: 190.152.237.181
+2025-11-21 16:53:59,854 - ERROR - ❌ Error: cannot import name 'ProfileWarmer' from 'humanizer' (/Users/omarmaldonado/Desktop/proxys/crear-perfiles-soax/humanizer.py)

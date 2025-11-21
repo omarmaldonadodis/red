@@ -1,0 +1,87 @@
+2025-11-21 16:27:03,748 - INFO - ======================================================================
+2025-11-21 16:27:03,748 - INFO - CREANDO NUEVO PERFIL
+2025-11-21 16:27:03,749 - INFO - ======================================================================
+2025-11-21 16:27:03,808 - INFO - Perfil generado:
+2025-11-21 16:27:03,808 - INFO -   Nombre: Gabriela Martí
+2025-11-21 16:27:03,808 - INFO -   Edad: 31
+2025-11-21 16:27:03,808 - INFO -   Ciudad: Quito
+2025-11-21 16:27:03,808 - INFO -   Región: pichincha
+2025-11-21 16:27:03,808 - INFO -   Dispositivo: mobile
+2025-11-21 16:27:03,808 - INFO -   Tipo Proxy: mobile
+2025-11-21 16:27:03,808 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-21 16:27:03,808 - INFO -   ├─ Dispositivo: Google Pixel 8 Pro
+2025-11-21 16:27:03,808 - INFO -   ├─ Resolución: 1344x2992
+2025-11-21 16:27:03,808 - INFO -   ├─ Viewport: 448x998
+2025-11-21 16:27:03,809 - INFO -   ├─ Pixel Ratio: 3.0x
+2025-11-21 16:27:03,809 - INFO -   ├─ CPU Cores: 10
+2025-11-21 16:27:03,809 - INFO -   ├─ RAM: 16GB
+2025-11-21 16:27:03,809 - INFO -   ├─ Touch Points: 5
+2025-11-21 16:27:03,809 - INFO -   ├─ Platform: Linux armv81
+2025-11-21 16:27:03,809 - INFO -   ├─ Renderer: Mali-G715
+2025-11-21 16:27:03,809 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gec...
+2025-11-21 16:27:03,809 - INFO -   Intereses: fitness_apps, messaging, social_media
+2025-11-21 16:27:23,926 - ERROR - ❌ Error creando perfil: Proxy no funciona: Timeout al conectar con el proxy (>25s)
+2025-11-21 16:29:06,733 - INFO - ======================================================================
+2025-11-21 16:29:06,733 - INFO - CREANDO NUEVO PERFIL
+2025-11-21 16:29:06,733 - INFO - ======================================================================
+2025-11-21 16:29:06,781 - INFO - Perfil generado:
+2025-11-21 16:29:06,781 - INFO -   Nombre: Rosa Salvà
+2025-11-21 16:29:06,781 - INFO -   Edad: 31
+2025-11-21 16:29:06,781 - INFO -   Ciudad: Quito
+2025-11-21 16:29:06,781 - INFO -   Región: pichincha
+2025-11-21 16:29:06,781 - INFO -   Dispositivo: mobile
+2025-11-21 16:29:06,781 - INFO -   Tipo Proxy: mobile
+2025-11-21 16:29:06,781 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-21 16:29:06,782 - INFO -   ├─ Dispositivo: Samsung Galaxy S24+
+2025-11-21 16:29:06,782 - INFO -   ├─ Resolución: 1440x3120
+2025-11-21 16:29:06,782 - INFO -   ├─ Viewport: 412x914
+2025-11-21 16:29:06,782 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-21 16:29:06,782 - INFO -   ├─ CPU Cores: 8
+2025-11-21 16:29:06,782 - INFO -   ├─ RAM: 16GB
+2025-11-21 16:29:06,782 - INFO -   ├─ Touch Points: 5
+2025-11-21 16:29:06,782 - INFO -   ├─ Platform: Linux armv81
+2025-11-21 16:29:06,782 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-21 16:29:06,782 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; SM-S926B) AppleWebKit/537.36 (KHTML, like Gecko)...
+2025-11-21 16:29:06,782 - INFO -   Intereses: banking, fitness_apps, food_delivery, news_apps
+2025-11-21 16:29:26,915 - ERROR - ❌ Error creando perfil: Proxy no funciona: Timeout al conectar con el proxy (>25s)
+2025-11-21 16:39:14,202 - INFO - ======================================================================
+2025-11-21 16:39:14,202 - INFO - CREANDO NUEVO PERFIL
+2025-11-21 16:39:14,202 - INFO - ======================================================================
+2025-11-21 16:39:14,293 - INFO - Perfil generado:
+2025-11-21 16:39:14,293 - INFO -   Nombre: Sofía Moraleda
+2025-11-21 16:39:14,293 - INFO -   Edad: 27
+2025-11-21 16:39:14,293 - INFO -   Ciudad: Guayaquil
+2025-11-21 16:39:14,293 - INFO -   Región: guayas
+2025-11-21 16:39:14,293 - INFO -   Dispositivo: mobile
+2025-11-21 16:39:14,294 - INFO -   Tipo Proxy: mobile
+2025-11-21 16:39:14,294 - INFO - 
+📱 FINGERPRINTS MÓVILES:
+2025-11-21 16:39:14,294 - INFO -   ├─ Dispositivo: OnePlus 12
+2025-11-21 16:39:14,294 - INFO -   ├─ Resolución: 1440x3168
+2025-11-21 16:39:14,294 - INFO -   ├─ Viewport: 412x915
+2025-11-21 16:39:14,294 - INFO -   ├─ Pixel Ratio: 3.5x
+2025-11-21 16:39:14,294 - INFO -   ├─ CPU Cores: 8
+2025-11-21 16:39:14,294 - INFO -   ├─ RAM: 16GB
+2025-11-21 16:39:14,294 - INFO -   ├─ Touch Points: 10
+2025-11-21 16:39:14,294 - INFO -   ├─ Platform: Linux armv81
+2025-11-21 16:39:14,294 - INFO -   ├─ Renderer: Adreno (TM) 750
+2025-11-21 16:39:14,294 - INFO -   └─ User Agent: Mozilla/5.0 (Linux; Android 14; CPH2583) AppleWebKit/537.36 (KHTML, like Gecko) ...
+2025-11-21 16:39:14,294 - INFO -   Intereses: shopping, fitness_apps, news_apps, banking
+2025-11-21 16:39:25,305 - INFO - ✅ Proxy MOBILE funcionando:
+2025-11-21 16:39:25,305 - INFO -   IP: 181.196.88.150
+2025-11-21 16:39:25,305 - INFO -   País: None
+2025-11-21 16:39:25,305 - INFO -   Ciudad: None
+2025-11-21 16:39:25,306 - INFO -   ISP: None
+2025-11-21 16:39:25,306 - INFO -   Tipo: mobile
+2025-11-21 16:39:26,471 - INFO - ======================================================================
+2025-11-21 16:39:26,471 - INFO - ✅ PERFIL CREADO EXITOSAMENTE
+2025-11-21 16:39:26,471 - INFO - ======================================================================
+2025-11-21 16:39:26,471 - INFO - ID: k177hjmi
+2025-11-21 16:39:26,471 - INFO - Nombre: Sofía Moraleda
+2025-11-21 16:39:26,471 - INFO - Ciudad: Guayaquil
+2025-11-21 16:39:26,471 - INFO - Región: guayas
+2025-11-21 16:39:26,471 - INFO - Tipo: MOBILE (mobile)
+2025-11-21 16:39:26,472 - INFO - Warmup: No
+2025-11-21 16:39:26,472 - INFO - ======================================================================

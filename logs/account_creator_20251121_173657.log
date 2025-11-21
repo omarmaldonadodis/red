@@ -1,0 +1,7 @@
+2025-11-21 17:37:54,382 - INFO - ======================================================================
+2025-11-21 17:37:54,383 - INFO - CREANDO PERFIL PERSONALIZADO
+2025-11-21 17:37:54,383 - INFO - ======================================================================
+2025-11-21 17:37:54,457 - INFO - 👤 Perfil: Josue Correa, 30 años
+2025-11-21 17:37:54,457 - INFO - 📍 Ubicación: Cuenca, EC
+2025-11-21 17:37:54,457 - INFO - ❤️  Intereses: music_streaming, social_media, snapchat
+2025-11-21 17:37:55,189 - ERROR - ❌ Error: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C

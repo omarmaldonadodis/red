@@ -1,0 +1,62 @@
+{
+  "profile_id": "k177ifes",
+  "profile_config": {
+    "name": "Josue Correa",
+    "age": 25,
+    "gender": "male",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-A546B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Mobile Safari/537.36",
+    "interests": [
+      "social_media",
+      "snapchat",
+      "mobile_gaming",
+      "photos"
+    ],
+    "browsing_history": [
+      "youtube.com",
+      "m.facebook.com",
+      "google.com",
+      "pichincha.com",
+      "m.elcomercio.com",
+      "m.gmail.com",
+      "play.google.com"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile",
+    "device_name": "Samsung Galaxy A54 5G",
+    "screen_resolution": "1080x2340",
+    "viewport": "412x915",
+    "pixel_ratio": 2.625,
+    "hardware_concurrency": 8,
+    "device_memory": 8,
+    "max_touch_points": 5,
+    "platform": "Linux armv81",
+    "renderer": "Mali-G68"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "wLUNqWQtB2whbkJW",
+    "country": "ec",
+    "city": "Quito",
+    "region": null
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.211.104.0",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "custom_request": {
+    "custom_name": "Josue Correa",
+    "custom_interests": null,
+    "custom_warmup_sites": null
+  },
+  "created_at": "2025-11-21T17:32:28.938198",
+  "warmup_completed": false
+}

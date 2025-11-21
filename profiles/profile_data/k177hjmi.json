@@ -1,0 +1,64 @@
+{
+  "profile_id": "k177hjmi",
+  "profile_config": {
+    "name": "Sofía Moraleda",
+    "age": 27,
+    "gender": "female",
+    "country": "EC",
+    "city": "Guayaquil",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; CPH2583) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+    "interests": [
+      "shopping",
+      "fitness_apps",
+      "news_apps",
+      "banking"
+    ],
+    "browsing_history": [
+      "google.com",
+      "m.elcomercio.com",
+      "wish.com",
+      "pichincha.com",
+      "bancoguayaquil.com",
+      "flipboard.com",
+      "youtube.com",
+      "m.amazon.com",
+      "m.facebook.com",
+      "m.gmail.com",
+      "m.eluniverso.com",
+      "news.google.com",
+      "m.mercadolibre.com.ec",
+      "produbanco.com"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile",
+    "device_name": "OnePlus 12",
+    "screen_resolution": "1440x3168",
+    "viewport": "412x915",
+    "pixel_ratio": 3.5,
+    "hardware_concurrency": 8,
+    "device_memory": 16,
+    "max_touch_points": 10,
+    "platform": "Linux armv81",
+    "renderer": "Adreno (TM) 750"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "DUlxx7bpa5c5wfKp",
+    "country": "ec",
+    "city": "Guayaquil",
+    "region": "guayas"
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "181.196.88.150",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "created_at": "2025-11-21T16:39:26.470453",
+  "warmup_completed": false
+}

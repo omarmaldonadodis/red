@@ -1,0 +1,7 @@
+2025-11-21 16:25:26,787 - INFO - ======================================================================
+2025-11-21 16:25:26,787 - INFO - CREANDO PERFIL PERSONALIZADO
+2025-11-21 16:25:26,787 - INFO - ======================================================================
+2025-11-21 16:25:26,857 - INFO - 👤 Perfil: Josue Correa, 25 años
+2025-11-21 16:25:26,857 - INFO - 📍 Ubicación: Quito, EC
+2025-11-21 16:25:26,857 - INFO - ❤️  Intereses: food_delivery, social_media, ride_sharing
+2025-11-21 16:25:46,976 - ERROR - ❌ Error: Proxy no funciona: Timeout al conectar con el proxy (>25s)

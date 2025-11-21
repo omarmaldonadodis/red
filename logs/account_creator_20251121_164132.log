@@ -1,0 +1,20 @@
+2025-11-21 16:42:27,026 - INFO - ======================================================================
+2025-11-21 16:42:27,027 - INFO - CREANDO PERFIL PERSONALIZADO
+2025-11-21 16:42:27,027 - INFO - ======================================================================
+2025-11-21 16:42:27,103 - INFO - 👤 Perfil: Josue Correa, 25 años
+2025-11-21 16:42:27,103 - INFO - 📍 Ubicación: Guayaquil, EC
+2025-11-21 16:42:27,103 - INFO - ❤️  Intereses: shopping, fitness_apps, messaging
+2025-11-21 16:43:00,206 - ERROR - ❌ Error: Proxy no funciona: Error de proxy: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (C
+2025-11-21 16:44:50,445 - INFO - ======================================================================
+2025-11-21 16:44:50,445 - INFO - CREANDO PERFIL PERSONALIZADO
+2025-11-21 16:44:50,445 - INFO - ======================================================================
+2025-11-21 16:44:50,491 - INFO - 👤 Perfil: Pablo Carbajo, 20 años
+2025-11-21 16:44:50,491 - INFO - 📍 Ubicación: Quito, EC
+2025-11-21 16:44:50,491 - INFO - ❤️  Intereses: mobile_gaming, instagram, messaging, tiktok, music_streaming
+2025-11-21 16:44:56,599 - INFO - ✅ Proxy MOBILE - IP: 181.211.104.242
+2025-11-21 16:44:57,057 - INFO - 🔌 Conectando al navegador del perfil: k177hmme
+2025-11-21 16:45:03,164 - WARNING - The chromedriver version (140.0.7339.81) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.183 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-11-21 16:45:04,756 - INFO - ✅ Conectado exitosamente al navegador
+2025-11-21 16:45:04,767 - INFO - 🍪 Auto-aceptador de cookies activado
+2025-11-21 16:45:04,780 - INFO - 🔌 Navegador cerrado
+2025-11-21 16:45:12,797 - ERROR - ❌ Error: 'ProfileWarmer' object has no attribute 'build_browsing_history'

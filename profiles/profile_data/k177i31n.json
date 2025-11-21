@@ -1,0 +1,66 @@
+{
+  "profile_id": "k177i31n",
+  "profile_config": {
+    "name": "Josue Serrano",
+    "age": 25,
+    "gender": "male",
+    "country": "EC",
+    "city": "Quito",
+    "language": "es-EC",
+    "timezone": "America/Guayaquil",
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.194 Mobile Safari/537.36",
+    "interests": [
+      "music_streaming",
+      "messaging",
+      "instagram",
+      "tiktok"
+    ],
+    "browsing_history": [
+      "pichincha.com",
+      "google.com",
+      "m.eluniverso.com",
+      "web.whatsapp.com",
+      "music.youtube.com",
+      "m.gmail.com",
+      "m.facebook.com",
+      "open.spotify.com",
+      "youtube.com",
+      "soundcloud.com",
+      "messenger.com"
+    ],
+    "proxy_type": "mobile",
+    "device_type": "mobile",
+    "device_name": "Google Pixel 7 Pro",
+    "screen_resolution": "1440x3120",
+    "viewport": "412x915",
+    "pixel_ratio": 3.5,
+    "hardware_concurrency": 8,
+    "device_memory": 16,
+    "max_touch_points": 5,
+    "platform": "Linux armv81",
+    "renderer": "Mali-G710"
+  },
+  "proxy_config": {
+    "type": "mobile",
+    "session_id": "LS6JAteZk9gBJFOG",
+    "country": "ec",
+    "city": "quito",
+    "region": null
+  },
+  "proxy_test": {
+    "success": true,
+    "ip": "190.152.236.143",
+    "country": null,
+    "city": null,
+    "isp": null,
+    "connection_type": "mobile",
+    "error": null
+  },
+  "custom_request": {
+    "custom_name": "Josue Serrano",
+    "custom_interests": null,
+    "custom_warmup_sites": null
+  },
+  "created_at": "2025-11-21T17:10:04.373743",
+  "warmup_completed": false
+}
